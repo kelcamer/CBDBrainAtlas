@@ -43,8 +43,12 @@ export const REGIONS = [
     mechanism:
       'Local 5-HT1A and CB1 receptors mediate antidepressant-like effects; CBD also modulates the glutamate/GABA (excitation–inhibition) balance measured with MR spectroscopy.',
     autismNote:
-      'Prefrontal glutamate–GABA imbalance is a leading model of autism. Both CBD and CBDV measurably shift these signals in autistic brains (Pretzsch 2019).',
-    sourceIds: ['bhatt2012', 'bhatt2015', 'oneill2021', 'grimm2018', 'wall2022', 'batalla2021', 'campos2012', 'sartim2016', 'blessing2015', 'melas2021', 'garciagutierrez2020', 'pretzschCBD2019', 'pretzschCBDV2019'],
+      'Prefrontal glutamate–GABA imbalance is a leading model of autism. Both CBD and CBDV measurably shift these signals in autistic brains (Pretzsch 2019), CBDV normalises atypical fronto-striatal connectivity (Pretzsch 2021), and a 2025 EEG study found CBD increased right fronto-parietal connectivity in autistic children (Parrella 2025) — though behavioural trials of CBD in autism have shown mixed, often null, primary-outcome results (Aran 2021, Trauner 2025, Parrella 2026).',
+    sourceIds: [
+      'bhatt2012', 'bhatt2015', 'oneill2021', 'grimm2018', 'wall2022', 'batalla2021', 'campos2012', 'sartim2016',
+      'blessing2015', 'melas2021', 'garciagutierrez2020', 'pretzschCBD2019', 'pretzschCBDV2019',
+      'parrella2025eeg', 'yeh2017', 'pretzschCBDV2021',
+    ],
   },
   {
     id: 'acc',
@@ -79,6 +83,22 @@ export const REGIONS = [
     autismNote:
       'The PCC/default-mode network is atypically connected in autism, but no study in this atlas has yet tested CBD’s effect on PCC function specifically in autistic people — a clear gap for future research.',
     sourceIds: ['crippa2004', 'crippa2011', 'wall2019dissociable', 'vanboxel2023', 'rutledge2026'],
+  },
+  {
+    id: 'parietal',
+    name: 'Parietal cortex (incl. temporoparietal junction)',
+    abbr: 'PAR',
+    category: 'cortical',
+    autism: true,
+    map: { shape: 'ellipse', cx: 378, cy: 204, rx: 24, ry: 12, rot: -8 },
+    summary:
+      'The least-studied region in this atlas. The temporoparietal junction (TPJ) is a core hub for theory-of-mind and social-cue processing, but direct evidence for CBD acting on parietal cortex is limited to one 2025 pediatric-autism EEG study and a fMRI salience study noting effects at the parietal operculum.',
+    functions: ['Theory of mind & social cognition (TPJ)', 'Spatial & sensory integration', 'Attention networks'],
+    mechanism:
+      'No parietal-specific CBD receptor mechanism has been established; evidence so far is limited to functional connectivity changes (EEG, fMRI) rather than a defined pharmacological target in this region.',
+    autismNote:
+      'Right fronto-parietal beta-band connectivity — a network implicated in decoding social cues and theory of mind — increased after 12 weeks of CBD oil in autistic children, with a hint (not surviving correction for multiple comparisons) that this tracked improvements in social responsiveness and adaptive behaviour (Parrella 2025).',
+    sourceIds: ['parrella2025eeg', 'wilson2019'],
   },
   {
     id: 'insula',

@@ -202,10 +202,10 @@ export const SOURCES = [
     type: 'RCT (fMRI)',
     category: 'imaging',
     url: 'https://doi.org/10.1186/s13229-021-00454-6',
-    regions: ['striatum', 'caudate', 'nac'],
+    regions: ['striatum', 'caudate', 'nac', 'pfc'],
     autism: true,
     finding:
-      'CBDV shifted the atypical functional connectivity of the striatum (caudate, putamen and nucleus accumbens) in autistic adults toward the pattern seen in non-autistic controls.',
+      'At baseline, autistic adults showed lower ventral-striatum connectivity to frontal and pericentral regions but higher putamen-to-temporal connectivity and higher intra-striatal connectivity than controls; CBDV reduced this atypical hyperconnectivity toward the non-autistic pattern without significantly changing connectivity in controls.',
   },
 
   // ---- Preclinical mechanism -------------------------------------------
@@ -834,7 +834,7 @@ export const SOURCES = [
     type: 'RCT (fMRI)',
     category: 'imaging',
     url: 'https://doi.org/10.1038/s41398-019-0534-2',
-    regions: ['insula'],
+    regions: ['insula', 'parietal'],
     autism: false,
     finding:
       'In antipsychotic-naïve people at clinical high risk for psychosis, CBD normalised abnormal insula/parietal-operculum over-activation during a reward-and-loss salience task and slowed premature responding — a proposed mechanism for its antipsychotic-like effect on aberrant salience.',
@@ -896,6 +896,92 @@ export const SOURCES = [
     autism: true,
     finding:
       'A systematic review of cannabinoid-based products in children and adolescents with neurodevelopmental and neuropsychiatric disorders — including autism — found the evidence base limited and generally low-quality, calling for larger, rigorous trials before treatment decisions rely on it.',
+  },
+
+  // ---- CBD, autism, and frontal / parietal networks -------------------------
+  {
+    id: 'parrella2026',
+    authors: 'Parrella NF, Hill AT, Enticott PG, Botha T, Catchlove S, Downey L, Ford TC',
+    year: 2026,
+    title: 'Effects of Cannabidiol on Social Relating, Anxiety, and Parental Stress in Autistic Children: A Randomized Controlled Crossover Trial',
+    journal: 'Autism Research',
+    type: 'RCT (crossover)',
+    category: 'clinical',
+    url: 'https://doi.org/10.1002/aur.70159',
+    regions: [],
+    autism: true,
+    finding:
+      'In a 12-week crossover trial of weight-based CBD oil (10 mg/kg/day) in 29 autistic children aged 5–12, the primary measure of social responsiveness did not improve, but secondary measures of social relating, anxiety and parental stress improved significantly versus placebo.',
+  },
+  {
+    id: 'parrella2025eeg',
+    authors: 'Parrella NF, Hill AT, Enticott PG, Downey LA, Catchlove S, Ford TC',
+    year: 2025,
+    title: 'Cannabidiol Modulates Right Fronto-Parietal Connectivity in Autistic Children: A Secondary EEG Analysis from a Randomised Placebo-Controlled Crossover Trial',
+    journal: 'medRxiv (preprint)',
+    type: 'Preprint (EEG, not yet peer-reviewed)',
+    category: 'imaging',
+    url: 'https://www.medrxiv.org/content/10.1101/2025.09.09.25335467v1',
+    regions: ['pfc', 'parietal'],
+    autism: true,
+    finding:
+      'A secondary EEG analysis of the same trial found 12 weeks of CBD oil selectively increased resting-state beta-band connectivity between right frontal and right inferior-parietal electrodes — a fronto-parietal network tied to social-cue and theory-of-mind processing — though its correlation with behavioural improvement did not survive correction for multiple comparisons.',
+  },
+  {
+    id: 'trauner2025',
+    authors: 'Trauner D, Umlauf A, Grelotti DJ, et al.',
+    year: 2025,
+    title: 'Cannabidiol (CBD) treatment for severe problem behaviors in boys with autism: a randomized clinical trial',
+    journal: 'Journal of Autism and Developmental Disorders',
+    type: 'RCT (crossover)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/40410546/',
+    regions: [],
+    autism: true,
+    finding:
+      'In 39 boys with moderate-to-severe autism, 20 weeks of purified CBD (20 mg/kg/day) showed no significant benefit over placebo on primary outcome measures, though clinicians rated roughly two-thirds of participants improved — a result muddied by a strong placebo response in both arms.',
+  },
+  {
+    id: 'depol2021',
+    authors: 'De Pol M, Kolla NJ',
+    year: 2021,
+    title: 'Endocannabinoid markers in autism spectrum disorder: a scoping review of human studies',
+    journal: 'Psychiatry Research',
+    type: 'Scoping review',
+    category: 'review',
+    url: 'https://doi.org/10.1016/j.psychres.2021.114256',
+    regions: [],
+    autism: true,
+    finding:
+      'This scoping review found autistic people show altered peripheral and central endocannabinoid markers (anandamide, 2-AG) relative to non-autistic people, though findings are inconsistent across studies and rarely tie back to specific brain regions — motivating, but not yet proving, cannabinoid-based treatment.',
+  },
+  {
+    id: 'su2021',
+    authors: 'Su T, Yan Y, Li Q, Ye J, Pei L',
+    year: 2021,
+    title: 'Endocannabinoid System Unlocks the Puzzle of Autism Treatment via Microglia',
+    journal: 'Frontiers in Psychiatry',
+    type: 'Mechanism review',
+    category: 'review',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/34744824/',
+    regions: [],
+    autism: true,
+    finding:
+      'This review proposes that autism-linked endocannabinoid signalling changes act partly through microglia, the brain’s resident immune cells, and that CBD and other cannabinoids could improve autism symptoms by normalising microglial activation state.',
+  },
+  {
+    id: 'yeh2017',
+    authors: 'Yeh ML, Levine ES',
+    year: 2017,
+    title: 'Perspectives on the Role of Endocannabinoids in Autism Spectrum Disorders',
+    journal: 'OBM Neurobiology',
+    type: 'Perspective / review',
+    category: 'review',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/30854511/',
+    regions: ['pfc'],
+    autism: true,
+    finding:
+      'This early perspective piece lays out the case for endocannabinoid system dysfunction — including altered CB1 signalling in prefrontal and limbic circuits — as a contributor to autism’s synaptic and behavioural phenotype, framing cannabinoids like CBD as a rational treatment avenue.',
   },
 ]
 
