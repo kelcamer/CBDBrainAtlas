@@ -283,7 +283,7 @@ export const REGIONS = [
     mechanism:
       'A single 600 mg CBD dose increased fALFF (a measure of regional activity) in the vermis and altered its functional connectivity with subcortical and cortical targets — an effect driven almost entirely by the autistic group, with little or no change in non-autistic controls.',
     autismNote:
-      'The same study found an analogous autism-selective activity increase in the right fusiform gyrus, a face-processing region on the underside of the temporal lobe not otherwise mapped in this atlas (Pretzsch 2019). Unlike most autism findings elsewhere in this atlas — where CBD affects both diagnostic groups but something else (GABA, connectivity) diverges by diagnosis — here the drug response itself is autism-specific.',
+      'CBD increased cerebellar vermis activity (fALFF) only in autistic participants — non-autistic controls showed little or no change. The same study found an analogous autism-selective activity increase in the right fusiform gyrus, a face-processing region on the underside of the temporal lobe not otherwise mapped in this atlas (Pretzsch 2019). Unlike most autism findings elsewhere in this atlas — where CBD affects both diagnostic groups but something else (GABA, connectivity) diverges by diagnosis — here the drug response itself is autism-specific.',
     sourceIds: ['pretzsch2019falff'],
   },
 ]
