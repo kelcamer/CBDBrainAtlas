@@ -1111,6 +1111,34 @@ export const SOURCES = [
     finding:
       'In this phase 3 trial, add-on CBD (25 or 50 mg/kg/day) significantly reduced seizure frequency in tuberous sclerosis complex — a genetic disorder in which up to half of patients also have autism — versus placebo, part of the evidence base behind CBD’s approval for TSC-associated seizures.',
   },
+  {
+    id: 'colizzi2022',
+    authors: 'Colizzi M, Bortoletto R, Costa R, Bhattacharyya S, Balestrieri M',
+    year: 2022,
+    title: 'The Autism–Psychosis Continuum Conundrum: Exploring the Role of the Endocannabinoid System',
+    journal: 'International Journal of Environmental Research and Public Health',
+    type: 'Systematic review',
+    category: 'review',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/35565034/',
+    regions: [],
+    autism: true,
+    finding:
+      'This review of endocannabinoid-system studies spanning autism and psychosis found both conditions share features of altered endocannabinoid signalling, such as blunted anandamide tone, proposing that where a person falls on this shared biological axis — not just their diagnostic label — may help predict whether cannabinoids like CBD help or harm.',
+  },
+  {
+    id: 'jia2025',
+    authors: 'Jia X, Gao S, Liu X, et al.',
+    year: 2025,
+    title: 'Alterations of the endocannabinoid system in autism spectrum disorder: a systematic review and meta-analysis',
+    journal: 'European Archives of Psychiatry and Clinical Neuroscience',
+    type: 'Systematic review & meta-analysis',
+    category: 'review',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/40518463/',
+    regions: ['hippocampus', 'pfc'],
+    autism: true,
+    finding:
+      'Pooling 16 animal and 5 human studies, this meta-analysis found hippocampal anandamide (AEA) reduced in autism animal models, prefrontal 2-AG reduced in ASD, and blood AEA reduced in autistic people versus controls — consistent with an underactive endocannabinoid tone that CBD’s anandamide-boosting (FAAH-inhibiting) mechanism could in principle address, though effects were region- and sex-dependent and inconsistent when pooled across all brain regions together.',
+  },
 ]
 
 // Convenience lookup

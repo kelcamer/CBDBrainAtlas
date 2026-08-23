@@ -43,11 +43,11 @@ export const REGIONS = [
     mechanism:
       'Local 5-HT1A and CB1 receptors mediate antidepressant-like effects; CBD also modulates the glutamate/GABA (excitation–inhibition) balance measured with MR spectroscopy.',
     autismNote:
-      'Prefrontal glutamate–GABA imbalance is a leading model of autism. CBD raises basal-ganglia glutamate and lowers dorsomedial-prefrontal glutamate in autistic and non-autistic adults alike — the autism-specific divergence shows up in GABA instead, which rises in non-autistic controls but falls in autistic adults (Pretzsch 2019). CBDV also raises basal-ganglia glutamate in both groups, with no significant prefrontal glutamate or GABA change in either. CBDV separately normalises atypical fronto-striatal connectivity (Pretzsch 2021), and a 2025 EEG study found CBD increased right fronto-parietal connectivity in autistic children (Parrella 2025) — though behavioural trials of CBD in autism have shown mixed, often null, primary-outcome results (Aran 2021, Trauner 2025, Parrella 2026).',
+      'Prefrontal glutamate–GABA imbalance is a leading model of autism. CBD raises basal-ganglia glutamate and lowers dorsomedial-prefrontal glutamate in autistic and non-autistic adults alike — the autism-specific divergence shows up in GABA instead, which rises in non-autistic controls but falls in autistic adults (Pretzsch 2019). CBDV also raises basal-ganglia glutamate in both groups, with no significant prefrontal glutamate or GABA change in either. Separately, prefrontal 2-AG (a different endocannabinoid, not glutamate) is reported reduced in autism (Jia 2025). CBDV normalises atypical fronto-striatal connectivity (Pretzsch 2021), and a 2025 EEG study found CBD increased right fronto-parietal connectivity in autistic children (Parrella 2025) — though behavioural trials of CBD in autism have shown mixed, often null, primary-outcome results (Aran 2021, Trauner 2025, Parrella 2026).',
     sourceIds: [
       'bhatt2012', 'bhatt2015', 'oneill2021', 'grimm2018', 'wall2022', 'batalla2021', 'campos2012', 'sartim2016',
       'blessing2015', 'melas2021', 'garciagutierrez2020', 'pretzschCBD2019', 'pretzschCBDV2019',
-      'parrella2025eeg', 'yeh2017', 'pretzschCBDV2021',
+      'parrella2025eeg', 'yeh2017', 'pretzschCBDV2021', 'jia2025',
     ],
   },
   {
@@ -146,8 +146,11 @@ export const REGIONS = [
     mechanism:
       'Anandamide-dependent neurogenesis (via FAAH inhibition) underlies chronic effects; dorsal-hippocampal CB1/CB2 receptors gate fear-memory consolidation.',
     autismNote:
-      'In the valproate rat model of autism, CBDV restored hippocampal endocannabinoid signalling and reduced microglial activation (Zamberletti 2019).',
-    sourceIds: ['bhatt2012', 'bhatt2015', 'bhatt2018', 'davies2020', 'oneill2021', 'batalla2021', 'campos2012', 'stern2017', 'blessing2015', 'melas2021', 'garciagutierrez2020', 'zamberletti2019'],
+      'In the valproate rat model of autism, CBDV restored hippocampal endocannabinoid signalling and reduced microglial activation (Zamberletti 2019). A 2025 meta-analysis found hippocampal anandamide is itself reduced in autism animal models — an underactive tone CBD’s anandamide-boosting mechanism could in principle counteract (Jia 2025).',
+    sourceIds: [
+      'bhatt2012', 'bhatt2015', 'bhatt2018', 'davies2020', 'oneill2021', 'batalla2021', 'campos2012', 'stern2017',
+      'blessing2015', 'melas2021', 'garciagutierrez2020', 'zamberletti2019', 'jia2025',
+    ],
   },
   {
     id: 'striatum',
