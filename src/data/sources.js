@@ -922,10 +922,10 @@ export const SOURCES = [
     type: 'Preprint (EEG, not yet peer-reviewed)',
     category: 'imaging',
     url: 'https://www.medrxiv.org/content/10.1101/2025.09.09.25335467v1',
-    regions: ['pfc', 'parietal'],
+    regions: ['pfc', 'acc', 'parietal'],
     autism: true,
     finding:
-      'A secondary EEG analysis of the same trial found 12 weeks of CBD oil selectively increased resting-state beta-band connectivity between right frontal and right inferior-parietal electrodes — a fronto-parietal network tied to social-cue and theory-of-mind processing — though its correlation with behavioural improvement did not survive correction for multiple comparisons.',
+      'Hypothesising that CBD would strengthen the "social brain" network — medial prefrontal cortex, anterior cingulate and the temporoparietal junction/posterior superior temporal sulcus — this secondary EEG analysis found 12 weeks of CBD oil selectively increased resting-state beta-band connectivity between right frontal and right inferior-parietal electrodes, though its correlation with behavioural improvement did not survive correction for multiple comparisons.',
   },
   {
     id: 'trauner2025',
@@ -982,6 +982,92 @@ export const SOURCES = [
     autism: true,
     finding:
       'This early perspective piece lays out the case for endocannabinoid system dysfunction — including altered CB1 signalling in prefrontal and limbic circuits — as a contributor to autism’s synaptic and behavioural phenotype, framing cannabinoids like CBD as a rational treatment avenue.',
+  },
+
+  // ---- CBD, autism & related neurodevelopmental disorders (additional) -----
+  {
+    id: 'connectfx2022',
+    authors: 'Berry-Kravis E, Hagerman R, Budimirovic D, et al.',
+    year: 2022,
+    title: 'A randomized, controlled trial of ZYN002 cannabidiol transdermal gel in children and adolescents with fragile X syndrome (CONNECT-FX)',
+    journal: 'Journal of Neurodevelopmental Disorders',
+    type: 'RCT (phase 3)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/36434514/',
+    regions: [],
+    autism: true,
+    finding:
+      'In this pivotal trial of a CBD transdermal gel for fragile X syndrome — the most common inherited cause of autism — the full study population missed its primary endpoint, but a pre-planned subgroup with ≥90% FMR1 gene methylation (about 80% of participants) showed significant improvement in social avoidance, a favourable benefit-risk profile.',
+  },
+  {
+    id: 'eurpsy2025meta',
+    authors: 'Cappelletti Beneti Branco L, Borja De Oliveira I, Alves GAM, et al.',
+    year: 2025,
+    title: 'Efficacy and Safety of Cannabidiol Cannabis Extracts for Children and Adolescents with Autism Spectrum Disorder: A Systematic Review and Meta-Analysis of Randomized Controlled Trials',
+    journal: 'European Psychiatry',
+    type: 'Systematic review & meta-analysis',
+    category: 'review',
+    url: 'https://doi.org/10.1192/j.eurpsy.2025.369',
+    regions: [],
+    autism: true,
+    finding:
+      'Pooling three RCTs (276 children and adolescents with autism), this meta-analysis found CBD-rich cannabis extracts produced moderate improvements in social responsiveness and smaller reductions in disruptive behaviour and anxiety, with a safety profile comparable to placebo.',
+  },
+  {
+    id: 'cazares2026',
+    authors: 'Cazares C, Hutton A, Paez G, Trauner D, Voytek B',
+    year: 2026,
+    title: 'Cannabidiol blood metabolite levels after cannabidiol treatment are associated with broadband EEG changes and improvements in visuomotor and non-verbal cognitive abilities in boys with autism requiring higher levels of support',
+    journal: 'Translational Psychiatry',
+    type: 'RCT (EEG companion analysis)',
+    category: 'imaging',
+    url: 'https://doi.org/10.1038/s41398-026-03815-y',
+    regions: [],
+    autism: true,
+    finding:
+      'In the EEG arm of the Trauner 2025 CBD trial, higher CBD blood-metabolite levels tracked broadband changes in aperiodic (non-oscillatory) brain activity — a larger aperiodic offset scalp-wide and a smaller aperiodic exponent over occipital electrodes — and these EEG shifts correlated with better receptive vocabulary, nonverbal IQ and visuomotor coordination.',
+  },
+  {
+    id: 'boeri2026',
+    authors: 'Boeri S, Bosisio L, Prato G, et al.',
+    year: 2026,
+    title: 'Efficacy and Safety of Cannabinoid-Based Products in Children and Adolescents with Autism Spectrum Disorder, Fragile X Syndrome and Rett Syndrome: A Systematic Review',
+    journal: 'Journal of Child and Adolescent Psychopharmacology',
+    type: 'Systematic review',
+    category: 'review',
+    url: 'https://doi.org/10.1177/10445463261462382',
+    regions: [],
+    autism: true,
+    finding:
+      'Reviewing trials across autism, fragile X and Rett syndrome — conditions that share excitatory/inhibitory imbalance potentially modulated by the endocannabinoid system — this review found cannabinoid-based products show a generally favourable safety profile but inconsistent efficacy for core versus co-occurring symptoms across the three conditions.',
+  },
+  {
+    id: 'hurley2022',
+    authors: 'Hurley EN, Ellaway CJ, Johnson AM, et al.',
+    year: 2022,
+    title: 'Efficacy and safety of cannabidivarin treatment of epilepsy in girls with Rett syndrome: a phase 1 clinical trial',
+    journal: 'Epilepsia',
+    type: 'Phase 1 clinical trial',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/35364618/',
+    regions: [],
+    autism: true,
+    finding:
+      'In five girls with Rett syndrome (a genetic disorder with substantial autism overlap) and drug-resistant epilepsy, CBDV at 10 mg/kg/day was safe and cut median monthly seizures by 79%, though it produced no significant change on EEG or in non-epilepsy Rett symptoms.',
+  },
+  {
+    id: 'schnapp2022',
+    authors: 'Schnapp A, Harel M, Cayam-Rand D, Cassuto H, Polyansky L, Aran A',
+    year: 2022,
+    title: 'A Placebo-Controlled Trial of Cannabinoid Treatment for Disruptive Behavior in Children and Adolescents with Autism Spectrum Disorder: Effects on Sleep Parameters as Measured by the CSHQ',
+    journal: 'Biomedicines',
+    type: 'RCT (secondary outcome analysis)',
+    category: 'clinical',
+    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9312464/',
+    regions: [],
+    autism: true,
+    finding:
+      'In a 150-child placebo-controlled trial, CBD-rich (20:1 CBD:THC) cannabinoid treatment did not improve parent-reported sleep problems more than placebo, though — regardless of which arm a child was in — those whose sleep improved also tended to show improved core autism symptoms and disruptive behaviour.',
   },
 ]
 

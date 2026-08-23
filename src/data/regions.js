@@ -65,7 +65,7 @@ export const REGIONS = [
     autismNote: null,
     sourceIds: [
       'fusarpoli2009', 'fusarpoli2010', 'perry2024', 'batalla2021',
-      'kowal2013', 'lawn2020', 'bloomfield2022', 'koethe2007', 'vallee2022', 'rutledge2026',
+      'kowal2013', 'lawn2020', 'bloomfield2022', 'koethe2007', 'vallee2022', 'rutledge2026', 'parrella2025eeg',
     ],
   },
   {
