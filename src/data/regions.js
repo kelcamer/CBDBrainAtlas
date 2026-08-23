@@ -18,6 +18,7 @@ export const CATEGORY_COLORS = {
   memory: '#2dd4a7',
   midbrain: '#f2c14e',
   serotonergic: '#4cc9e0',
+  cerebellar: '#8bc954',
 }
 
 export const CATEGORY_LABELS = {
@@ -27,6 +28,7 @@ export const CATEGORY_LABELS = {
   memory: 'Memory (hippocampal)',
   midbrain: 'Midbrain',
   serotonergic: 'Serotonergic',
+  cerebellar: 'Cerebellar',
 }
 
 export const REGIONS = [
@@ -267,6 +269,22 @@ export const REGIONS = [
       'Like the dorsal PAG, anxiolysis here relies on 5-HT1A-mediated neurotransmission: CBD injected into the BNST reduces anxiety-like behaviour in the elevated plus-maze and Vogel conflict test (Gomes 2011) and reduces freezing when a fear-conditioned context is re-encountered (Gomes 2012), both effects blocked by a 5-HT1A antagonist.',
     autismNote: null,
     sourceIds: ['campos2012', 'gomes2011bnst', 'gomes2012bnstfear'],
+  },
+  {
+    id: 'cerebellum',
+    name: 'Cerebellum (vermis)',
+    abbr: 'CBM',
+    category: 'cerebellar',
+    autism: true,
+    map: { shape: 'ellipse', cx: 656, cy: 398, rx: 38, ry: 28 },
+    summary:
+      'Traditionally viewed as purely a motor structure, the cerebellar vermis is now recognised for roles in language and social cognition — and cerebellar abnormalities (e.g., Purkinje cell loss) are among autism’s most-replicated neuropathological findings. This is the only region in the atlas where CBD’s effect was seen almost exclusively in autistic participants, not controls.',
+    functions: ['Motor coordination & timing', 'Cerebellar contribution to language & social cognition', 'Sensorimotor prediction'],
+    mechanism:
+      'A single 600 mg CBD dose increased fALFF (a measure of regional activity) in the vermis and altered its functional connectivity with subcortical and cortical targets — an effect driven almost entirely by the autistic group, with little or no change in non-autistic controls.',
+    autismNote:
+      'The same study found an analogous autism-selective activity increase in the right fusiform gyrus, a face-processing region on the underside of the temporal lobe not otherwise mapped in this atlas (Pretzsch 2019). Unlike most autism findings elsewhere in this atlas — where CBD affects both diagnostic groups but something else (GABA, connectivity) diverges by diagnosis — here the drug response itself is autism-specific.',
+    sourceIds: ['pretzsch2019falff'],
   },
 ]
 

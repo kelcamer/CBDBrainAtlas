@@ -4,6 +4,7 @@ import RegionPanel from './components/RegionPanel.jsx'
 import SourceList from './components/SourceList.jsx'
 import ReceptorPanel from './components/ReceptorPanel.jsx'
 import LiveScan from './components/LiveScan.jsx'
+import GapsPanel from './components/GapsPanel.jsx'
 import { REGIONS, REGION_BY_ID, CATEGORY_COLORS } from './data/regions.js'
 import { SOURCES } from './data/sources.js'
 import { RECEPTORS } from './data/receptors.js'
@@ -12,6 +13,7 @@ const TABS = [
   { id: 'sources', label: 'Sources' },
   { id: 'targets', label: 'Molecular targets' },
   { id: 'scan', label: 'Live PubMed scan' },
+  { id: 'gaps', label: 'Research gaps' },
 ]
 
 export default function App() {
@@ -154,6 +156,7 @@ export default function App() {
             )}
             {tab === 'targets' && <ReceptorPanel />}
             {tab === 'scan' && <LiveScan />}
+            {tab === 'gaps' && <GapsPanel />}
           </div>
         </section>
       </main>
@@ -190,6 +193,7 @@ function legendLabel(cat) {
     memory: 'Hippocampal',
     midbrain: 'Midbrain',
     serotonergic: 'Serotonergic',
+    cerebellar: 'Cerebellar',
   }
   return map[cat] || cat
 }

@@ -1226,6 +1226,22 @@ export const SOURCES = [
     finding:
       'Recording directly from rat dorsal raphe neurons, CBD alone did not change serotonin-cell firing but blunted the inhibitory effect of a selective 5-HT1A agonist — evidence CBD acts as a negative allosteric modulator at this receptor rather than a straightforward direct agonist, refining the “CBD is a 5-HT1A agonist” shorthand used elsewhere in the literature.',
   },
+
+  // ---- Cerebellum / fusiform gyrus -------------------------------------
+  {
+    id: 'pretzsch2019falff',
+    authors: 'Pretzsch CM, Voinescu B, Mendez MA, et al.',
+    year: 2019,
+    title: 'The effect of cannabidiol (CBD) on low-frequency activity and functional connectivity in the brain of adults with and without autism spectrum disorder (ASD)',
+    journal: 'Journal of Psychopharmacology',
+    type: 'RCT (fMRI)',
+    category: 'imaging',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/31237191/',
+    regions: ['cerebellum'],
+    autism: true,
+    finding:
+      'A single 600 mg dose of CBD increased regional activity (fALFF) in the cerebellar vermis and right fusiform gyrus, and altered the vermis’s functional connectivity with striatal and cortical targets — effects driven almost entirely by the autistic group, with little or no change in non-autistic controls.',
+  },
 ]
 
 // Convenience lookup
