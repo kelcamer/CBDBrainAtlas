@@ -157,12 +157,12 @@ export const REGIONS = [
     autism: true,
     map: { shape: 'ellipse', cx: 386, cy: 272, rx: 30, ry: 24, rot: -12 },
     summary:
-      'CBD changes striatal activation and its connectivity with cortex during salience and fear tasks — often opposite to THC — and shifts basal-ganglia glutamate in autistic adults.',
+      'CBD changes striatal activation and its connectivity with cortex during salience and fear tasks — often opposite to THC — and both CBD and CBDV raise basal-ganglia glutamate in autistic and non-autistic adults alike.',
     functions: ['Reward & motivation', 'Habit & motor control', 'Salience attribution'],
     mechanism:
-      'Enhances fronto-striatal connectivity; modulates basal-ganglia glutamate (Glx) measured with MR spectroscopy.',
+      'Enhances fronto-striatal connectivity; increases basal-ganglia glutamate (Glx) measured with MR spectroscopy — a shared drug effect seen in both autistic and non-autistic adults, not an autism-specific correction.',
     autismNote:
-      'Basal-ganglia glutamate and striatal connectivity are atypical in autism; CBD and CBDV measurably shift both toward neurotypical patterns (Pretzsch 2019, 2021).',
+      'Basal-ganglia glutamate rises with both CBD and CBDV regardless of diagnosis — that part isn’t autism-specific. What is autism-specific is baseline striatal connectivity: CBDV shifts atypical caudate/putamen/accumbens hyperconnectivity toward the non-autistic pattern (Pretzsch 2021), while CBD’s diagnosis-dependent effect shows up as a GABA (not glutamate) divergence in the prefrontal cortex, not the striatum itself (Pretzsch 2019).',
     sourceIds: [
       'bhatt2012', 'bhatt2015', 'bhatt2018', 'davies2020', 'oneill2021', 'grimm2018', 'wall2022', 'batalla2021',
       'pretzschCBD2019', 'pretzschCBDV2019', 'pretzschCBDV2021',
