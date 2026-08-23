@@ -123,10 +123,10 @@ export const REGIONS = [
     autism: false,
     map: { shape: 'ellipse', cx: 402, cy: 324, rx: 15, ry: 12, rot: 20 },
     summary:
-      'The brain’s threat detector. A single dose of CBD reliably dampens amygdala reactivity to fearful faces and negative stimuli.',
+      'The brain’s threat detector. Several single-dose studies find CBD dampens amygdala reactivity to fearful faces and negative stimuli, though a larger, better-powered 2022 crossover trial found no such effect — one of several inconsistent-replication patterns in this atlas.',
     functions: ['Fear & threat processing', 'Emotional salience', 'Stress responses'],
     mechanism:
-      'Reduced amygdala BOLD response accompanies lower physiological arousal; mediated partly via 5-HT1A receptors and altered limbic connectivity.',
+      'Where an effect is seen, reduced amygdala BOLD response accompanies lower physiological arousal, mediated partly via 5-HT1A receptors and altered limbic connectivity — but this has not replicated in every study (Bloomfield 2022).',
     autismNote: null,
     sourceIds: [
       'fusarpoli2009', 'fusarpoli2010', 'perry2024', 'davies2020', 'batalla2021', 'blessing2015', 'garciagutierrez2020',
