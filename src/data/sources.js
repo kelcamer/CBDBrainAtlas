@@ -177,7 +177,7 @@ export const SOURCES = [
     regions: ['pfc', 'striatum'],
     autism: true,
     finding:
-      'A single dose of CBD shifted the glutamate/GABA balance in the basal ganglia and dorsomedial prefrontal cortex — but prefrontal GABA responded differently in autistic adults, dropping where it did not in controls.',
+      'A single dose of CBD increased glutamate (Glx) in the basal ganglia and decreased it in the dorsomedial prefrontal cortex, in both autistic and non-autistic adults alike — but prefrontal GABA diverged by group, rising in controls while dropping in autistic adults.',
   },
   {
     id: 'pretzschCBDV2019',
@@ -1068,6 +1068,48 @@ export const SOURCES = [
     autism: true,
     finding:
       'In a 150-child placebo-controlled trial, CBD-rich (20:1 CBD:THC) cannabinoid treatment did not improve parent-reported sleep problems more than placebo, though — regardless of which arm a child was in — those whose sleep improved also tended to show improved core autism symptoms and disruptive behaviour.',
+  },
+  {
+    id: 'siniscalco2013',
+    authors: 'Siniscalco D, Sapone A, Giordano C, et al.',
+    year: 2013,
+    title: 'Cannabinoid receptor type 2, but not type 1, is up-regulated in peripheral blood mononuclear cells of children affected by autistic disorders',
+    journal: 'Journal of Autism and Developmental Disorders',
+    type: 'Human PBMC study',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/23585028/',
+    regions: [],
+    autism: true,
+    finding:
+      'In blood cells from autistic children, CB2 receptor expression was elevated relative to non-autistic children while CB1 expression was unchanged, pointing to immune-linked (rather than classical neuronal CB1) endocannabinoid signalling as an autism-relevant target.',
+  },
+  {
+    id: 'premoli2023',
+    authors: 'Premoli M, Fyke W, Bellocchio L, et al.',
+    year: 2023,
+    title: 'Early Administration of the Phytocannabinoid Cannabidivarin Prevents the Neurobehavioral Abnormalities Associated with the Fmr1-KO Mouse Model of Fragile X Syndrome',
+    journal: 'Cells',
+    type: 'Preclinical (mouse)',
+    category: 'preclinical',
+    url: 'https://doi.org/10.3390/cells12151927',
+    regions: [],
+    autism: true,
+    finding:
+      'Giving CBDV to Fmr1-knockout mice — the standard fragile X syndrome model — starting early in development prevented the emergence of the model’s characteristic neurobehavioral abnormalities, suggesting a developmental window in which cannabinoid treatment could alter fragile X’s trajectory rather than just treat symptoms afterward.',
+  },
+  {
+    id: 'thiele2021tsc',
+    authors: 'Thiele EA, Bebin EM, Bhathal H, et al. (GWPCARE6)',
+    year: 2021,
+    title: 'Add-on Cannabidiol Treatment for Drug-Resistant Seizures in Tuberous Sclerosis Complex: A Placebo-Controlled Randomized Clinical Trial',
+    journal: 'JAMA Neurology',
+    type: 'RCT (phase 3)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/33346789/',
+    regions: [],
+    autism: true,
+    finding:
+      'In this phase 3 trial, add-on CBD (25 or 50 mg/kg/day) significantly reduced seizure frequency in tuberous sclerosis complex — a genetic disorder in which up to half of patients also have autism — versus placebo, part of the evidence base behind CBD’s approval for TSC-associated seizures.',
   },
 ]
 
