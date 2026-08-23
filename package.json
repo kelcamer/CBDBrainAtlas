@@ -1,0 +1,20 @@
+{
+  "name": "cbd-brain-atlas",
+  "private": true,
+  "version": "1.0.0",
+  "description": "An interactive atlas of the brain regions cannabidiol (CBD) affects, with a dedicated autism-research view. Built from 30+ peer-reviewed sources.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
+  }
+}

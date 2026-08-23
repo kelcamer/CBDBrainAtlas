@@ -1,0 +1,422 @@
+:root {
+  --bg: #0b1120;
+  --bg-2: #0e1626;
+  --panel: #131d30;
+  --panel-2: #172236;
+  --line: #24344c;
+  --text: #dbe6f4;
+  --muted: #8ea3bd;
+  --muted-2: #6a7f9a;
+  --cbd: #3fbf8f;
+  --cbd-dim: #1e6b52;
+  --autism: #ff5da2;
+  --autism-dim: #7d2e56;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background:
+    radial-gradient(1200px 600px at 20% -10%, #14203a 0%, transparent 55%),
+    radial-gradient(1000px 700px at 100% 0%, #10243a 0%, transparent 50%),
+    var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+a { color: var(--cbd); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.app {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 26px 22px 60px;
+}
+
+/* ---------------- Header ---------------- */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.header-main h1 {
+  margin: 0 0 6px;
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.leaf { color: var(--cbd); font-size: 26px; }
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+  max-width: 560px;
+  font-size: 14.5px;
+}
+.header-controls { display: flex; flex-direction: column; gap: 12px; align-items: flex-end; }
+
+.stat-row { display: flex; gap: 10px; flex-wrap: wrap; }
+.stat {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 8px 14px;
+  min-width: 78px;
+  text-align: center;
+}
+.stat-n { font-size: 22px; font-weight: 800; color: #fff; }
+.stat-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.stat-hot { border-color: var(--autism); box-shadow: 0 0 0 1px var(--autism-dim) inset; }
+.stat-hot .stat-n { color: var(--autism); }
+
+.mode-toggle {
+  display: inline-flex;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 4px;
+  gap: 4px;
+}
+.toggle {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  padding: 7px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.toggle:hover { color: var(--text); }
+.toggle.active { background: var(--cbd); color: #062015; }
+.toggle.active.toggle-autism { background: var(--autism); color: #2a0918; }
+
+.autism-banner {
+  background: linear-gradient(90deg, rgba(255, 93, 162, 0.14), rgba(255, 93, 162, 0.04));
+  border: 1px solid var(--autism-dim);
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 13.5px;
+  color: #ffd7e8;
+  margin-bottom: 18px;
+}
+
+/* ---------------- Panels & layout ---------------- */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.app-main { display: flex; flex-direction: column; gap: 22px; }
+.map-section {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 22px;
+}
+.map-panel { padding: 16px; display: flex; flex-direction: column; }
+
+.brain-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #0d1626, #0b1220);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+  margin: 12px 2px 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.legend-item { display: inline-flex; align-items: center; gap: 6px; }
+.legend-dot { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+.legend-autism { background: transparent; border: 1.6px dashed var(--autism); }
+
+.chip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 8px;
+  margin-top: 14px;
+}
+.region-chip {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-align: left;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--chip-color, var(--line));
+  border-radius: 9px;
+  padding: 8px 10px;
+  color: var(--text);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.region-chip:hover:not(.dimmed) { background: #1d2a42; transform: translateY(-1px); }
+.region-chip.selected {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px #fff inset;
+}
+.region-chip.dimmed { opacity: 0.32; cursor: default; }
+.region-chip.has-autism { position: relative; }
+.region-chip.has-autism::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--autism);
+}
+.chip-abbr {
+  font-weight: 800;
+  font-size: 12px;
+  color: var(--chip-color, var(--text));
+  min-width: 34px;
+}
+.chip-name { font-size: 12px; color: var(--muted); line-height: 1.2; }
+
+/* ---------------- Region panel ---------------- */
+.region-panel { padding: 20px 22px; }
+.region-empty h2 { margin-top: 4px; }
+.region-head { display: flex; align-items: flex-start; gap: 12px; }
+.region-swatch { width: 16px; height: 16px; border-radius: 5px; margin-top: 6px; flex: none; }
+.region-head h2 { margin: 0; font-size: 20px; letter-spacing: -0.01em; }
+.region-cat { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.close-btn {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  width: 28px; height: 28px;
+  border-radius: 7px;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1;
+}
+.close-btn:hover { color: #fff; border-color: var(--muted); }
+
+.region-summary { font-size: 15px; margin: 14px 0 6px; }
+.region-block { margin-top: 16px; }
+.region-block h3 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted-2);
+  margin: 0 0 8px;
+}
+.chip-row { display: flex; flex-wrap: wrap; gap: 6px; }
+.fn-chip {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 4px 11px;
+  font-size: 12.5px;
+  color: var(--text);
+}
+.autism-note {
+  background: rgba(255, 93, 162, 0.08);
+  border: 1px solid var(--autism-dim);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.autism-note h3 { color: var(--autism); }
+.autism-note p { margin: 0; font-size: 13.5px; color: #ffdcec; }
+.autism-count { color: var(--autism); font-weight: 700; }
+
+.src-mini-list { list-style: none; margin: 0; padding: 0; }
+.src-mini-list li { padding: 5px 0; border-bottom: 1px dashed var(--line); font-size: 13px; }
+.src-mini-list li:last-child { border-bottom: none; }
+.src-mini-journal { color: var(--muted-2); }
+
+/* ---------------- Tabs ---------------- */
+.tab-bar { display: flex; gap: 6px; margin-bottom: 12px; flex-wrap: wrap; }
+.tab {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  padding: 9px 18px;
+  border-radius: 9px;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.tab:hover { color: var(--text); }
+.tab.active { background: var(--cbd); color: #062015; border-color: var(--cbd); }
+.tab-panel { padding: 20px 22px; }
+
+/* ---------------- Sources ---------------- */
+.sources-toolbar { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.search-input {
+  flex: 1 1 260px;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 10px 13px;
+  color: var(--text);
+  font-size: 14px;
+}
+.search-input:focus, .select:focus { outline: none; border-color: var(--cbd); }
+.select {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 10px 12px;
+  color: var(--text);
+  font-size: 13.5px;
+  cursor: pointer;
+}
+.sources-count {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.tag-autism { background: var(--autism); color: #2a0918; }
+.tag-region { background: var(--panel-2); border: 1px solid var(--line); color: var(--text); text-transform: none; }
+.tag-x { background: transparent; border: none; color: inherit; cursor: pointer; font-size: 14px; padding: 0; line-height: 1; }
+
+.source-cards { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 12px; }
+.source-card {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 14px 16px;
+}
+.source-card:hover { border-color: #33496b; }
+.source-card-head { display: flex; gap: 10px; align-items: flex-start; }
+.source-title { font-size: 15px; font-weight: 650; color: #eaf2fc; line-height: 1.35; }
+.source-title:hover { color: var(--cbd); }
+.source-meta { font-size: 12.5px; color: var(--muted); margin: 5px 0 8px; }
+.source-finding { font-size: 13.5px; margin: 0 0 12px; color: #cdd9e8; }
+.source-footer { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+.badge-imaging { background: rgba(91, 140, 255, 0.16); color: #9db8ff; border-color: rgba(91, 140, 255, 0.3); }
+.badge-clinical { background: rgba(63, 191, 143, 0.16); color: #6fe0b6; border-color: rgba(63, 191, 143, 0.3); }
+.badge-preclinical { background: rgba(242, 193, 78, 0.16); color: #f2cf7e; border-color: rgba(242, 193, 78, 0.3); }
+.badge-review { background: rgba(181, 124, 255, 0.16); color: #cba9ff; border-color: rgba(181, 124, 255, 0.3); }
+.region-pill {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.region-pill:hover { color: #fff; border-color: var(--muted); }
+.pubmed-link { margin-left: auto; font-size: 12.5px; font-weight: 600; }
+
+/* ---------------- Receptors ---------------- */
+.receptor-intro { margin-top: 0; }
+.receptor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+.receptor-card {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 14px;
+}
+.receptor-name { font-weight: 700; font-size: 14px; color: #eaf2fc; }
+.receptor-action { font-size: 12px; color: var(--cbd); margin: 4px 0 8px; font-weight: 600; }
+.receptor-effect { font-size: 13px; color: var(--muted); }
+
+/* ---------------- Live scan ---------------- */
+.livescan-bar { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0; }
+.btn-primary {
+  background: var(--cbd);
+  color: #062015;
+  border: none;
+  border-radius: 9px;
+  padding: 10px 18px;
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+.btn-primary:disabled { opacity: 0.6; cursor: wait; }
+.preset-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.preset-chip {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  color: var(--muted);
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+.preset-chip:hover { color: #fff; border-color: var(--cbd); }
+.scan-error {
+  background: rgba(255, 93, 93, 0.1);
+  border: 1px solid rgba(255, 93, 93, 0.35);
+  color: #ffb3b3;
+  padding: 10px 14px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+code {
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 1px 5px;
+  font-size: 12px;
+}
+
+/* ---------------- Footer / misc ---------------- */
+.app-footer { margin-top: 30px; border-top: 1px solid var(--line); padding-top: 18px; }
+.app-footer p { font-size: 13px; color: var(--muted); margin: 6px 0; }
+.app-footer strong { color: #e7cf7a; }
+.muted { color: var(--muted); }
+.small { font-size: 12px; }
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 900px) {
+  .map-section { grid-template-columns: 1fr; }
+  .app-header { flex-direction: column; align-items: flex-start; }
+  .header-controls { align-items: flex-start; width: 100%; }
+}
+@media (max-width: 560px) {
+  .header-main h1 { font-size: 24px; }
+  .stat { min-width: 68px; padding: 6px 10px; }
+  .stat-n { font-size: 18px; }
+}
