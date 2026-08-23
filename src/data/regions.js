@@ -59,7 +59,26 @@ export const REGIONS = [
     mechanism:
       'Part of the amygdala–ACC–insula salience circuit engaged during fear; CBD reduces ACC reactivity and dampens forward ACC→amygdala connectivity.',
     autismNote: null,
-    sourceIds: ['fusarpoli2009', 'fusarpoli2010', 'perry2024', 'batalla2021'],
+    sourceIds: [
+      'fusarpoli2009', 'fusarpoli2010', 'perry2024', 'batalla2021',
+      'kowal2013', 'lawn2020', 'bloomfield2022', 'koethe2007', 'vallee2022', 'rutledge2026',
+    ],
+  },
+  {
+    id: 'pcc',
+    name: 'Posterior cingulate cortex',
+    abbr: 'PCC',
+    category: 'cortical',
+    autism: false,
+    map: { shape: 'ellipse', cx: 400, cy: 256, rx: 26, ry: 13, rot: -8 },
+    summary:
+      'The hub of the default-mode network. CBD’s effects here are the least settled in the atlas: single-dose SPECT studies find shifted blood flow, and CBD (unlike THC-only cannabis) preserves PCC-anchored resting-state connectivity — but a 2026 systematic review found no consistent direction of effect across studies.',
+    functions: ['Default-mode network hub', 'Self-referential thought', 'Autobiographical memory', 'Internally directed attention'],
+    mechanism:
+      'Densely connected to the hippocampus, parahippocampal gyrus and precuneus; CBD studies here rely on resting perfusion (SPECT) and resting-state fMRI connectivity rather than task activation, which likely explains the mixed findings.',
+    autismNote:
+      'The PCC/default-mode network is atypically connected in autism, but no study in this atlas has yet tested CBD’s effect on PCC function specifically in autistic people — a clear gap for future research.',
+    sourceIds: ['crippa2004', 'crippa2011', 'wall2019dissociable', 'vanboxel2023', 'rutledge2026'],
   },
   {
     id: 'insula',
@@ -74,7 +93,7 @@ export const REGIONS = [
     mechanism:
       'A hub of the salience network; effects overlap with CBD’s broader anxiolytic modulation of limbic circuits. (Shown here schematically — the insula is buried in the lateral sulcus.)',
     autismNote: null,
-    sourceIds: ['perry2024', 'batalla2021'],
+    sourceIds: ['perry2024', 'batalla2021', 'wilson2019', 'lawn2020'],
   },
   {
     id: 'amygdala',
@@ -89,7 +108,10 @@ export const REGIONS = [
     mechanism:
       'Reduced amygdala BOLD response accompanies lower physiological arousal; mediated partly via 5-HT1A receptors and altered limbic connectivity.',
     autismNote: null,
-    sourceIds: ['fusarpoli2009', 'fusarpoli2010', 'perry2024', 'davies2020', 'batalla2021', 'blessing2015', 'garciagutierrez2020'],
+    sourceIds: [
+      'fusarpoli2009', 'fusarpoli2010', 'perry2024', 'davies2020', 'batalla2021', 'blessing2015', 'garciagutierrez2020',
+      'crippa2004', 'bhattacharyya2010', 'bloomfield2022', 'lorenzetti2024',
+    ],
   },
   {
     id: 'hippocampus',
@@ -121,7 +143,31 @@ export const REGIONS = [
       'Enhances fronto-striatal connectivity; modulates basal-ganglia glutamate (Glx) measured with MR spectroscopy.',
     autismNote:
       'Basal-ganglia glutamate and striatal connectivity are atypical in autism; CBD and CBDV measurably shift both toward neurotypical patterns (Pretzsch 2019, 2021).',
-    sourceIds: ['bhatt2012', 'bhatt2015', 'bhatt2018', 'davies2020', 'oneill2021', 'grimm2018', 'wall2022', 'batalla2021', 'pretzschCBD2019', 'pretzschCBDV2019', 'pretzschCBDV2021'],
+    sourceIds: [
+      'bhatt2012', 'bhatt2015', 'bhatt2018', 'davies2020', 'oneill2021', 'grimm2018', 'wall2022', 'batalla2021',
+      'pretzschCBD2019', 'pretzschCBDV2019', 'pretzschCBDV2021',
+      'bhattacharyya2010', 'seeman2016', 'mosley2023', 'morenoalcazar2018', 'wall2019dissociable',
+    ],
+  },
+  {
+    id: 'caudate',
+    name: 'Caudate nucleus',
+    abbr: 'CAU',
+    category: 'striatal',
+    autism: true,
+    map: { shape: 'ellipse', cx: 366, cy: 244, rx: 16, ry: 13, rot: -10 },
+    summary:
+      'The dorsomedial part of the striatum, singled out across many of the studies above: CBD raises caudate activation opposite to THC, and the receptor mechanisms behind CBD’s antipsychotic and anti-craving effects (GPR55, dopamine D2High) are concentrated here.',
+    functions: ['Goal-directed action selection', 'Habit learning', 'Cognitive/motor loop of the basal ganglia', 'Salience & reward signalling'],
+    mechanism:
+      'CBD antagonises GPR55 and acts as a dopamine-D2High partial agonist, both receptor types dense in caudate medium spiny neurons; in imaging studies CBD boosts caudate activation during verbal-memory encoding and salience tasks where THC does the opposite.',
+    autismNote:
+      'CBDV shifted atypical caudate/putamen/accumbens connectivity in autistic adults toward the non-autistic pattern (Pretzsch 2021), and cortico-striato-thalamo-cortical circuitry involving the caudate is implicated in both autism and OCD.',
+    sourceIds: [
+      'ryberg2007', 'seeman2016', 'bhattacharyya2010', 'sharma2019', 'mosley2023', 'lawn2020',
+      'morenoalcazar2018', 'wall2019dissociable', 'rutledge2026', 'vallee2022',
+      'bhatt2012', 'davies2020', 'oneill2021', 'pretzschCBDV2021',
+    ],
   },
   {
     id: 'nac',
@@ -131,13 +177,13 @@ export const REGIONS = [
     autism: true,
     map: { shape: 'ellipse', cx: 338, cy: 322, rx: 14, ry: 11 },
     summary:
-      'Part of the ventral striatum’s reward circuitry. CBDV shifts atypical nucleus-accumbens functional connectivity in autistic adults toward the non-autistic pattern.',
+      'Part of the ventral striatum’s reward circuitry. CBDV shifts atypical nucleus-accumbens functional connectivity in autistic adults toward the non-autistic pattern, and single-dose CBD lowers cue-induced accumbens activation during craving in substance use disorders.',
     functions: ['Reward & pleasure', 'Motivation', 'Social reward'],
     mechanism:
-      'Studied as part of striatal functional connectivity; sits within the mesolimbic dopamine system that CBD influences indirectly.',
+      'Studied as part of striatal functional connectivity; sits within the mesolimbic dopamine system that CBD influences indirectly, partly via accumbal D1/D2 dopamine receptors.',
     autismNote:
       'Nucleus-accumbens connectivity differences relate to social-motivation models of autism (Pretzsch 2021).',
-    sourceIds: ['pretzschCBDV2021'],
+    sourceIds: ['pretzschCBDV2021', 'zimmermann2025', 'sharifi2022', 'morenoalcazar2018', 'lawn2020'],
   },
   {
     id: 'midbrain',
