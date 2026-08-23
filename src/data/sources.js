@@ -1139,6 +1139,93 @@ export const SOURCES = [
     finding:
       'Pooling 16 animal and 5 human studies, this meta-analysis found hippocampal anandamide (AEA) reduced in autism animal models, prefrontal 2-AG reduced in ASD, and blood AEA reduced in autistic people versus controls — consistent with an underactive endocannabinoid tone that CBD’s anandamide-boosting (FAAH-inhibiting) mechanism could in principle address, though effects were region- and sex-dependent and inconsistent when pooled across all brain regions together.',
   },
+
+  // ---- Preclinical mechanism: PAG / BNST / DRN (primary studies behind ------
+  // ---- the Campos 2012 review's 5-HT1A claims) ------------------------------
+  {
+    id: 'soares2010pag',
+    authors: 'Soares VP, Campos AC, Bortoli VC, Zangrossi H Jr, Guimarães FS, Zuardi AW',
+    year: 2010,
+    title: 'Intra-dorsal periaqueductal gray administration of cannabidiol blocks panic-like response by activating 5-HT1A receptors',
+    journal: 'Behavioural Brain Research',
+    type: 'Preclinical (rat)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/20457188/',
+    regions: ['pag'],
+    autism: false,
+    finding:
+      'Microinjecting CBD directly into the dorsal periaqueductal grey blocked panic-like escape responses in rats, an effect prevented by co-administering a 5-HT1A antagonist — direct evidence that the region’s panicolytic role for CBD depends on local 5-HT1A activation.',
+  },
+  {
+    id: 'casarotto2013pag',
+    authors: 'Casarotto PC, de Paula Soares V, Carvalho MC, et al.',
+    year: 2013,
+    title: 'Involvement of serotonin-mediated neurotransmission in the dorsal periaqueductal gray matter on cannabidiol chronic effects in panic-like responses in rats',
+    journal: 'Psychopharmacology',
+    type: 'Preclinical (rat)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/23007604/',
+    regions: ['pag'],
+    autism: false,
+    finding:
+      'In the dorsal periaqueductal grey, repeated — but not single-dose — CBD reduced panic-like responses in rats without changing 5-HT1A receptor expression itself, suggesting the antipanic effect builds with sustained dosing through a functional rather than receptor-density change.',
+  },
+  {
+    id: 'gomes2011bnst',
+    authors: 'Gomes FV, Resstel LB, Guimarães FS',
+    year: 2011,
+    title: 'The anxiolytic-like effects of cannabidiol injected into the bed nucleus of the stria terminalis are mediated by 5-HT1A receptors',
+    journal: 'Psychopharmacology',
+    type: 'Preclinical (rat)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/20945065/',
+    regions: ['bnst'],
+    autism: false,
+    finding:
+      'Microinjecting CBD into the bed nucleus of the stria terminalis produced anxiolytic-like effects in two classic rodent anxiety tests (elevated plus-maze, Vogel conflict test), blocked by a 5-HT1A antagonist — establishing the BNST as a second serotonin-dependent site, alongside the PAG, for CBD’s anxiolytic action.',
+  },
+  {
+    id: 'gomes2012bnstfear',
+    authors: 'Gomes FV, Reis DG, Alves FH, Corrêa FM, Guimarães FS, Resstel LB',
+    year: 2012,
+    title: 'Cannabidiol injected into the bed nucleus of the stria terminalis reduces the expression of contextual fear conditioning via 5-HT1A receptors',
+    journal: 'Journal of Psychopharmacology',
+    type: 'Preclinical (rat)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/21148020/',
+    regions: ['bnst'],
+    autism: false,
+    finding:
+      'CBD injected into the BNST reduced freezing and cardiovascular fear responses when rats were re-exposed to a context previously paired with shock, again via 5-HT1A receptors — showing the BNST’s role extends from acute anxiety to sustained contextual fear expression.',
+  },
+  {
+    id: 'rock2012drn',
+    authors: 'Rock EM, Bolognini D, Limebeer CL, et al.',
+    year: 2012,
+    title: 'Cannabidiol, a non-psychotropic component of cannabis, attenuates vomiting and nausea-like behaviour via indirect agonism of 5-HT1A somatodendritic autoreceptors in the dorsal raphe nucleus',
+    journal: 'British Journal of Pharmacology',
+    type: 'Preclinical (shrew/rat)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/21827451/',
+    regions: ['drn'],
+    autism: false,
+    finding:
+      'In shrews and rats, CBD’s anti-nausea and anti-vomiting effects depended on indirectly activating 5-HT1A autoreceptors on the dorsal raphe’s own serotonin-producing neurons, extending CBD’s DRN-dependent mechanism beyond mood and anxiety into nausea control.',
+  },
+  {
+    id: 'mendiguren2022drn',
+    authors: 'Mendiguren A, Aostri E, Alberdi E, Pérez-Samartín A, Pineda J',
+    year: 2022,
+    title: 'Functional characterization of cannabidiol effect on the serotonergic neurons of the dorsal raphe nucleus in rat brain slices',
+    journal: 'Frontiers in Pharmacology',
+    type: 'Preclinical (rat, ex vivo slice)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/36147343/',
+    regions: ['drn'],
+    autism: false,
+    finding:
+      'Recording directly from rat dorsal raphe neurons, CBD alone did not change serotonin-cell firing but blunted the inhibitory effect of a selective 5-HT1A agonist — evidence CBD acts as a negative allosteric modulator at this receptor rather than a straightforward direct agonist, refining the “CBD is a 5-HT1A agonist” shorthand used elsewhere in the literature.',
+  },
 ]
 
 // Convenience lookup

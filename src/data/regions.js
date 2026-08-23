@@ -231,12 +231,12 @@ export const REGIONS = [
     autism: false,
     map: { shape: 'ellipse', cx: 492, cy: 330, rx: 11, ry: 10 },
     summary:
-      'The dorsal periaqueductal grey organises defensive responses and pain. CBD acts here through serotonin receptors to reduce anxiety-like and panic responses.',
+      'The dorsal periaqueductal grey organises defensive responses and pain. Microinjected directly into this region, CBD blocks panic-like escape behaviour in rats via local 5-HT1A receptors.',
     functions: ['Defensive behaviour', 'Panic responses', 'Descending pain control'],
     mechanism:
-      'Acute anxiolytic effects depend on facilitating 5-HT1A neurotransmission in the dorsal PAG.',
+      'A single CBD dose blocks panic-like responses in the dPAG via 5-HT1A activation (Soares 2010); repeated dosing achieves a similar antipanic effect without changing 5-HT1A receptor density itself, suggesting a functional rather than structural adaptation (Casarotto 2013).',
     autismNote: null,
-    sourceIds: ['campos2012'],
+    sourceIds: ['campos2012', 'soares2010pag', 'casarotto2013pag'],
   },
   {
     id: 'drn',
@@ -249,9 +249,9 @@ export const REGIONS = [
       'The dorsal raphe is the brain’s main serotonin source. CBD’s acute mood and anxiety effects hinge on 5-HT1A signalling linked to this system.',
     functions: ['Serotonin (5-HT) supply', 'Mood regulation', 'Stress resilience'],
     mechanism:
-      'CBD behaves as a 5-HT1A agonist/modulator, shaping the serotonergic tone that reaches the whole forebrain.',
+      'CBD is often shorthanded as a "5-HT1A agonist," but direct recordings from rat DRN neurons find it doesn’t itself change serotonin-cell firing — instead it acts as a negative allosteric modulator, blunting the effect of a selective 5-HT1A agonist (Mendiguren 2022). Indirect activation of these same somatodendritic 5-HT1A autoreceptors also underlies CBD’s anti-nausea/anti-vomiting effects (Rock 2012), extending the DRN’s role for CBD beyond mood into nausea control.',
     autismNote: null,
-    sourceIds: ['campos2012', 'blessing2015', 'melas2021', 'garciagutierrez2020'],
+    sourceIds: ['campos2012', 'blessing2015', 'melas2021', 'garciagutierrez2020', 'rock2012drn', 'mendiguren2022drn'],
   },
   {
     id: 'bnst',
@@ -261,12 +261,12 @@ export const REGIONS = [
     autism: false,
     map: { shape: 'ellipse', cx: 358, cy: 298, rx: 10, ry: 8 },
     summary:
-      'The BNST drives sustained (“anticipatory”) anxiety. CBD reduces these responses through serotonin receptors.',
+      'The BNST drives sustained (“anticipatory”) anxiety. Microinjected CBD reduces both acute anxiety-like behaviour and sustained contextual fear here, through serotonin receptors.',
     functions: ['Sustained anxiety', 'Threat anticipation', 'HPA-axis modulation'],
     mechanism:
-      'Like the dorsal PAG, acute anxiolysis here relies on 5-HT1A-mediated neurotransmission.',
+      'Like the dorsal PAG, anxiolysis here relies on 5-HT1A-mediated neurotransmission: CBD injected into the BNST reduces anxiety-like behaviour in the elevated plus-maze and Vogel conflict test (Gomes 2011) and reduces freezing when a fear-conditioned context is re-encountered (Gomes 2012), both effects blocked by a 5-HT1A antagonist.',
     autismNote: null,
-    sourceIds: ['campos2012'],
+    sourceIds: ['campos2012', 'gomes2011bnst', 'gomes2012bnstfear'],
   },
 ]
 
