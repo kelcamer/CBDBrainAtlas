@@ -11,6 +11,8 @@
   --cbd-dim: #1e6b52;
   --autism: #ff5da2;
   --autism-dim: #7d2e56;
+  --nonautism: #f2c14e;
+  --nonautism-dim: #7a611f;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   --radius: 14px;
 }
@@ -239,6 +241,14 @@ a:hover { text-decoration: underline; }
 .autism-note h3 { color: var(--autism); }
 .autism-note p { margin: 0; font-size: 13.5px; color: #ffdcec; }
 .autism-count { color: var(--autism); font-weight: 700; }
+.nonautism-note {
+  background: rgba(242, 193, 78, 0.08);
+  border: 1px solid var(--nonautism-dim);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.nonautism-note h3 { color: var(--nonautism); }
+.nonautism-note p { margin: 0; font-size: 13.5px; color: #fff2d1; }
 
 .src-mini-list { list-style: none; margin: 0; padding: 0; }
 .src-mini-list li { padding: 5px 0; border-bottom: 1px dashed var(--line); font-size: 13px; }

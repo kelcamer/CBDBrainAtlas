@@ -409,7 +409,7 @@ export const SOURCES = [
     regions: [],
     autism: true,
     finding:
-      'In 60 children with ASD and severe behavioural problems, CBD-rich cannabis was tolerable and behavioural outbursts improved in roughly 61% — early feasibility evidence that motivated controlled trials.',
+      'In 60 autistic children with severe behavioural problems, CBD-rich cannabis was tolerable and behavioural outbursts improved in roughly 61% — early feasibility evidence that motivated controlled trials.',
   },
   {
     id: 'aran2021',
@@ -423,7 +423,7 @@ export const SOURCES = [
     regions: [],
     autism: true,
     finding:
-      'A double-blind crossover trial of whole-plant CBD-rich extract in children with ASD found modest, mixed benefits on disruptive behaviour and social responsiveness, with a notably large placebo response.',
+      'A double-blind crossover trial of whole-plant CBD-rich extract in autistic children found modest, mixed benefits on disruptive behaviour and social responsiveness, with a notably large placebo response.',
   },
   {
     id: 'barchel2019',
@@ -578,7 +578,7 @@ export const SOURCES = [
     type: 'Human fMRI',
     category: 'imaging',
     url: 'https://pubmed.ncbi.nlm.nih.gov/32755273/',
-    regions: ['acc', 'caudate', 'nac', 'insula'],
+    regions: ['acc', 'caudate', 'nac', 'insula', 'pfc'],
     autism: false,
     finding:
       'In healthy volunteers performing a reward task that reliably activated the insula, caudate, nucleus accumbens, anterior cingulate and orbitofrontal cortex, a single 600 mg dose of CBD produced no detectable change in reward-related brain activity or motivation — a Bayesian-confirmed null result urging caution about claims of CBD’s reward effects.',
@@ -1011,7 +1011,7 @@ export const SOURCES = [
     regions: [],
     autism: true,
     finding:
-      'Pooling three RCTs (276 children and adolescents with autism), this meta-analysis found CBD-rich cannabis extracts produced moderate improvements in social responsiveness and smaller reductions in disruptive behaviour and anxiety, with a safety profile comparable to placebo.',
+      'Pooling three RCTs (276 autistic children and adolescents), this meta-analysis found CBD-rich cannabis extracts produced moderate improvements in social responsiveness and smaller reductions in disruptive behaviour and anxiety, with a safety profile comparable to placebo.',
   },
   {
     id: 'cazares2026',
@@ -1241,6 +1241,20 @@ export const SOURCES = [
     autism: true,
     finding:
       'A single 600 mg dose of CBD increased regional activity (fALFF) in the cerebellar vermis and right fusiform gyrus, and altered the vermis’s functional connectivity with striatal and cortical targets — effects driven almost entirely by the autistic group, with little or no change in non-autistic controls.',
+  },
+  {
+    id: 'pretzsch2018insar',
+    authors: 'Pretzsch CM, Freyberg J, Voinescu B, et al.',
+    year: 2018,
+    title: 'The Non-Psychoactive Cannabinoid Cannabidivarin (CBDV) Modulates the Functional Connectivity of the Default Mode Network in Adults with ASD but Not in Controls',
+    journal: 'International Society for Autism Research (INSAR) Annual Meeting',
+    type: 'Conference abstract',
+    category: 'imaging',
+    url: 'https://insar.confex.com/insar/2018/webprogram/Paper27190.html',
+    regions: ['pcc', 'hippocampus'],
+    autism: true,
+    finding:
+      'From the same CBDV/autism trial behind other Pretzsch studies in this atlas, this analysis found a significant autism-vs-control difference under CBDV that the fully published papers from the same dataset don’t report: autistic adults showed lower parahippocampal-to-posterior-cingulate connectivity (part of the ventral default-mode network) than controls. As far as this atlas’s research could determine, this finding was presented at a conference (INSAR 2018) but never appeared in a full peer-reviewed journal article — the only source in this atlas for which that’s true.',
   },
 ]
 

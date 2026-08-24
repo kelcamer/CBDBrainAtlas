@@ -77,6 +77,13 @@ export default function RegionPanel({ region, onClear }) {
         </div>
       )}
 
+      {region.nonAutismNote && (
+        <div className="region-block nonautism-note">
+          <h3>Non-autistic people</h3>
+          <p>{region.nonAutismNote}</p>
+        </div>
+      )}
+
       <div className="region-block">
         <h3>
           Sources {autismSources.length > 0 && <span className="autism-count">({autismSources.length} autism)</span>}
