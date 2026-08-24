@@ -5,6 +5,7 @@ import SourceList from './components/SourceList.jsx'
 import ReceptorPanel from './components/ReceptorPanel.jsx'
 import LiveScan from './components/LiveScan.jsx'
 import GapsPanel from './components/GapsPanel.jsx'
+import GlossaryPanel from './components/GlossaryPanel.jsx'
 import { REGIONS, REGION_BY_ID, CATEGORY_COLORS } from './data/regions.js'
 import { SOURCES } from './data/sources.js'
 import { RECEPTORS } from './data/receptors.js'
@@ -14,6 +15,7 @@ const TABS = [
   { id: 'targets', label: 'Molecular targets' },
   { id: 'scan', label: 'Live PubMed scan' },
   { id: 'gaps', label: 'Research gaps' },
+  { id: 'glossary', label: 'Glossary' },
 ]
 
 export default function App() {
@@ -157,6 +159,7 @@ export default function App() {
             {tab === 'targets' && <ReceptorPanel />}
             {tab === 'scan' && <LiveScan />}
             {tab === 'gaps' && <GapsPanel />}
+            {tab === 'glossary' && <GlossaryPanel />}
           </div>
         </section>
       </main>

@@ -402,6 +402,23 @@ a:hover { text-decoration: underline; }
 .gap-label-autism { color: var(--autism); background: rgba(255, 93, 162, 0.12); }
 .gap-label-cbd { color: var(--cbd); background: rgba(63, 191, 143, 0.12); }
 
+/* ---------------- Glossary ---------------- */
+.glossary-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+.glossary-item {
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.glossary-term { font-weight: 700; font-size: 13.5px; color: #eaf2fc; }
+.glossary-full { font-weight: 400; font-size: 12px; color: var(--muted-2); }
+.glossary-def { margin: 5px 0 0; font-size: 13px; color: var(--muted); line-height: 1.5; }
+
 /* ---------------- Live scan ---------------- */
 .livescan-bar { display: flex; gap: 10px; flex-wrap: wrap; margin: 12px 0; }
 .btn-primary {
