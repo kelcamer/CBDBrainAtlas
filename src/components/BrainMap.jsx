@@ -127,10 +127,6 @@ export default function BrainMap({ selectedId, onSelect, autismOnly }) {
         {/* corpus callosum arc */}
         <path d="M300 252 C360 234 448 234 508 262" fill="none" stroke="#3d5674" strokeWidth="6" strokeLinecap="round" opacity="0.7" />
 
-        {/* thalamus (context) */}
-        <ellipse cx="452" cy="272" rx="26" ry="21" fill="#2c3d54" stroke="#3d5674" strokeWidth="1" opacity="0.85" />
-        <text x="452" y="275" textAnchor="middle" fontSize="9" fill="#7d93ac" pointerEvents="none" style={{ userSelect: 'none' }}>Thal</text>
-
         {/* brainstem */}
         <path d="M486 372 C500 402 496 442 480 486 L456 480 C468 440 466 404 462 378 Z" fill="#2c3d54" stroke="#3d5674" strokeWidth="1" />
         {/* cerebellum */}

@@ -197,6 +197,7 @@ function legendLabel(cat) {
     midbrain: 'Midbrain',
     serotonergic: 'Serotonergic',
     cerebellar: 'Cerebellar',
+    thalamic: 'Thalamic',
   }
   return map[cat] || cat
 }

@@ -6,17 +6,12 @@
 // This list exists to be honest about absence of evidence, not evidence of
 // absence: these are well-replicated autism findings that CBD research has
 // simply never examined, as far as this project's search could determine.
+// Two former entries here — the thalamus and the hypothalamus — were moved
+// out after a broader search surfaced real CBD research touching them (see
+// the Thalamus region, and the BNST region's HPA-axis note).
 // ---------------------------------------------------------------------------
 
 export const GAPS = [
-  {
-    id: 'thalamus',
-    name: 'Thalamus',
-    autismEvidence:
-      'Thalamocortical hyperconnectivity and impaired sensory gating are well-replicated autism findings, linked to sensory over-responsivity. Surface-based shape analysis (rather than overall volume) has also found expanded surface area in the right posterior thalamus and a more concave left mediodorsal nucleus in autism.',
-    cbdGap:
-      'No study — autism-specific or general — has examined CBD’s effect on the thalamus. It appears only as non-interactive background anatomy on this atlas’s map.',
-  },
   {
     id: 'whiteMatter',
     name: 'White matter / corpus callosum',
@@ -71,7 +66,7 @@ export const GAPS = [
     autismEvidence:
       'Lower activation shared between autism and ADHD versus controls; overlaps functionally with dorsolateral prefrontal cortex, supporting working memory and attention-shifting.',
     cbdGap:
-      'CBD studies target the prefrontal cortex broadly — and specifically the dorsomedial PFC via MR spectroscopy — but none isolate the middle frontal gyrus itself.',
+      'CBD studies target the prefrontal cortex broadly — and specifically the dorsomedial, orbital, prelimbic and infralimbic PFC subregions — but none isolate the middle frontal gyrus itself.',
   },
   {
     id: 'globusPallidus',
@@ -79,7 +74,7 @@ export const GAPS = [
     autismEvidence:
       'No overall volume difference from controls, but surface-based shape analysis found bilateral dorsal-medial globus pallidus surface area correlates with restricted/repetitive behavior severity, and pallidal shape grows more concave with age in autism.',
     cbdGap:
-      'No CBD study examines the globus pallidus — this atlas’s basal-ganglia evidence for CBD is limited to the caudate, putamen, and nucleus accumbens.',
+      'No CBD study isolates the globus pallidus specifically. A whole-brain mouse fMRI screen (Sadaka 2021) reported no significant overall change across the basal ganglia, but didn’t break its results out by individual nucleus, so the globus pallidus itself remains untested on its own.',
   },
   {
     id: 'sma',
@@ -90,19 +85,11 @@ export const GAPS = [
       'No CBD study examines the supplementary motor area or premotor cortex, in autism or generally.',
   },
   {
-    id: 'hypothalamus',
-    name: 'Hypothalamus',
-    autismEvidence:
-      'Contested structural findings in autism: one study found decreased hypothalamic gray-matter density with an enlarged third ventricle; a later study found no volume difference but an altered oxytocin association.',
-    cbdGap:
-      'No direct CBD-hypothalamus study exists in this atlas — though CBD’s broader HPA-axis effects, via the BNST and PAG (both elsewhere in this atlas), make the hypothalamus a very plausible downstream target that simply hasn’t been tested directly.',
-  },
-  {
     id: 'locusCoeruleus',
     name: 'Locus coeruleus (noradrenergic system)',
     autismEvidence:
       'Autistic children show increased tonic (resting pupil diameter) but reduced phasic (event-related) locus-coeruleus/noradrenergic activity versus typically developing peers — implicated in autism’s hyperarousal, anxiety and sensory over-responsivity.',
     cbdGap:
-      'THC and synthetic CB1 agonists are known to increase locus-coeruleus firing, but no study has tested CBD specifically here — in autism or otherwise.',
+      'THC, synthetic CB1 agonists, and even the related phytocannabinoid CBG all have locus-coeruleus electrophysiology data — but a specific search for CBD itself found none. The closest CBD evidence in this atlas is for the neighbouring dorsal raphe nucleus, a different (serotonergic, not noradrenergic) brainstem nucleus.',
   },
 ]

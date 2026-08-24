@@ -1256,6 +1256,36 @@ export const SOURCES = [
     finding:
       'From the same CBDV/autism trial behind other Pretzsch studies in this atlas, this analysis found a significant autism-vs-control difference under CBDV that the fully published papers from the same dataset don’t report: autistic adults showed lower parahippocampal-to-posterior-cingulate connectivity (part of the ventral default-mode network) than controls. As far as this atlas’s research could determine, this finding was presented at a conference (INSAR 2018) but never appeared in a full peer-reviewed journal article — the only source in this atlas for which that’s true.',
   },
+
+  // ---- Whole-brain pharmacological imaging & other newly-covered areas -----
+  {
+    id: 'sadaka2021',
+    authors: 'Sadaka AH, Ozuna AG, Ortiz RJ, et al.',
+    year: 2021,
+    title: 'Cannabidiol has a unique effect on global brain activity: a pharmacological, functional MRI study in awake mice',
+    journal: 'Journal of Translational Medicine',
+    type: 'Preclinical (mouse fMRI, whole-brain)',
+    category: 'preclinical',
+    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8142641/',
+    regions: ['pfc', 'cerebellum', 'drn', 'thalamus', 'caudate', 'striatum'],
+    autism: false,
+    finding:
+      'Scanning awake mice across the whole brain, a single CBD dose produced a dose-dependent split along the front-to-back axis: BOLD signal rose in the olfactory system and prefrontal cortex (including orbital, prelimbic and infralimbic subregions) but fell in the cerebellum and brainstem arousal circuitry (including the dorsal raphe), with an inverted-U dose curve peaking at 10 mg/kg. The thalamus, amygdala, basal ganglia (including caudate/putamen) and hippocampus showed no significant change.',
+  },
+  {
+    id: 'jenkins2026hpa',
+    authors: 'Jenkins BW, Spina HA, Nicholson K, Newman AEM, Khokhar JY',
+    year: 2026,
+    title: 'Cannabidiol (CBD) potentiates physiological and behavioral markers of hypothalamic-pituitary-adrenal (HPA) axis responsivity in female and male mice',
+    journal: 'Psychopharmacology',
+    type: 'Preclinical (mouse)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/39754667/',
+    regions: [],
+    autism: false,
+    finding:
+      'In mice, CBD increased HPA-axis (stress-hormone system) responsivity rather than calming it — significantly in males — and normalised anxiety-like behaviour specifically in female mice whose HPA axis was underactive at baseline. Effects were clearly sex-specific: females showed higher stress-hormone levels and reactivity overall. This is one of the only studies to test CBD’s effect on the hypothalamic stress axis directly, and complicates the simple "CBD is calming" narrative used elsewhere in this atlas.',
+  },
 ]
 
 // Convenience lookup
