@@ -73,6 +73,7 @@ export const REGIONS = [
     sourceIds: [
       'fusarpoli2009', 'fusarpoli2010', 'perry2024', 'batalla2021',
       'kowal2013', 'lawn2020', 'bloomfield2022', 'koethe2007', 'vallee2022', 'rutledge2026', 'parrella2025eeg',
+      'stern2012reconsolidation',
     ],
   },
   {
@@ -142,7 +143,7 @@ export const REGIONS = [
     nonAutismNote: null,
     sourceIds: [
       'fusarpoli2009', 'fusarpoli2010', 'perry2024', 'davies2020', 'batalla2021', 'blessing2015', 'garciagutierrez2020',
-      'crippa2004', 'bhattacharyya2010', 'bloomfield2022', 'lorenzetti2024',
+      'crippa2004', 'bhattacharyya2010', 'bloomfield2022', 'lorenzetti2024', 'dirik2026alcohol',
     ],
   },
   {
@@ -186,6 +187,7 @@ export const REGIONS = [
       'bhatt2012', 'bhatt2015', 'bhatt2018', 'davies2020', 'oneill2021', 'grimm2018', 'wall2022', 'batalla2021',
       'pretzschCBD2019', 'pretzschCBDV2019', 'pretzschCBDV2021',
       'bhattacharyya2010', 'seeman2016', 'mosley2023', 'morenoalcazar2018', 'wall2019dissociable', 'sadaka2021',
+      'dirik2026alcohol',
     ],
   },
   {

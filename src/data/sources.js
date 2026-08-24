@@ -1848,6 +1848,64 @@ export const SOURCES = [
     finding:
       'This scoping review found sex has been strikingly understudied as a factor in CBD research — limited preclinical evidence hints at sex-dependent effects (e.g., on antidepressant-like responses), but human trials have rarely analysed or reported results by sex, leaving a real gap in understanding who CBD actually works best for.',
   },
+
+  // ---- Memory reconsolidation, addiction neuroprotection, working memory ------
+  {
+    id: 'stern2012reconsolidation',
+    authors: 'Stern CAJ, Gazarini L, Vanvossen AC, Zuardi AW, Galve-Roperh I, Guimaraes FS, Takahashi RN, Bertoglio LJ',
+    year: 2012,
+    title: 'On disruption of fear memory by reconsolidation blockade: evidence from cannabidiol treatment',
+    journal: 'Neuropsychopharmacology',
+    type: 'Preclinical (rat)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/22549120/',
+    regions: ['acc'],
+    autism: false,
+    finding:
+      'In rats, CBD disrupted the reconsolidation of established fear memories when given within 6 hours of memory retrieval, by indirectly activating CB1 receptors in the dorsal anterior cingulate cortex — a specific brain-region mechanism for CBD potentially weakening, not just helping extinguish, old traumatic memories.',
+  },
+  {
+    id: 'dirik2026alcohol',
+    authors: 'Dirik S, Doyle MR, Wood CP, et al.',
+    year: 2026,
+    title: 'Cannabidiol mitigates alcohol dependence and withdrawal with neuroprotective effects in the basolateral amygdala and striatum',
+    journal: 'Neuropsychopharmacology',
+    type: 'Preclinical (rat)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/40640509/',
+    regions: ['amygdala', 'striatum'],
+    autism: false,
+    finding:
+      'In rats with alcohol dependence, CBD reduced alcohol self-administration, withdrawal symptoms and anxiety-like behaviour, while reversing alcohol-induced neuronal damage specifically in the basolateral amygdala and striatum — two regions central to the neurocircuitry of addiction.',
+  },
+  {
+    id: 'gaston2020workingmemory',
+    authors: 'Gaston TE, Allendorfer JB, Nair S, et al.',
+    year: 2020,
+    title: 'Effects of highly purified cannabidiol (CBD) on fMRI of working memory in treatment-resistant epilepsy',
+    journal: 'Epilepsy & Behavior',
+    type: 'Open-label (fMRI)',
+    category: 'imaging',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/32871501/',
+    regions: [],
+    autism: false,
+    finding:
+      'In people with treatment-resistant epilepsy, CBD treatment produced no change in working-memory task performance, but fMRI showed increased activity in memory- and attention-related brain regions during the task — suggesting the brain may work somewhat harder to achieve the same performance level.',
+  },
+  {
+    id: 'jones2021nback',
+    authors: 'Jones É, Vlachou S',
+    year: 2021,
+    title: 'Cannabidiol Does Not Cause Significant Changes to Working Memory Performance in the N-Back Task',
+    journal: 'Pharmaceuticals',
+    type: 'Cross-sectional',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/34832947/',
+    regions: [],
+    autism: false,
+    finding:
+      'Comparing regular CBD users to non-users, no statistically significant difference emerged in working-memory performance on the N-back task — reassuring real-world evidence (as opposed to single-dose lab studies) that habitual CBD use doesn’t appear to impair working memory.',
+  },
 ]
 
 // Convenience lookup
