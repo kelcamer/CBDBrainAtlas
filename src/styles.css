@@ -103,6 +103,7 @@ a:hover { text-decoration: underline; }
 .toggle:hover { color: var(--text); }
 .toggle.active { background: var(--cbd); color: #062015; }
 .toggle.active.toggle-autism { background: var(--autism); color: #2a0918; }
+.toggle.active.toggle-summary { background: var(--nonautism); color: #2e2205; }
 
 .autism-banner {
   background: linear-gradient(90deg, rgba(255, 93, 162, 0.14), rgba(255, 93, 162, 0.04));
@@ -477,3 +478,96 @@ code {
   .stat { min-width: 68px; padding: 6px 10px; }
   .stat-n { font-size: 18px; }
 }
+
+/* ---------------- Full Autism Research Summary ---------------- */
+.summary-section { width: 100%; }
+.summary-banner { background: linear-gradient(90deg, rgba(242, 193, 78, 0.14), rgba(242, 193, 78, 0.04)); border-color: var(--nonautism-dim); color: #fff2d1; }
+.summary-panel { width: 100%; }
+.summary-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.summary-copy-btn {
+  flex-shrink: 0;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  color: var(--text);
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.summary-copy-btn:hover { border-color: var(--cbd); color: var(--cbd); }
+.summary-copy-btn.copied { background: var(--cbd); color: #062015; border-color: var(--cbd); }
+.summary-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0 14px;
+}
+.summary-chip {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+}
+.summary-chip.status-autism { color: var(--cbd); }
+.summary-chip.status-general { color: var(--nonautism); }
+.summary-chip.status-null { color: #9fb2c9; }
+.summary-chip.status-gap { color: #ff7a7a; }
+
+.summary-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 760px;
+}
+.summary-table th {
+  text-align: left;
+  background: var(--panel-2);
+  color: var(--muted);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 10px 14px;
+  position: sticky;
+  top: 0;
+}
+.summary-table td {
+  padding: 12px 14px;
+  border-top: 1px solid var(--line);
+  vertical-align: top;
+}
+.summary-table tr.clickable { cursor: pointer; }
+.summary-table tr.clickable:hover td { background: rgba(63, 191, 143, 0.06); }
+.summary-area { font-weight: 700; color: #eaf2fc; white-space: nowrap; }
+.summary-dir { color: var(--muted-2); margin-right: 2px; }
+.summary-link-hint { color: var(--cbd); font-weight: 400; }
+.summary-autism-cell { color: var(--muted); max-width: 320px; }
+.summary-cbd-cell { max-width: 340px; }
+.summary-cbd-cell p { margin: 3px 0 0; color: var(--muted); }
+.summary-status-label {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.summary-cbd-cell.status-autism .summary-status-label { color: var(--cbd); background: rgba(63, 191, 143, 0.12); }
+.summary-cbd-cell.status-general .summary-status-label { color: var(--nonautism); background: rgba(242, 193, 78, 0.12); }
+.summary-cbd-cell.status-null .summary-status-label { color: #9fb2c9; background: rgba(159, 178, 201, 0.12); }
+.summary-cbd-cell.status-gap .summary-status-label { color: #ff7a7a; background: rgba(255, 122, 122, 0.12); }

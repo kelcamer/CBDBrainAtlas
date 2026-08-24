@@ -6,6 +6,7 @@ import ReceptorPanel from './components/ReceptorPanel.jsx'
 import LiveScan from './components/LiveScan.jsx'
 import GapsPanel from './components/GapsPanel.jsx'
 import GlossaryPanel from './components/GlossaryPanel.jsx'
+import AutismSummaryPanel from './components/AutismSummaryPanel.jsx'
 import { REGIONS, REGION_BY_ID, CATEGORY_COLORS } from './data/regions.js'
 import { SOURCES } from './data/sources.js'
 import { RECEPTORS } from './data/receptors.js'
@@ -20,11 +21,17 @@ const TABS = [
 
 export default function App() {
   const [selectedId, setSelectedId] = useState(null)
-  const [autismOnly, setAutismOnly] = useState(false)
+  const [viewMode, setViewMode] = useState('all') // 'all' | 'autism' | 'summary'
   const [tab, setTab] = useState('sources')
   const [regionFilter, setRegionFilter] = useState('all')
 
+  const autismOnly = viewMode === 'autism'
   const selectedRegion = selectedId ? REGION_BY_ID[selectedId] : null
+
+  const jumpToRegion = (regionId) => {
+    setViewMode('all')
+    setSelectedId(regionId)
+  }
 
   // Stats
   const stats = useMemo(() => {
@@ -67,16 +74,22 @@ export default function App() {
 
           <div className="mode-toggle" role="group" aria-label="Research view">
             <button
-              className={!autismOnly ? 'toggle active' : 'toggle'}
-              onClick={() => setAutismOnly(false)}
+              className={viewMode === 'all' ? 'toggle active' : 'toggle'}
+              onClick={() => setViewMode('all')}
             >
               All research
             </button>
             <button
-              className={autismOnly ? 'toggle active toggle-autism' : 'toggle'}
-              onClick={() => setAutismOnly(true)}
+              className={viewMode === 'autism' ? 'toggle active toggle-autism' : 'toggle'}
+              onClick={() => setViewMode('autism')}
             >
               Autism research only
+            </button>
+            <button
+              className={viewMode === 'summary' ? 'toggle active toggle-summary' : 'toggle'}
+              onClick={() => setViewMode('summary')}
+            >
+              Full Autism Research Summary
             </button>
           </div>
         </div>
@@ -90,50 +103,65 @@ export default function App() {
         </div>
       )}
 
+      {viewMode === 'summary' && (
+        <div className="autism-banner summary-banner">
+          Every autism-relevant brain area found in this atlas's research, side by side with what CBD does
+          (or doesn't) there. Click a row with a link icon to see that region's full detail.
+        </div>
+      )}
+
       <main className="app-main">
-        <section className="map-section">
-          <div className="panel map-panel">
-            <BrainMap selectedId={selectedId} onSelect={selectRegion} autismOnly={autismOnly} />
+        {viewMode === 'summary' ? (
+          <section className="summary-section">
+            <div className="panel">
+              <AutismSummaryPanel onJumpToRegion={jumpToRegion} />
+            </div>
+          </section>
+        ) : (
+          <section className="map-section">
+            <div className="panel map-panel">
+              <BrainMap selectedId={selectedId} onSelect={selectRegion} autismOnly={autismOnly} />
 
-            <div className="legend">
-              {Object.entries(CATEGORY_COLORS).map(([cat, color]) => (
-                <span key={cat} className="legend-item">
-                  <span className="legend-dot" style={{ background: color }} />
-                  {legendLabel(cat)}
+              <div className="legend">
+                {Object.entries(CATEGORY_COLORS).map(([cat, color]) => (
+                  <span key={cat} className="legend-item">
+                    <span className="legend-dot" style={{ background: color }} />
+                    {legendLabel(cat)}
+                  </span>
+                ))}
+                <span className="legend-item">
+                  <span className="legend-dot legend-autism" />
+                  autism evidence
                 </span>
-              ))}
-              <span className="legend-item">
-                <span className="legend-dot legend-autism" />
-                autism evidence
-              </span>
+              </div>
+
+              <div className="chip-grid">
+                {REGIONS.map((r) => {
+                  const dimmed = autismOnly && !r.autism
+                  return (
+                    <button
+                      key={r.id}
+                      className={
+                        'region-chip' +
+                        (selectedId === r.id ? ' selected' : '') +
+                        (dimmed ? ' dimmed' : '') +
+                        (r.autism ? ' has-autism' : '')
+                      }
+                      style={{ '--chip-color': CATEGORY_COLORS[r.category] }}
+                      disabled={dimmed}
+                      onClick={() => selectRegion(r.id)}
+                    >
+                      <span className="chip-abbr">{r.abbr}</span>
+                      <span className="chip-name">{r.name}</span>
+                    </button>
+                  )
+                })}
+              </div>
             </div>
 
-            <div className="chip-grid">
-              {REGIONS.map((r) => {
-                const dimmed = autismOnly && !r.autism
-                return (
-                  <button
-                    key={r.id}
-                    className={
-                      'region-chip' +
-                      (selectedId === r.id ? ' selected' : '') +
-                      (dimmed ? ' dimmed' : '') +
-                      (r.autism ? ' has-autism' : '')
-                    }
-                    style={{ '--chip-color': CATEGORY_COLORS[r.category] }}
-                    disabled={dimmed}
-                    onClick={() => selectRegion(r.id)}
-                  >
-                    <span className="chip-abbr">{r.abbr}</span>
-                    <span className="chip-name">{r.name}</span>
-                  </button>
-                )
-              })}
-            </div>
-          </div>
-
-          <RegionPanel region={selectedRegion} onClear={() => setSelectedId(null)} />
-        </section>
+            <RegionPanel region={selectedRegion} onClear={() => setSelectedId(null)} />
+          </section>
+        )}
 
         <section className="tabs-section">
           <div className="tab-bar">
