@@ -215,7 +215,7 @@ export const REGIONS = [
     autism: true,
     map: { shape: 'ellipse', cx: 338, cy: 322, rx: 14, ry: 11 },
     summary:
-      'Part of the ventral striatum’s reward circuitry. CBDV shifts atypical nucleus-accumbens functional connectivity in autistic adults toward the non-autistic pattern, and single-dose CBD lowers cue-induced accumbens activation during craving in substance use disorders.',
+      'Part of the ventral striatum’s reward circuitry. CBDV shifts atypical nucleus-accumbens functional connectivity in autistic adults toward the non-autistic pattern, and single-dose CBD lowers cue-induced accumbens activation during craving in substance use disorders. In practice, this is the neural basis for CBD’s emerging use as an anti-craving aid in addiction treatment, and a candidate clue to why reward and social motivation can feel different for autistic people.',
     functions: ['Reward & pleasure', 'Motivation', 'Social reward'],
     mechanism:
       'Studied as part of striatal functional connectivity; sits within the mesolimbic dopamine system that CBD influences indirectly, partly via accumbal D1/D2 dopamine receptors.',
