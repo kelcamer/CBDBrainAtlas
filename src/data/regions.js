@@ -40,7 +40,7 @@ export const REGIONS = [
     autism: true,
     map: { shape: 'ellipse', cx: 214, cy: 262, rx: 30, ry: 42 },
     summary:
-      'CBD shifts prefrontal activity and excitatory/inhibitory balance. In salience and memory tasks it tends to reduce over-activation, and in autistic adults it lowers prefrontal GABA where it does not in non-autistic controls.',
+      'CBD shifts prefrontal activity and excitatory/inhibitory balance. In salience and memory tasks it tends to reduce over-activation, and in autistic adults it lowers prefrontal GABA where it does not in non-autistic controls. In practice, this excitation/inhibition shift is the main biological rationale for testing CBD in psychosis-risk and autism trials targeting executive function and social cognition — though a shifted brain chemical doesn’t automatically mean a felt or measurable behavioural benefit.',
     functions: ['Executive control & decision-making', 'Emotion regulation', 'Working memory', 'Social cognition'],
     mechanism:
       'Local 5-HT1A and CB1 receptors mediate antidepressant-like effects; CBD also modulates the glutamate/GABA (excitation–inhibition) balance measured with MR spectroscopy. The orbitofrontal cortex, a ventral part of this region, was directly tested in a reward task (Lawn 2020) and showed no significant CBD effect — a null result, not an untested area.',
@@ -62,7 +62,7 @@ export const REGIONS = [
     autism: false,
     map: { shape: 'ellipse', cx: 322, cy: 232, rx: 34, ry: 15, rot: -20 },
     summary:
-      'A core node of the “emotional brain.” CBD blunts anterior cingulate responses to threat and reshapes its connectivity with the amygdala.',
+      'A core node of the “emotional brain.” CBD blunts anterior cingulate responses to threat and reshapes its connectivity with the amygdala. In practice, this is part of the biological case for CBD as an anxiety treatment — dampening the brain’s threat-monitoring circuit is a plausible route to feeling less on edge, though (as below) the effect hasn’t always replicated.',
     functions: ['Conflict & error monitoring', 'Emotional appraisal', 'Autonomic regulation'],
     mechanism:
       'Part of the amygdala–ACC–insula salience circuit engaged during fear; CBD reduces ACC reactivity and dampens forward ACC→amygdala connectivity.',
@@ -81,7 +81,7 @@ export const REGIONS = [
     autism: true,
     map: { shape: 'ellipse', cx: 400, cy: 256, rx: 26, ry: 13, rot: -8 },
     summary:
-      'The hub of the default-mode network. CBD’s effects here are the least settled in the atlas: single-dose SPECT studies find shifted blood flow, and CBD (unlike THC-only cannabis) preserves PCC-anchored resting-state connectivity — but a 2026 systematic review found no consistent direction of effect across studies.',
+      'The hub of the default-mode network. CBD’s effects here are the least settled in the atlas: single-dose SPECT studies find shifted blood flow, and CBD (unlike THC-only cannabis) preserves PCC-anchored resting-state connectivity — but a 2026 systematic review found no consistent direction of effect across studies. In practice, this inconsistency is a caution sign: claims that CBD "calms the default-mode network" or improves mind-wandering and self-referential thought outrun what this region’s evidence can currently support.',
     functions: ['Default-mode network hub', 'Self-referential thought', 'Autobiographical memory', 'Internally directed attention'],
     mechanism:
       'Densely connected to the hippocampus, parahippocampal gyrus and precuneus; CBD studies here rely on resting perfusion (SPECT) and resting-state fMRI connectivity rather than task activation, which likely explains the mixed findings.',
@@ -99,7 +99,7 @@ export const REGIONS = [
     autism: true,
     map: { shape: 'ellipse', cx: 378, cy: 204, rx: 24, ry: 12, rot: -8 },
     summary:
-      'The least-studied region in this atlas. The temporoparietal junction (TPJ) is a core hub for theory-of-mind and social-cue processing, but direct evidence for CBD acting on parietal cortex is limited to one 2025 pediatric-autism EEG study and a fMRI salience study noting effects at the parietal operculum.',
+      'The least-studied region in this atlas. The temporoparietal junction (TPJ) is a core hub for theory-of-mind and social-cue processing, but direct evidence for CBD acting on parietal cortex is limited to one 2025 pediatric-autism EEG study and a fMRI salience study noting effects at the parietal operculum. In practice, this means claims that CBD improves social cognition or theory-of-mind processing via the parietal cortex are still speculative extrapolation, not something directly demonstrated yet.',
     functions: ['Theory of mind & social cognition (TPJ)', 'Spatial & sensory integration', 'Attention networks'],
     mechanism:
       'No parietal-specific CBD receptor mechanism has been established; evidence so far is limited to functional connectivity changes (EEG, fMRI) rather than a defined pharmacological target in this region.',
@@ -116,7 +116,7 @@ export const REGIONS = [
     autism: false,
     map: { shape: 'ellipse', cx: 292, cy: 300, rx: 15, ry: 19, dashed: true },
     summary:
-      'The anterior insula tracks bodily/interoceptive arousal. CBD — and even the expectation of CBD — alters its stress-related connectivity with the amygdala and cingulate.',
+      'The anterior insula tracks bodily/interoceptive arousal. CBD — and even the expectation of CBD — alters its stress-related connectivity with the amygdala and cingulate. In practice, this is a big reason placebo-controlled (not just before/after) trial design matters so much for CBD research: simply believing you’ve taken it can measurably change this circuit.',
     functions: ['Interoception (body-state sensing)', 'Salience detection', 'Anxiety & disgust processing'],
     mechanism:
       'A hub of the salience network; effects overlap with CBD’s broader anxiolytic modulation of limbic circuits. (Shown here schematically — the insula is buried in the lateral sulcus.)',
@@ -132,7 +132,7 @@ export const REGIONS = [
     autism: false,
     map: { shape: 'ellipse', cx: 402, cy: 324, rx: 15, ry: 12, rot: 20 },
     summary:
-      'The brain’s threat detector. Several single-dose studies find CBD dampens amygdala reactivity to fearful faces and negative stimuli, though a larger, better-powered 2022 crossover trial found no such effect — one of several inconsistent-replication patterns in this atlas.',
+      'The brain’s threat detector. Several single-dose studies find CBD dampens amygdala reactivity to fearful faces and negative stimuli, though a larger, better-powered 2022 crossover trial found no such effect — one of several inconsistent-replication patterns in this atlas. In practice, this is the single most-cited brain basis for CBD’s reputation as calming — and the failed replication is real reason to be cautious about how reliable that effect actually is.',
     functions: ['Fear & threat processing', 'Emotional salience', 'Stress responses'],
     mechanism:
       'Where an effect is seen, reduced amygdala BOLD response accompanies lower physiological arousal, mediated partly via 5-HT1A receptors and altered limbic connectivity — but this has not replicated in every study (Bloomfield 2022).',
@@ -151,7 +151,7 @@ export const REGIONS = [
     autism: true,
     map: { shape: 'path', d: 'M436 314 C 454 314, 472 326, 488 336 C 500 344, 510 350, 520 352', sw: 15, labelX: 486, labelY: 378 },
     summary:
-      'CBD modulates hippocampal (and parahippocampal) activity, supports adult neurogenesis under stress, and disrupts the consolidation of fear memories.',
+      'CBD modulates hippocampal (and parahippocampal) activity, supports adult neurogenesis under stress, and disrupts the consolidation of fear memories. In practice, this is the proposed mechanism behind CBD’s potential to ease PTSD-type fear memories, support hippocampal health during chronic stress, and — in animal models — protect against THC-related memory harms.',
     functions: ['Learning & memory', 'Contextual fear', 'Adult neurogenesis', 'Mood regulation'],
     mechanism:
       'Anandamide-dependent neurogenesis (via FAAH inhibition) underlies chronic effects; dorsal-hippocampal CB1/CB2 receptors gate fear-memory consolidation. The parahippocampal gyrus specifically — not just the hippocampus proper — shows its own CBD-related blood-flow and activation changes across several human studies (Crippa 2004, Crippa 2011, O’Neill 2021), and CBDV alters parahippocampal-to-posterior-cingulate connectivity in autistic adults (see the Posterior cingulate cortex region).',
@@ -171,7 +171,7 @@ export const REGIONS = [
     autism: true,
     map: { shape: 'ellipse', cx: 386, cy: 272, rx: 30, ry: 24, rot: -12 },
     summary:
-      'CBD changes striatal activation and its connectivity with cortex during salience and fear tasks — often opposite to THC — and both CBD and CBDV raise basal-ganglia glutamate in autistic and non-autistic adults alike.',
+      'CBD changes striatal activation and its connectivity with cortex during salience and fear tasks — often opposite to THC — and both CBD and CBDV raise basal-ganglia glutamate in autistic and non-autistic adults alike. In practice, this opposite-to-THC pattern is the core evidence behind using CBD to blunt THC’s psychosis-like effects, and behind interest in CBD as an add-on antipsychotic.',
     functions: ['Reward & motivation', 'Habit & motor control', 'Salience attribution'],
     mechanism:
       'Enhances fronto-striatal connectivity; increases basal-ganglia glutamate (Glx) measured with MR spectroscopy — a shared drug effect seen in both autistic and non-autistic adults, not an autism-specific correction.',
@@ -193,7 +193,7 @@ export const REGIONS = [
     autism: true,
     map: { shape: 'ellipse', cx: 366, cy: 244, rx: 16, ry: 13, rot: -10 },
     summary:
-      'The dorsomedial part of the striatum, singled out across many of the studies above: CBD raises caudate activation opposite to THC, and the receptor mechanisms behind CBD’s antipsychotic and anti-craving effects (GPR55, dopamine D2High) are concentrated here.',
+      'The dorsomedial part of the striatum, singled out across many of the studies above: CBD raises caudate activation opposite to THC, and the receptor mechanisms behind CBD’s antipsychotic and anti-craving effects (GPR55, dopamine D2High) are concentrated here. In practice, this is where CBD’s antipsychotic-like drug action most plausibly originates at the receptor level — the mechanistic backbone behind ongoing schizophrenia and psychosis-risk trials.',
     functions: ['Goal-directed action selection', 'Habit learning', 'Cognitive/motor loop of the basal ganglia', 'Salience & reward signalling'],
     mechanism:
       'CBD antagonises GPR55 and acts as a dopamine-D2High partial agonist, both receptor types dense in caudate medium spiny neurons; in imaging studies CBD boosts caudate activation during verbal-memory encoding and salience tasks where THC does the opposite.',
@@ -233,7 +233,7 @@ export const REGIONS = [
     autism: false,
     map: { shape: 'ellipse', cx: 470, cy: 314, rx: 16, ry: 14 },
     summary:
-      'CBD partially normalises abnormal midbrain activation — a dopamine hub — in people at high risk for psychosis.',
+      'CBD partially normalises abnormal midbrain activation — a dopamine hub — in people at high risk for psychosis. In practice, this is part of the biological case for testing CBD as an early intervention in people showing warning signs of psychosis, before a full episode develops.',
     functions: ['Dopamine production (SN/VTA)', 'Arousal', 'Salience signalling'],
     mechanism:
       'The midbrain–striatal–hippocampal loop is central to psychosis; CBD nudges over- or under-active nodes toward control levels.',
@@ -249,7 +249,7 @@ export const REGIONS = [
     autism: false,
     map: { shape: 'ellipse', cx: 492, cy: 330, rx: 11, ry: 10 },
     summary:
-      'The dorsal periaqueductal grey organises defensive responses and pain. Microinjected directly into this region, CBD blocks panic-like escape behaviour in rats via local 5-HT1A receptors.',
+      'The dorsal periaqueductal grey organises defensive responses and pain. Microinjected directly into this region, CBD blocks panic-like escape behaviour in rats via local 5-HT1A receptors. In practice, this is animal evidence for a specific antipanic mechanism, not proof CBD works this way in humans — but it’s part of why CBD is investigated for panic disorder specifically, not just generic anxiety.',
     functions: ['Defensive behaviour', 'Panic responses', 'Descending pain control'],
     mechanism:
       'A single CBD dose blocks panic-like responses in the dPAG via 5-HT1A activation (Soares 2010); repeated dosing achieves a similar antipanic effect without changing 5-HT1A receptor density itself, suggesting a functional rather than structural adaptation (Casarotto 2013).',
@@ -265,7 +265,7 @@ export const REGIONS = [
     autism: false,
     map: { shape: 'ellipse', cx: 478, cy: 362, rx: 10, ry: 13 },
     summary:
-      'The dorsal raphe is the brain’s main serotonin source. CBD’s acute mood and anxiety effects hinge on 5-HT1A signalling linked to this system.',
+      'The dorsal raphe is the brain’s main serotonin source. CBD’s acute mood and anxiety effects hinge on 5-HT1A signalling linked to this system. In practice, this serotonergic route is why CBD is sometimes discussed alongside SSRIs and buspirone-type anxiety medications, despite working through a different, less direct mechanism.',
     functions: ['Serotonin (5-HT) supply', 'Mood regulation', 'Stress resilience'],
     mechanism:
       'CBD is often shorthanded as a "5-HT1A agonist," but direct recordings from rat DRN neurons find it doesn’t itself change serotonin-cell firing — instead it acts as a negative allosteric modulator, blunting the effect of a selective 5-HT1A agonist (Mendiguren 2022). Indirect activation of these same somatodendritic 5-HT1A autoreceptors also underlies CBD’s anti-nausea/anti-vomiting effects (Rock 2012), extending the DRN’s role for CBD beyond mood into nausea control.',
@@ -281,7 +281,7 @@ export const REGIONS = [
     autism: false,
     map: { shape: 'ellipse', cx: 358, cy: 298, rx: 10, ry: 8 },
     summary:
-      'The BNST drives sustained (“anticipatory”) anxiety. Microinjected CBD reduces both acute anxiety-like behaviour and sustained contextual fear here, through serotonin receptors.',
+      'The BNST drives sustained (“anticipatory”) anxiety. Microinjected CBD reduces both acute anxiety-like behaviour and sustained contextual fear here, through serotonin receptors. In practice, this distinguishes CBD’s potential from drugs that only blunt acute fear spikes — if the effect generalises to humans, it would target the lingering, anticipatory dread that’s often the most disabling part of anxiety disorders.',
     functions: ['Sustained anxiety', 'Threat anticipation', 'HPA-axis modulation'],
     mechanism:
       'Like the dorsal PAG, anxiolysis here relies on 5-HT1A-mediated neurotransmission: CBD injected into the BNST reduces anxiety-like behaviour in the elevated plus-maze and Vogel conflict test (Gomes 2011) and reduces freezing when a fear-conditioned context is re-encountered (Gomes 2012), both effects blocked by a 5-HT1A antagonist.',
@@ -297,7 +297,7 @@ export const REGIONS = [
     autism: true,
     map: { shape: 'ellipse', cx: 656, cy: 398, rx: 38, ry: 28 },
     summary:
-      'The vermis is the narrow strip of cerebellum running down the midline, sandwiched between the cerebellum’s two larger side lobes. Traditionally viewed as purely a motor structure, it’s now recognised for roles in language and social cognition — and cerebellar abnormalities (e.g., loss of the cerebellum’s main output neurons) are among autism’s most-replicated neuropathological findings. This is the only region in the atlas where CBD’s effect was seen almost exclusively in autistic participants, not controls.',
+      'The vermis is the narrow strip of cerebellum running down the midline, sandwiched between the cerebellum’s two larger side lobes. Traditionally viewed as purely a motor structure, it’s now recognised for roles in language and social cognition — and cerebellar abnormalities (e.g., loss of the cerebellum’s main output neurons) are among autism’s most-replicated neuropathological findings. This is the only region in the atlas where CBD’s effect was seen almost exclusively in autistic participants, not controls. In practice, this makes the vermis one of the more promising leads for an autism-specific (not just generic anxiety or psychosis) effect of CBD — though, like the atlas’s other autism findings, it comes from a single small study and needs replication before it means much clinically.',
     functions: ['Motor coordination & timing', 'Cerebellar contribution to language & social cognition', 'Sensorimotor prediction'],
     mechanism:
       'A single 600 mg CBD dose increased fALFF in the vermis — meaning that, while participants lay resting and doing nothing in particular, their vermis showed a bigger natural rise-and-fall in activity level than it did on placebo. CBD also altered how strongly the vermis was “talking to” (functionally connected with) other brain areas like the striatum and cortex. Both effects were driven almost entirely by the autistic group, with little or no change in non-autistic controls.',
