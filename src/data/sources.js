@@ -795,7 +795,7 @@ export const SOURCES = [
     regions: ['hippocampus', 'amygdala'],
     autism: false,
     finding:
-      'In current cannabis users given 200 mg CBD daily for 10 weeks, resting-state functional connectivity of the hippocampus and amygdala shifted significantly from baseline — an open-label signal that sustained CBD dosing, not just single acute doses, measurably remodels limbic circuitry in cannabis users.',
+      'In current cannabis users given 200 mg CBD daily for 10 weeks, resting-state functional connectivity of the hippocampus and amygdala shifted significantly from baseline — including a large increase (d=1.19) in amygdala-to-lingual-gyrus connectivity — an open-label signal that sustained CBD dosing, not just single acute doses, measurably remodels limbic and visual-processing circuitry in cannabis users.',
   },
   {
     id: 'bergamaschi2011',

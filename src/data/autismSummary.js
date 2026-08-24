@@ -18,9 +18,9 @@ export const AUTISM_SUMMARY = [
     area: 'Lingual gyrus',
     direction: '▲',
     autismFinding: 'Greater activation vs. controls (shared with ADHD) on matched cognitive tasks — visual-imagery and memory-encoding region.',
-    cbdStatus: 'gap',
-    cbdFinding: 'No CBD research on this region.',
-    regionId: null,
+    cbdStatus: 'general',
+    cbdFinding: '10 weeks of daily CBD increased amygdala-to-lingual-gyrus functional connectivity in cannabis users, with a large effect size (Lorenzetti 2024) — not studied in autistic people specifically.',
+    regionId: 'amygdala',
   },
   {
     area: 'Gyrus rectus',

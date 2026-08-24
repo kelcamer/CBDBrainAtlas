@@ -6,9 +6,14 @@
 // This list exists to be honest about absence of evidence, not evidence of
 // absence: these are well-replicated autism findings that CBD research has
 // simply never examined, as far as this project's search could determine.
-// Two former entries here — the thalamus and the hypothalamus — were moved
-// out after a broader search surfaced real CBD research touching them (see
-// the Thalamus region, and the BNST region's HPA-axis note).
+// Three former entries here — the thalamus, hypothalamus, and lingual
+// gyrus — were moved out after further review surfaced real CBD research
+// touching them (see the Thalamus region, the BNST region's HPA-axis note,
+// and the Lorenzetti 2024 finding on amygdala-to-lingual-gyrus connectivity).
+// The lingual gyrus case in particular was a lesson: it was missed the
+// first time because the source paper's title only names the hippocampus
+// and amygdala — its specific connectivity-partner findings, buried in the
+// results rather than the title, hadn't been checked against this list.
 // ---------------------------------------------------------------------------
 
 export const GAPS = [
@@ -43,14 +48,6 @@ export const GAPS = [
       'A genuinely lateralized finding in autism — greater activation on the left, lower on the right, versus controls — rather than a simple up-or-down effect. Supports semantic/language processing and social perception.',
     cbdGap:
       'No CBD study, autism-specific or general, examines the middle temporal gyrus.',
-  },
-  {
-    id: 'lingualGyrus',
-    name: 'Lingual gyrus',
-    autismEvidence:
-      'Greater activation shared between autism and ADHD versus typically developing controls on matched cognitive tasks — a visual-system region at the occipital-temporal border involved in complex imagery and visual memory encoding.',
-    cbdGap:
-      'No CBD study, autism-specific or general, examines the lingual gyrus.',
   },
   {
     id: 'gyrusRectus',
