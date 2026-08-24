@@ -6,12 +6,13 @@
 // This list exists to be honest about absence of evidence, not evidence of
 // absence: these are well-replicated autism findings that CBD research has
 // simply never examined, as far as this project's search could determine.
-// Five former entries here — the thalamus, hypothalamus, lingual gyrus,
-// gyrus rectus, and superior temporal gyrus — were moved out after further
-// review surfaced real CBD research touching them (see the Thalamus region,
-// the BNST region's HPA-axis note, the Lorenzetti 2024 lingual-gyrus
-// finding, Bloomfield 2020 on orbitofrontal blood flow, and Winton-Brown
-// 2011 on the superior temporal gyrus). The lingual gyrus case in
+// Six former entries here — the thalamus, hypothalamus, lingual gyrus,
+// gyrus rectus, superior temporal gyrus, and globus pallidus — were moved
+// out after further review surfaced real CBD research touching them (see
+// the Thalamus region, the BNST region's HPA-axis note, the Lorenzetti
+// 2024 lingual-gyrus finding, Bloomfield 2020 on orbitofrontal blood flow,
+// Winton-Brown 2011 on the superior temporal gyrus, and Patricio 2022's
+// direct intrapallidal CBD injection in rats). The lingual gyrus case in
 // particular was a lesson: it was missed the first time because the source
 // paper's title only names the hippocampus and amygdala — its specific
 // connectivity-partner findings, buried in the results rather than the
@@ -50,14 +51,6 @@ export const GAPS = [
       'Lower activation shared between autism and ADHD versus controls; overlaps functionally with dorsolateral prefrontal cortex, supporting working memory and attention-shifting.',
     cbdGap:
       'CBD studies target the prefrontal cortex broadly — and specifically the dorsomedial, orbital, prelimbic and infralimbic PFC subregions — but none reliably isolate the middle frontal gyrus itself. A secondary source cites a "Fusar-Poli 2012" finding of CBD activation here in established psychosis, but this project could not independently verify that citation as a real, distinct primary paper.',
-  },
-  {
-    id: 'globusPallidus',
-    name: 'Globus pallidus',
-    autismEvidence:
-      'No overall volume difference from controls, but surface-based shape analysis found bilateral dorsal-medial globus pallidus surface area correlates with restricted/repetitive behavior severity, and pallidal shape grows more concave with age in autism.',
-    cbdGap:
-      'No CBD study isolates the globus pallidus specifically. A whole-brain mouse fMRI screen (Sadaka 2021) reported no significant overall change across the basal ganglia, but didn’t break its results out by individual nucleus, so the globus pallidus itself remains untested on its own.',
   },
   {
     id: 'sma',

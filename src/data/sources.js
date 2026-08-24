@@ -1360,6 +1360,20 @@ export const SOURCES = [
     finding:
       'A single 30 mg CBD dose modestly, favourably shifted several heart-rate-variability measures (an index of autonomic/vagal tone) an hour after ingestion. This is peripheral, indirect evidence relevant to the locus coeruleus-noradrenergic system that helps drive autonomic arousal — not a direct brain-level test of the locus coeruleus itself, which remains untested.',
   },
+  {
+    id: 'patricio2022pallidum',
+    authors: 'Patricio F, Morales Dávila E, Patricio-Martínez A, et al.',
+    year: 2022,
+    title: 'Intrapallidal injection of cannabidiol or a selective GPR55 antagonist decreases motor asymmetry and improves fine motor skills in hemiparkinsonian rats',
+    journal: 'Frontiers in Pharmacology',
+    type: 'Preclinical (rat)',
+    category: 'preclinical',
+    url: 'https://doi.org/10.3389/fphar.2022.945836',
+    regions: [],
+    autism: false,
+    finding:
+      'Injecting CBD directly into the external globus pallidus of hemiparkinsonian rats reduced amphetamine-induced motor asymmetry and improved fine motor performance on a staircase test — mimicking a selective GPR55 antagonist, which suggests CBD acts here by blocking GPR55 (the same receptor mechanism already established for CBD in the caudate) rather than through classic CB1/CB2 signalling.',
+  },
 ]
 
 // Convenience lookup

@@ -170,8 +170,8 @@ export const AUTISM_SUMMARY = [
     area: 'Globus pallidus',
     direction: '↕',
     autismFinding: 'No overall volume difference, but pallidal shape/surface area correlates with restricted-repetitive-behavior severity and grows more concave with age.',
-    cbdStatus: 'gap',
-    cbdFinding: 'No CBD study isolates this nucleus. A whole-brain mouse fMRI screen found no overall basal-ganglia change, but didn’t break results out by individual structure (Sadaka 2021).',
+    cbdStatus: 'general',
+    cbdFinding: 'Yes — injected directly into the external globus pallidus of rats, CBD reduced motor asymmetry and improved fine motor skills in a Parkinson’s model, acting via GPR55 (Patricio 2022). Not studied in autistic subjects.',
     regionId: null,
   },
   {
