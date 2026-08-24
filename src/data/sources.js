@@ -1660,6 +1660,64 @@ export const SOURCES = [
     finding:
       'In mice, prenatal CBD exposure altered offspring prefrontal-cortex neuronal excitability and produced sex-specific effects — heightened thermal pain sensitivity in males, reduced problem-solving in females — a caution that CBD is not necessarily neurodevelopmentally inert just because it’s non-intoxicating.',
   },
+
+  // ---- Eating disorders, OCD, epilepsy mechanism, TBI --------------------------
+  {
+    id: 'sahota2026anorexia',
+    authors: 'Sahota N, Grelotti DJ, Nguyen T, et al.',
+    year: 2026,
+    title: 'Cannabidiol in Anorexia Nervosa: A Double-Blind Randomized Placebo Controlled Pilot Study to Test Safety, Pharmacokinetics, and Symptom Change',
+    journal: 'International Journal of Eating Disorders',
+    type: 'RCT (pilot)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/41906184/',
+    regions: [],
+    autism: false,
+    finding:
+      'In a placebo-controlled pilot trial in women with anorexia nervosa, twice-daily CBD (Epidiolex) was well tolerated and produced a small but statistically significant BMI increase compared to placebo, alongside large effect-size improvements in eating-disorder symptoms — an encouraging early signal that needs replication in a larger sample.',
+  },
+  {
+    id: 'zahedi2026ocd',
+    authors: 'Zahedi N, Majidi M, Rezaei B, Mirzadeh M, Zamir SM',
+    year: 2026,
+    title: 'Evaluation of Cannabidiol Effects as an Adjunctive Therapy on Symptoms of Patients with Obsessive–compulsive Disorder',
+    journal: 'Annals of Indian Psychiatry',
+    type: 'RCT',
+    category: 'clinical',
+    url: 'https://doi.org/10.4103/aip.aip_67_25',
+    regions: [],
+    autism: false,
+    finding:
+      'In a randomized trial of 30 people with OCD, 25 mg daily CBD drops added to usual treatment produced a statistically significant reduction in OCD symptom severity over 8 weeks compared to placebo — one of the first completed RCTs (rather than just the mechanism reviews elsewhere in this atlas) supporting CBD specifically for OCD.',
+  },
+  {
+    id: 'patel2016nav16',
+    authors: 'Patel RR, Barbosa C, Brustovetsky T, Brustovetsky N, Cummins TR',
+    year: 2016,
+    title: 'Aberrant epilepsy-associated mutant Nav1.6 sodium channel activity can be targeted with cannabidiol',
+    journal: 'Brain',
+    type: 'Preclinical (in vitro)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/27267376/',
+    regions: [],
+    autism: false,
+    finding:
+      'CBD selectively blocks the abnormal "resurgent" sodium currents produced by epilepsy-causing mutant Nav1.6 sodium channels, without as strongly affecting normal channel function — a specific molecular mechanism, distinct from any cannabinoid or serotonin receptor, helping explain CBD’s antiseizure effect in genetic epilepsies.',
+  },
+  {
+    id: 'santiago2022tbi',
+    authors: 'Santiago-Castañeda C, Huerta de la Cruz S, Martínez-Aguirre C, Orozco-Suárez SA, Rocha L',
+    year: 2022,
+    title: 'Cannabidiol Reduces Short- and Long-Term High Glutamate Release after Severe Traumatic Brain Injury and Improves Functional Recovery',
+    journal: 'Pharmaceutics',
+    type: 'Preclinical (rat)',
+    category: 'preclinical',
+    url: 'https://doi.org/10.3390/pharmaceutics14081609',
+    regions: [],
+    autism: false,
+    finding:
+      'In rats, oral CBD pretreatment before severe traumatic brain injury reduced the surge of excitotoxic glutamate release both immediately and in the following days, and improved sensorimotor recovery — preclinical support for CBD’s neuroprotective potential in brain injury, though no completed human TBI trial exists yet.',
+  },
 ]
 
 // Convenience lookup
