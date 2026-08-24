@@ -837,7 +837,7 @@ export const SOURCES = [
     regions: ['insula', 'parietal'],
     autism: false,
     finding:
-      'In antipsychotic-naïve people at clinical high risk for psychosis, CBD normalised abnormal insula/parietal-operculum over-activation during a reward-and-loss salience task and slowed premature responding — a proposed mechanism for its antipsychotic-like effect on aberrant salience.',
+      'In antipsychotic-naïve people at clinical high risk for psychosis, CBD normalised abnormal insula/parietal-operculum over-activation during a reward-and-loss salience task — with intermediate activation also seen in the left superior frontal gyrus and left frontal operculum — and slowed premature responding, a proposed mechanism for its antipsychotic-like effect on aberrant salience.',
   },
   {
     id: 'leweke2021cognition',
@@ -1285,6 +1285,36 @@ export const SOURCES = [
     autism: false,
     finding:
       'In mice, CBD increased HPA-axis (stress-hormone system) responsivity rather than calming it — significantly in males — and normalised anxiety-like behaviour specifically in female mice whose HPA axis was underactive at baseline. Effects were clearly sex-specific: females showed higher stress-hormone levels and reactivity overall. This is one of the only studies to test CBD’s effect on the hypothalamic stress axis directly, and complicates the simple "CBD is calming" narrative used elsewhere in this atlas.',
+  },
+
+  // ---- Filling remaining gap regions: orbitofrontal/gyrus rectus, STG ------
+  {
+    id: 'bloomfield2020ofc',
+    authors: 'Bloomfield MAP, Green SF, Hindocha C, et al.',
+    year: 2020,
+    title: 'The effects of acute cannabidiol on cerebral blood flow and its relationship to memory: an arterial spin labelling magnetic resonance imaging study',
+    journal: 'Journal of Psychopharmacology',
+    type: 'RCT (ASL-MRI)',
+    category: 'imaging',
+    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7436497/',
+    regions: ['pfc'],
+    autism: false,
+    finding:
+      'In healthy adults given 600 mg CBD, greater CBD-induced increases in orbitofrontal blood flow — an area that anatomically includes the gyrus rectus, though this study didn’t isolate it as its own region of interest — correlated with faster reaction times on a demanding working-memory task (r=-0.73), direct evidence CBD affects this ventral prefrontal territory with a measurable cognitive correlate.',
+  },
+  {
+    id: 'wintonbrown2011',
+    authors: 'Winton-Brown TT, Allen P, Bhattacharyya S, et al.',
+    year: 2011,
+    title: 'Modulation of auditory and visual processing by delta-9-tetrahydrocannabinol and cannabidiol: an fMRI study',
+    journal: 'Neuropsychopharmacology',
+    type: 'Human fMRI (crossover)',
+    category: 'imaging',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/21412224/',
+    regions: [],
+    autism: false,
+    finding:
+      'During passive auditory processing, 600 mg CBD was associated with increased activation in right temporal cortex, and — directly contrasted with 10 mg THC — produced opposite effects specifically in the right posterior superior temporal gyrus (the right-hemisphere homolog of Wernicke’s area), the same spot where THC’s activation drop correlated with THC-induced psychotic symptoms.',
   },
 ]
 

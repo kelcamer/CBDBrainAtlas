@@ -6,14 +6,16 @@
 // This list exists to be honest about absence of evidence, not evidence of
 // absence: these are well-replicated autism findings that CBD research has
 // simply never examined, as far as this project's search could determine.
-// Three former entries here — the thalamus, hypothalamus, and lingual
-// gyrus — were moved out after further review surfaced real CBD research
-// touching them (see the Thalamus region, the BNST region's HPA-axis note,
-// and the Lorenzetti 2024 finding on amygdala-to-lingual-gyrus connectivity).
-// The lingual gyrus case in particular was a lesson: it was missed the
-// first time because the source paper's title only names the hippocampus
-// and amygdala — its specific connectivity-partner findings, buried in the
-// results rather than the title, hadn't been checked against this list.
+// Five former entries here — the thalamus, hypothalamus, lingual gyrus,
+// gyrus rectus, and superior temporal gyrus — were moved out after further
+// review surfaced real CBD research touching them (see the Thalamus region,
+// the BNST region's HPA-axis note, the Lorenzetti 2024 lingual-gyrus
+// finding, Bloomfield 2020 on orbitofrontal blood flow, and Winton-Brown
+// 2011 on the superior temporal gyrus). The lingual gyrus case in
+// particular was a lesson: it was missed the first time because the source
+// paper's title only names the hippocampus and amygdala — its specific
+// connectivity-partner findings, buried in the results rather than the
+// title, hadn't been checked against this list.
 // ---------------------------------------------------------------------------
 
 export const GAPS = [
@@ -34,14 +36,6 @@ export const GAPS = [
       'No CBD study, autism-specific or general, has examined the STS directly — despite it being explicitly named as part of the hypothesized "social brain" network in the Parrella 2025 EEG study, which measured nearby parietal electrodes rather than the STS itself.',
   },
   {
-    id: 'stg',
-    name: 'Superior temporal gyrus',
-    autismEvidence:
-      'Shows lower activation in autism relative to controls (shared with ADHD in a large task-based fMRI meta-analysis); processes auditory information and speech comprehension, and — in its posterior portion — voice-based social cognition.',
-    cbdGap:
-      'No CBD study examines the superior temporal gyrus directly. The closest evidence in this atlas is for the fusiform gyrus (which does have a CBD finding) and the adjacent superior temporal sulcus (also listed here as a gap).',
-  },
-  {
     id: 'mtg',
     name: 'Middle temporal gyrus',
     autismEvidence:
@@ -50,20 +44,12 @@ export const GAPS = [
       'No CBD study, autism-specific or general, examines the middle temporal gyrus.',
   },
   {
-    id: 'gyrusRectus',
-    name: 'Gyrus rectus',
-    autismEvidence:
-      'Greater activation shared between autism and ADHD versus controls in this ventral frontal-lobe region tied to social cognition, decision-making, and olfactory processing.',
-    cbdGap:
-      'No CBD study has examined the gyrus rectus specifically.',
-  },
-  {
     id: 'middleFrontalGyrus',
     name: 'Middle frontal gyrus',
     autismEvidence:
       'Lower activation shared between autism and ADHD versus controls; overlaps functionally with dorsolateral prefrontal cortex, supporting working memory and attention-shifting.',
     cbdGap:
-      'CBD studies target the prefrontal cortex broadly — and specifically the dorsomedial, orbital, prelimbic and infralimbic PFC subregions — but none isolate the middle frontal gyrus itself.',
+      'CBD studies target the prefrontal cortex broadly — and specifically the dorsomedial, orbital, prelimbic and infralimbic PFC subregions — but none reliably isolate the middle frontal gyrus itself. A secondary source cites a "Fusar-Poli 2012" finding of CBD activation here in established psychosis, but this project could not independently verify that citation as a real, distinct primary paper.',
   },
   {
     id: 'globusPallidus',
