@@ -1718,6 +1718,64 @@ export const SOURCES = [
     finding:
       'In rats, oral CBD pretreatment before severe traumatic brain injury reduced the surge of excitotoxic glutamate release both immediately and in the following days, and improved sensorimotor recovery — preclinical support for CBD’s neuroprotective potential in brain injury, though no completed human TBI trial exists yet.',
   },
+
+  // ---- Gut-brain axis, hippocampal structure, and further mechanism -----------
+  {
+    id: 'vanortenluiten2022ibs',
+    authors: 'van Orten-Luiten ACB, de Roos NM, Majait S, Witteman BJM, Witkamp RF',
+    year: 2022,
+    title: 'Effects of Cannabidiol Chewing Gum on Perceived Pain and Well-Being of Irritable Bowel Syndrome Patients: A Placebo-Controlled Crossover Exploratory Intervention Study with Symptom-Driven Dosing',
+    journal: 'Cannabis and Cannabinoid Research',
+    type: 'RCT (crossover)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/33998882/',
+    regions: [],
+    autism: false,
+    finding:
+      'In a crossover trial of 32 women with irritable bowel syndrome, 50 mg CBD chewing gum produced no statistically significant reduction in abdominal pain compared to placebo at the group level, and most patients used the gum less than instructed — a null result, though the symptom-driven dosing design makes it hard to separate true inefficacy from under-dosing.',
+  },
+  {
+    id: 'beale2018hippocampal',
+    authors: 'Beale C, Broyd SJ, Chye Y, et al.',
+    year: 2018,
+    title: 'Prolonged Cannabidiol Treatment Effects on Hippocampal Subfield Volumes in Current Cannabis Users',
+    journal: 'Cannabis and Cannabinoid Research',
+    type: 'Open-label (structural MRI)',
+    category: 'imaging',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/29682609/',
+    regions: ['hippocampus'],
+    autism: false,
+    finding:
+      'In regular cannabis users given 200 mg daily CBD for 10 weeks, structural MRI found a small but significant volume increase in the hippocampal subiculum and CA1 subfields — a possible restorative effect on cannabis-related hippocampal harm, most pronounced in heavier users.',
+  },
+  {
+    id: 'xiong2012glycine',
+    authors: 'Xiong W, Cui T, Cheng K, et al.',
+    year: 2012,
+    title: 'Cannabinoids suppress inflammatory and neuropathic pain by targeting α3 glycine receptors',
+    journal: 'Journal of Experimental Medicine',
+    type: 'Preclinical (rat/mouse)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/22585736/',
+    regions: [],
+    autism: false,
+    finding:
+      'CBD suppressed chronic inflammatory and neuropathic pain in rodents by directly binding and potentiating α3 glycine receptors in the spinal cord — a mechanism entirely independent of CB1/CB2 cannabinoid receptors, confirmed via a direct NMR interaction with a specific receptor site.',
+  },
+  {
+    id: 'laun2019gpr',
+    authors: 'Laun AS, Shrader SH, Brown KJ, Song ZH',
+    year: 2019,
+    title: 'GPR3, GPR6, and GPR12 as novel molecular targets: their biological functions and interaction with cannabidiol',
+    journal: 'Acta Pharmacologica Sinica',
+    type: 'Preclinical review',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/29941868/',
+    regions: [],
+    autism: false,
+    finding:
+      'CBD acts as an inverse agonist at three closely related orphan receptors — GPR3, GPR6 and GPR12 — phylogenetically related to the cannabinoid receptors but with no confirmed natural ligand, adding yet another non-classical target to CBD’s broad pharmacology, with proposed relevance to Alzheimer’s and Parkinson’s disease.',
+  },
 ]
 
 // Convenience lookup

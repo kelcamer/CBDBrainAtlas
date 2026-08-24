@@ -163,7 +163,7 @@ export const REGIONS = [
     sourceIds: [
       'bhatt2012', 'bhatt2015', 'bhatt2018', 'davies2020', 'oneill2021', 'batalla2021', 'campos2012', 'stern2017',
       'blessing2015', 'melas2021', 'garciagutierrez2020', 'zamberletti2019', 'jia2025', 'crippa2004', 'crippa2011',
-      'esposito2011ppar',
+      'esposito2011ppar', 'beale2018hippocampal',
     ],
   },
   {
