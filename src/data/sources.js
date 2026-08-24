@@ -1374,6 +1374,202 @@ export const SOURCES = [
     finding:
       'Injecting CBD directly into the external globus pallidus of hemiparkinsonian rats reduced amphetamine-induced motor asymmetry and improved fine motor performance on a staircase test — mimicking a selective GPR55 antagonist, which suggests CBD acts here by blocking GPR55 (the same receptor mechanism already established for CBD in the caudate) rather than through classic CB1/CB2 signalling.',
   },
+
+  // ---- Addiction / craving --------------------------------------------------
+  {
+    id: 'hurd2019heroin',
+    authors: 'Hurd YL, Spriggs S, Alishayev J, et al.',
+    year: 2019,
+    title: 'Cannabidiol for the Reduction of Cue-Induced Craving and Anxiety in Drug-Abstinent Individuals With Heroin Use Disorder: A Double-Blind Randomized Placebo-Controlled Trial',
+    journal: 'American Journal of Psychiatry',
+    type: 'RCT',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/31109198/',
+    regions: ['nac'],
+    autism: false,
+    finding:
+      'In drug-abstinent people with heroin use disorder, single daily doses of CBD (400 or 800 mg) significantly reduced cue-induced craving and anxiety compared to placebo, with effects on craving still detectable up to a week after the last dose — one of the strongest human trials behind CBD’s anti-craving reputation.',
+  },
+  {
+    id: 'chisholm2026heroin',
+    authors: 'Chisholm A, Ferland JN, Ellis RJ, Hurd YL',
+    year: 2026,
+    title: 'Cannabidiol Attenuates Heroin Seeking in Male Rats Associated With Normalization of Discrete Neurobiological Signatures Within the Nucleus Accumbens With Subregional Specificity',
+    journal: 'Biological Psychiatry',
+    type: 'Preclinical (rat)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/40992584/',
+    regions: ['nac'],
+    autism: false,
+    finding:
+      'In rats, CBD reduced cue-induced heroin-seeking behaviour and normalised region-specific gene-expression signatures — linked to immune function and astrocyte activity — within nucleus accumbens subregions, a proposed molecular mechanism behind CBD’s anti-relapse effects in addiction.',
+  },
+  {
+    id: 'suzuki2023oud',
+    authors: 'Suzuki J, Prostko S, Szpak V, et al.',
+    year: 2023,
+    title: 'Impact of cannabidiol on reward- and stress-related neurocognitive processes among individuals with opioid use disorder: A pilot, double-blind, placebo-controlled, randomized cross-over trial',
+    journal: 'Frontiers in Psychiatry',
+    type: 'RCT (crossover)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/37065899/',
+    regions: ['nac'],
+    autism: false,
+    finding:
+      'In people with opioid use disorder maintained on buprenorphine or methadone, a single 600 mg dose of CBD significantly reduced cue-induced craving and attentional bias toward drug-related cues compared to placebo — a pilot signal for CBD as an adjunct to standard opioid-use-disorder treatment.',
+  },
+
+  // ---- Pain / rheumatic conditions (mostly null results) --------------------
+  {
+    id: 'rasmussen2025fibromyalgia',
+    authors: 'Rasmussen MU, Christensen R, Wæhrens EE, et al.',
+    year: 2026,
+    title: 'Cannabidiol versus placebo in patients with fibromyalgia: a randomised, double-blind, placebo-controlled, parallel-group, single-centre trial',
+    journal: 'Annals of the Rheumatic Diseases',
+    type: 'RCT',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/40846590/',
+    regions: [],
+    autism: false,
+    finding:
+      'In the largest CBD fibromyalgia trial to date (200 patients), 24 weeks of CBD 50 mg/day was not superior to placebo for pain — placebo actually improved more — a clear negative result against a commonly cited off-label use of CBD.',
+  },
+  {
+    id: 'pramhas2023oa',
+    authors: 'Pramhas S, Thalhammer T, Terner S, et al.',
+    year: 2023,
+    title: 'Oral cannabidiol (CBD) as add-on to paracetamol for painful chronic osteoarthritis of the knee: a randomized, double-blind, placebo-controlled clinical trial',
+    journal: 'The Lancet Regional Health – Europe',
+    type: 'RCT',
+    category: 'clinical',
+    url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10682664/',
+    regions: [],
+    autism: false,
+    finding:
+      'Adding 600 mg/day oral CBD to paracetamol for 8 weeks produced no additional pain relief over paracetamol plus placebo in painful knee osteoarthritis — another negative trial against CBD’s use as a general-purpose analgesic.',
+  },
+  {
+    id: 'grimison2020cinv',
+    authors: 'Grimison P, Mersiades A, Kirby A, et al.',
+    year: 2020,
+    title: 'Oral THC:CBD cannabis extract for refractory chemotherapy-induced nausea and vomiting: a randomised, placebo-controlled, phase II crossover trial',
+    journal: 'Annals of Oncology',
+    type: 'RCT (crossover)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/32801017/',
+    regions: [],
+    autism: false,
+    finding:
+      'Adding an oral THC:CBD extract to guideline antiemetics improved control of refractory chemotherapy-induced nausea and vomiting (complete response rose from 14% to 25%) versus placebo, though about a third of patients had moderate-to-severe side effects — evidence for a THC:CBD combination, not CBD alone.',
+  },
+
+  // ---- Movement disorders ----------------------------------------------------
+  {
+    id: 'chagas2014parkinsons',
+    authors: 'Chagas MHN, Zuardi AW, Tumas V, et al.',
+    year: 2014,
+    title: 'Effects of cannabidiol in the treatment of patients with Parkinson’s disease: an exploratory double-blind trial',
+    journal: 'Journal of Psychopharmacology',
+    type: 'RCT (pilot)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/25237116/',
+    regions: [],
+    autism: false,
+    finding:
+      'In a small exploratory trial, CBD (75 or 300 mg/day) did not significantly improve Parkinson’s disease motor symptoms versus placebo, though the 300 mg group showed improved quality-of-life scores — an early, likely underpowered signal rather than confirmed efficacy.',
+  },
+  {
+    id: 'consroe1991huntington',
+    authors: 'Consroe P, Laguna J, Allender J, et al.',
+    year: 1991,
+    title: 'Controlled Clinical Trial of Cannabidiol in Huntington’s Disease',
+    journal: 'Pharmacology Biochemistry and Behavior',
+    type: 'RCT (crossover)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/1839644/',
+    regions: [],
+    autism: false,
+    finding:
+      'In 15 people with Huntington’s disease — a condition driven by progressive caudate/putamen neurodegeneration — 6 weeks of CBD (~700 mg/day) was safe but showed no significant benefit on chorea severity or other symptoms versus placebo, one of the earliest (1991) controlled CBD trials and a clear null result.',
+  },
+
+  // ---- Mood disorders ---------------------------------------------------------
+  {
+    id: 'pinto2024bipolar',
+    authors: 'Pinto JV, Crippa JAS, Ceresér KM, et al.',
+    year: 2024,
+    title: 'Cannabidiol as an Adjunctive Treatment for Acute Bipolar Depression: A Pilot Study',
+    journal: 'Canadian Journal of Psychiatry',
+    type: 'RCT (pilot)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/37920963/',
+    regions: [],
+    autism: false,
+    finding:
+      'In the first placebo-controlled pilot trial of adjunctive CBD for acute bipolar depression, CBD did not significantly outperform placebo on the primary depression measure, and importantly showed no signal of triggering mania — a safety-reassuring but efficacy-null early result.',
+  },
+
+  // ---- Safety / pharmacology --------------------------------------------------
+  {
+    id: 'mccartney2022driving',
+    authors: 'McCartney D, Suraev AS, Doohan PT, et al.',
+    year: 2022,
+    title: 'Effects of cannabidiol on simulated driving and cognitive performance: A dose-ranging randomised controlled trial',
+    journal: 'Journal of Psychopharmacology',
+    type: 'RCT (dose-ranging)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/35637624/',
+    regions: [],
+    autism: false,
+    finding:
+      'In a dose-ranging crossover trial (15, 300, or 1500 mg oral CBD), no dose impaired simulated driving performance or cognition, or produced feelings of intoxication, in healthy adults — reassuring safety evidence distinguishing pure CBD from THC-containing cannabis, which does impair driving.',
+  },
+
+  // ---- Rare pediatric epilepsy syndromes --------------------------------------
+  {
+    id: 'devinsky2018raredisorders',
+    authors: 'Devinsky O, Verducci C, Thiele EA, et al.',
+    year: 2018,
+    title: 'Open-label use of highly purified CBD (Epidiolex®) in patients with CDKL5 deficiency disorder and Aicardi, Dup15q, and Doose syndromes',
+    journal: 'Epilepsy & Behavior',
+    type: 'Open-label (expanded access)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/30006259/',
+    regions: [],
+    autism: false,
+    finding:
+      'In an open-label expanded-access programme, CBD roughly halved convulsive seizure frequency by 12 weeks in patients with four distinct, severe genetic epilepsy syndromes (CDKL5 deficiency, Aicardi, Dup15q, and Doose syndromes) — extending CBD’s antiseizure evidence base beyond Dravet and Lennox-Gastaut syndrome.',
+  },
+
+  // ---- Neuroinflammation mechanism (Alzheimer's, MS) --------------------------
+  {
+    id: 'esposito2011ppar',
+    authors: 'Esposito G, Scuderi C, Valenza M, et al.',
+    year: 2011,
+    title: 'Cannabidiol reduces Aβ-induced neuroinflammation and promotes hippocampal neurogenesis through PPARγ involvement',
+    journal: 'PLoS ONE',
+    type: 'Preclinical (cell model)',
+    category: 'preclinical',
+    url: 'https://doi.org/10.1371/journal.pone.0028668',
+    regions: ['hippocampus'],
+    autism: false,
+    finding:
+      'In a cellular model of Alzheimer’s disease, CBD reduced amyloid-beta-induced neuroinflammation and promoted hippocampal neurogenesis — effects blocked by inhibiting PPARγ, identifying this nuclear receptor as a distinct, non-cannabinoid-receptor mechanism behind CBD’s neuroprotective effects.',
+  },
+  {
+    id: 'mecha2013ms',
+    authors: 'Mecha M, Feliú A, Iñigo PM, Mestre L, Carrillo-Salinas FJ, Guaza C',
+    year: 2013,
+    title: 'Cannabidiol provides long-lasting protection against the deleterious effects of inflammation in a viral model of multiple sclerosis: a role for A2A receptors',
+    journal: 'Neurobiology of Disease',
+    type: 'Preclinical (mouse)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/23851307/',
+    regions: [],
+    autism: false,
+    finding:
+      'In a viral mouse model of multiple sclerosis, CBD provided long-lasting protection against neuroinflammation — reducing immune-cell entry into the brain and microglial activation — an effect partly reversed by blocking adenosine A2A receptors, identifying another non-cannabinoid-receptor mechanism for CBD’s anti-inflammatory action.',
+  },
 ]
 
 // Convenience lookup

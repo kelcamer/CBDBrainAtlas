@@ -163,6 +163,7 @@ export const REGIONS = [
     sourceIds: [
       'bhatt2012', 'bhatt2015', 'bhatt2018', 'davies2020', 'oneill2021', 'batalla2021', 'campos2012', 'stern2017',
       'blessing2015', 'melas2021', 'garciagutierrez2020', 'zamberletti2019', 'jia2025', 'crippa2004', 'crippa2011',
+      'esposito2011ppar',
     ],
   },
   {
@@ -225,7 +226,7 @@ export const REGIONS = [
       'Autistic adults show lower ventral-striatum-to-anterior-cingulate connectivity than non-autistic adults at baseline — a pattern that relates to social-motivation models of autism. CBDV increased this connectivity slightly in autistic adults, though the change didn’t reach statistical significance (Pretzsch 2021) — unlike the two other striatal connections (see Striatum and Caudate nucleus) where CBDV’s effect was significant.',
     nonAutismNote:
       'Non-autistic adults’ connectivity here is the reference level autistic adults’ lower baseline was compared against; CBDV produced no significant change in this group either (Pretzsch 2021).',
-    sourceIds: ['pretzschCBDV2021', 'zimmermann2025', 'sharifi2022', 'morenoalcazar2018', 'lawn2020'],
+    sourceIds: ['pretzschCBDV2021', 'zimmermann2025', 'sharifi2022', 'morenoalcazar2018', 'lawn2020', 'hurd2019heroin', 'chisholm2026heroin', 'suzuki2023oud'],
   },
   {
     id: 'midbrain',
