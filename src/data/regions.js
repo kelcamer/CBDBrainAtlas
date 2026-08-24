@@ -167,7 +167,7 @@ export const REGIONS = [
     mechanism:
       'Enhances fronto-striatal connectivity; increases basal-ganglia glutamate (Glx) measured with MR spectroscopy — a shared drug effect seen in both autistic and non-autistic adults, not an autism-specific correction.',
     autismNote:
-      'Basal-ganglia glutamate rises with both CBD and CBDV regardless of diagnosis — that part isn’t autism-specific. What is autism-specific is baseline striatal connectivity: CBDV shifts atypical caudate/putamen/accumbens hyperconnectivity toward the non-autistic pattern (Pretzsch 2021), while CBD’s diagnosis-dependent effect shows up as a GABA (not glutamate) divergence in the prefrontal cortex, not the striatum itself (Pretzsch 2019).',
+      'Basal-ganglia glutamate rises with both CBD and CBDV regardless of diagnosis — that part isn’t autism-specific. What is autism-specific is baseline striatal connectivity: CBDV shifts atypical caudate/putamen/accumbens hyperconnectivity toward the non-autistic pattern (Pretzsch 2021), while CBD’s diagnosis-dependent effect is a full reversal in the prefrontal cortex, not the striatum itself — GABA (not glutamate) rises in non-autistic controls but falls in autistic adults (Pretzsch 2019).',
     sourceIds: [
       'bhatt2012', 'bhatt2015', 'bhatt2018', 'davies2020', 'oneill2021', 'grimm2018', 'wall2022', 'batalla2021',
       'pretzschCBD2019', 'pretzschCBDV2019', 'pretzschCBDV2021',
