@@ -45,13 +45,13 @@ export const REGIONS = [
     mechanism:
       'Local 5-HT1A and CB1 receptors mediate antidepressant-like effects; CBD also modulates the glutamate/GABA (excitation–inhibition) balance measured with MR spectroscopy. The orbitofrontal cortex, a ventral part of this region, was directly tested in a reward task (Lawn 2020) and showed no significant CBD effect — a null result, not an untested area.',
     autismNote:
-      'Prefrontal glutamate–GABA imbalance is a leading model of autism. In autistic adults, CBD decreases dorsomedial-prefrontal GABA (Pretzsch 2019). Prefrontal 2-AG (a different endocannabinoid, not glutamate) is separately reported reduced in autism (Jia 2025). CBDV normalises atypical fronto-striatal connectivity in autistic adults (Pretzsch 2021), and a 2025 EEG study found CBD increased right fronto-parietal connectivity in autistic children (Parrella 2025) — though behavioural trials of CBD in autism have shown mixed, often null, primary-outcome results (Aran 2021, Trauner 2025, Parrella 2026).',
+      'Prefrontal glutamate–GABA imbalance is a leading model of autism. In autistic adults, CBD decreases dorsomedial-prefrontal GABA (Pretzsch 2019). Prefrontal 2-AG (a different endocannabinoid, not glutamate) is separately reported reduced in autism (Jia 2025). A 2025 EEG study found CBD increased right fronto-parietal connectivity in autistic children (Parrella 2025) — though behavioural trials of CBD in autism have shown mixed, often null, primary-outcome results (Aran 2021, Trauner 2025, Parrella 2026).',
     nonAutismNote:
       'In non-autistic adults, CBD increases dorsomedial-prefrontal GABA — the opposite direction from autistic adults (Pretzsch 2019). The basal-ganglia glutamate rise and dorsomedial-prefrontal glutamate drop CBD produces happen the same way in non-autistic adults as in autistic adults — those parts aren’t different by diagnosis (Pretzsch 2019, CBDV: Pretzsch 2019).',
     sourceIds: [
       'bhatt2012', 'bhatt2015', 'oneill2021', 'grimm2018', 'wall2022', 'batalla2021', 'campos2012', 'sartim2016',
       'blessing2015', 'melas2021', 'garciagutierrez2020', 'pretzschCBD2019', 'pretzschCBDV2019',
-      'parrella2025eeg', 'yeh2017', 'pretzschCBDV2021', 'jia2025', 'lawn2020',
+      'parrella2025eeg', 'yeh2017', 'jia2025', 'lawn2020',
     ],
   },
   {
@@ -176,9 +176,9 @@ export const REGIONS = [
     mechanism:
       'Enhances fronto-striatal connectivity; increases basal-ganglia glutamate (Glx) measured with MR spectroscopy — a shared drug effect seen in both autistic and non-autistic adults, not an autism-specific correction.',
     autismNote:
-      'In autistic adults, CBDV normalises atypical caudate/putamen/accumbens hyperconnectivity toward the non-autistic pattern (Pretzsch 2021). Separately, in the prefrontal cortex (not the striatum itself), CBD decreases GABA in autistic adults (Pretzsch 2019).',
+      'At baseline, autistic adults show higher ventral-striatum-to-putamen connectivity and higher putamen-to-posterior-superior-temporal-gyrus connectivity than non-autistic adults (plus lower ventral-striatum-to-anterior-cingulate connectivity, which CBDV didn’t significantly change). CBDV significantly reduces both of the elevated connections toward the non-autistic level (Pretzsch 2021). Separately, in the prefrontal cortex (not the striatum itself), CBD decreases GABA in autistic adults (Pretzsch 2019).',
     nonAutismNote:
-      'Non-autistic people don’t show the atypical striatal hyperconnectivity CBDV corrects in autism — there’s nothing there for it to normalise (Pretzsch 2021). The basal-ganglia glutamate rise from CBD and CBDV happens the same way in non-autistic people as in autistic people. In the prefrontal cortex, CBD increases GABA in non-autistic adults — the opposite direction from autistic adults (Pretzsch 2019).',
+      'Non-autistic adults don’t show the elevated ventral-striatum-to-putamen and putamen-to-temporal connectivity seen in autism — there’s nothing there for CBDV to reduce, and indeed CBDV produced no significant connectivity change in this group (Pretzsch 2021). The basal-ganglia glutamate rise from CBD and CBDV happens the same way in non-autistic people as in autistic people. In the prefrontal cortex, CBD increases GABA in non-autistic adults — the opposite direction from autistic adults (Pretzsch 2019).',
     sourceIds: [
       'bhatt2012', 'bhatt2015', 'bhatt2018', 'davies2020', 'oneill2021', 'grimm2018', 'wall2022', 'batalla2021',
       'pretzschCBD2019', 'pretzschCBDV2019', 'pretzschCBDV2021',
@@ -198,9 +198,9 @@ export const REGIONS = [
     mechanism:
       'CBD antagonises GPR55 and acts as a dopamine-D2High partial agonist, both receptor types dense in caudate medium spiny neurons; in imaging studies CBD boosts caudate activation during verbal-memory encoding and salience tasks where THC does the opposite.',
     autismNote:
-      'In autistic adults, CBDV shifted atypical caudate/putamen/accumbens connectivity toward the non-autistic pattern (Pretzsch 2021), and cortico-striato-thalamo-cortical circuitry involving the caudate is implicated in both autism and OCD.',
+      'In autistic adults, CBDV significantly reduced two specific elevated connections toward the non-autistic level: ventral-striatum-to-putamen connectivity and putamen-to-posterior-superior-temporal-gyrus connectivity, both higher than in non-autistic adults at baseline (Pretzsch 2021). Cortico-striato-thalamo-cortical circuitry involving the caudate is also implicated in both autism and OCD.',
     nonAutismNote:
-      'Non-autistic adults’ caudate/putamen/accumbens connectivity was largely unaffected by CBDV — their baseline pattern is the target autistic adults’ connectivity shifted toward, not something CBDV needed to change (Pretzsch 2021).',
+      'Non-autistic adults didn’t show these elevated connections in the first place, and CBDV produced no significant connectivity change in this group — their baseline pattern is what autistic adults’ connectivity moved toward (Pretzsch 2021).',
     sourceIds: [
       'ryberg2007', 'seeman2016', 'bhattacharyya2010', 'sharma2019', 'mosley2023', 'lawn2020',
       'morenoalcazar2018', 'wall2019dissociable', 'rutledge2026', 'vallee2022',
@@ -215,14 +215,14 @@ export const REGIONS = [
     autism: true,
     map: { shape: 'ellipse', cx: 338, cy: 322, rx: 14, ry: 11 },
     summary:
-      'Part of the ventral striatum’s reward circuitry. CBDV shifts atypical nucleus-accumbens functional connectivity in autistic adults toward the non-autistic pattern, and single-dose CBD lowers cue-induced accumbens activation during craving in substance use disorders. In practice, this is the neural basis for CBD’s emerging use as an anti-craving aid in addiction treatment, and a candidate clue to why reward and social motivation can feel different for autistic people.',
+      'Part of the ventral striatum’s reward circuitry. At baseline, autistic adults show lower ventral-striatum-to-anterior-cingulate connectivity than non-autistic adults — CBDV nudged this up slightly but not to a statistically significant degree. Separately, single-dose CBD lowers cue-induced accumbens activation during craving in substance use disorders. In practice, this is the neural basis for CBD’s emerging use as an anti-craving aid in addiction treatment, and a candidate clue to why reward and social motivation can feel different for autistic people.',
     functions: ['Reward & pleasure', 'Motivation', 'Social reward'],
     mechanism:
       'Studied as part of striatal functional connectivity; sits within the mesolimbic dopamine system that CBD influences indirectly, partly via accumbal D1/D2 dopamine receptors.',
     autismNote:
-      'Nucleus-accumbens connectivity differences relate to social-motivation models of autism (Pretzsch 2021).',
+      'Autistic adults show lower ventral-striatum-to-anterior-cingulate connectivity than non-autistic adults at baseline — a pattern that relates to social-motivation models of autism. CBDV increased this connectivity slightly in autistic adults, though the change didn’t reach statistical significance (Pretzsch 2021) — unlike the two other striatal connections (see Striatum and Caudate nucleus) where CBDV’s effect was significant.',
     nonAutismNote:
-      'Non-autistic adults didn’t show the same nucleus-accumbens connectivity difference CBDV corrected in autism — their baseline connectivity is what autistic adults’ pattern shifted toward (Pretzsch 2021).',
+      'Non-autistic adults’ connectivity here is the reference level autistic adults’ lower baseline was compared against; CBDV produced no significant change in this group either (Pretzsch 2021).',
     sourceIds: ['pretzschCBDV2021', 'zimmermann2025', 'sharifi2022', 'morenoalcazar2018', 'lawn2020'],
   },
   {

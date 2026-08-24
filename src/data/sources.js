@@ -202,10 +202,10 @@ export const SOURCES = [
     type: 'RCT (fMRI)',
     category: 'imaging',
     url: 'https://doi.org/10.1186/s13229-021-00454-6',
-    regions: ['striatum', 'caudate', 'nac', 'pfc'],
+    regions: ['striatum', 'caudate', 'nac'],
     autism: true,
     finding:
-      'At baseline, autistic adults showed lower ventral-striatum connectivity to frontal and pericentral regions but higher putamen-to-temporal connectivity and higher intra-striatal connectivity than controls; CBDV reduced this atypical hyperconnectivity toward the non-autistic pattern without significantly changing connectivity in controls.',
+      'At baseline, autistic adults showed three specific connectivity differences from non-autistic adults: lower ventral-striatum-to-anterior-cingulate/paracentral connectivity, but higher ventral-striatum-to-putamen connectivity and higher putamen-to-posterior-superior-temporal-gyrus connectivity. CBDV significantly reduced both of the elevated (hyper) connections toward the non-autistic level; the reduced (hypo) connection ticked up slightly under CBDV but the change wasn’t statistically significant. Connectivity in non-autistic controls didn’t change significantly with CBDV.',
   },
 
   // ---- Preclinical mechanism -------------------------------------------
