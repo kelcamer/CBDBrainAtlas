@@ -1316,6 +1316,50 @@ export const SOURCES = [
     finding:
       'During passive auditory processing, 600 mg CBD was associated with increased activation in right temporal cortex, and — directly contrasted with 10 mg THC — produced opposite effects specifically in the right posterior superior temporal gyrus (the right-hemisphere homolog of Wernicke’s area), the same spot where THC’s activation drop correlated with THC-induced psychotic symptoms.',
   },
+
+  // ---- Motor circuitry, white matter, and autonomic/LC-adjacent evidence ---
+  {
+    id: 'desalencar2021tremor',
+    authors: 'Santos de Alencar S, Crippa JAS, Brito MCM, Pimentel ÂV, Cecilio Hallak JE, Tumas V',
+    year: 2021,
+    title: 'A single oral dose of cannabidiol did not reduce upper limb tremor in patients with essential tremor',
+    journal: 'Parkinsonism and Related Disorders',
+    type: 'RCT (crossover)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/33465546/',
+    regions: [],
+    autism: false,
+    finding:
+      'In a double-blind crossover trial of 19 people with essential tremor — a movement disorder driven by cerebello-thalamo-cortical and motor-cortex circuitry — a single 300 mg oral dose of CBD had no significant effect on tremor severity. This is the closest clinical evidence to a motor-cortex/supplementary-motor-area test in this atlas, though it used clinical rating scales rather than brain imaging, and only tested a single acute dose.',
+  },
+  {
+    id: 'houston2021dti',
+    authors: 'Houston JT, Nenert R, Allendorfer JB, Bebin EM, Gaston TE, Goodman AM, Szaflarski JP',
+    year: 2021,
+    title: 'White matter integrity after cannabidiol administration for treatment resistant epilepsy',
+    journal: 'Epilepsy Research',
+    type: 'Open-label (DTI)',
+    category: 'imaging',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/33725662/',
+    regions: [],
+    autism: false,
+    finding:
+      'Using diffusion-tensor imaging (DTI) — the standard method for measuring white-matter tract integrity — before and after 12 weeks of pharmaceutical-grade CBD in patients with treatment-resistant epilepsy, the researchers found only minor, largely non-significant short-term changes to white-matter structure.',
+  },
+  {
+    id: 'williams2021hrv',
+    authors: 'Williams NNB, Ewell TR, Abbotts KSS, et al.',
+    year: 2021,
+    title: 'Comparison of Five Oral Cannabidiol Preparations in Adult Humans: Pharmacokinetics, Body Composition, and Heart Rate Variability',
+    journal: 'Pharmaceuticals',
+    type: 'RCT (crossover)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/33418866/',
+    regions: [],
+    autism: false,
+    finding:
+      'A single 30 mg CBD dose modestly, favourably shifted several heart-rate-variability measures (an index of autonomic/vagal tone) an hour after ingestion. This is peripheral, indirect evidence relevant to the locus coeruleus-noradrenergic system that helps drive autonomic arousal — not a direct brain-level test of the locus coeruleus itself, which remains untested.',
+  },
 ]
 
 // Convenience lookup

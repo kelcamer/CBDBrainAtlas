@@ -115,7 +115,7 @@ export const AUTISM_SUMMARY = [
     direction: '↕',
     autismFinding: 'Increased tonic (resting pupil) but reduced phasic noradrenergic activity vs. peers — implicated in hyperarousal and sensory over-responsivity.',
     cbdStatus: 'gap',
-    cbdFinding: 'No CBD research at all — only THC, synthetic CB1 agonists, and the related cannabinoid CBG have been tested here.',
+    cbdFinding: 'No direct brain-level CBD research — only THC, synthetic CB1 agonists, and the related cannabinoid CBG. The closest indirect evidence: CBD modestly improved heart-rate-variability measures of autonomic tone (Williams 2021), a peripheral readout, not a direct LC test.',
     regionId: null,
   },
   {
@@ -187,7 +187,7 @@ export const AUTISM_SUMMARY = [
     direction: '↕',
     autismFinding: 'Atypical sensorimotor activation, plus increased premotor gray-matter volume with altered white-matter tracts — autism’s well-documented motor/praxis differences live largely here.',
     cbdStatus: 'gap',
-    cbdFinding: 'No CBD research examines the supplementary motor area or premotor cortex, in autism or generally.',
+    cbdFinding: 'No brain-imaging study exists. Closest clinical evidence: a single CBD dose didn’t reduce tremor in essential tremor, a disorder of this same motor circuitry (de Alencar 2021) — but that used rating scales, not brain imaging.',
     regionId: null,
   },
   {

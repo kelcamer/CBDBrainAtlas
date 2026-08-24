@@ -25,7 +25,7 @@ export const GAPS = [
     autismEvidence:
       'The single most consistently reported finding in autism diffusion-tensor-imaging (DTI) studies: reduced corpus callosum integrity and widespread white-matter tract disruption, linked to interhemispheric and long-range connectivity differences.',
     cbdGap:
-      'One CBD structural-MRI study exists (Sharma 2019, in epilepsy, not autism) and found no gray-matter change — but no CBD-autism DTI study of white matter exists at all.',
+      'Two CBD structural-MRI studies exist, both in epilepsy (not autism), and both essentially null: Sharma 2019 found no gray-matter/cortical-thickness change, and Houston 2021 — using diffusion-tensor imaging, the standard white-matter-integrity method — found only minor, largely non-significant white-matter changes after 12 weeks of CBD. No CBD-autism DTI study of white matter exists at all.',
   },
   {
     id: 'sts',
@@ -65,7 +65,7 @@ export const GAPS = [
     autismEvidence:
       'Atypical activation during sensorimotor processing, plus increased premotor gray-matter volume with altered premotor white-matter tracts in autism — a distinct motor/praxis literature separate from the social-cognition findings elsewhere on this list. Autism’s well-documented motor and coordination differences live largely here.',
     cbdGap:
-      'No CBD study examines the supplementary motor area or premotor cortex, in autism or generally.',
+      'No brain-imaging study of the supplementary motor area or premotor cortex exists for CBD, in autism or generally. The closest clinical evidence is a null result: a single 300 mg CBD dose didn’t reduce tremor severity in essential tremor, a movement disorder driven by this same motor circuitry (de Alencar 2021) — but that trial used clinical rating scales, not brain imaging.',
   },
   {
     id: 'locusCoeruleus',
@@ -73,6 +73,6 @@ export const GAPS = [
     autismEvidence:
       'Autistic children show increased tonic (resting pupil diameter) but reduced phasic (event-related) locus-coeruleus/noradrenergic activity versus typically developing peers — implicated in autism’s hyperarousal, anxiety and sensory over-responsivity.',
     cbdGap:
-      'THC, synthetic CB1 agonists, and even the related phytocannabinoid CBG all have locus-coeruleus electrophysiology data — but a specific search for CBD itself found none. The closest CBD evidence in this atlas is for the neighbouring dorsal raphe nucleus, a different (serotonergic, not noradrenergic) brainstem nucleus.',
+      'THC, synthetic CB1 agonists, and even the related phytocannabinoid CBG all have locus-coeruleus electrophysiology data — but a specific search for CBD itself found no direct brain-level study. The closest indirect evidence: a single CBD dose modestly improved heart-rate-variability measures of autonomic/vagal tone (Williams 2021) — a peripheral readout downstream of the LC-noradrenergic system, not a test of the LC itself. The closest direct CBD evidence in this atlas remains the neighbouring dorsal raphe nucleus, a different (serotonergic, not noradrenergic) brainstem nucleus.',
   },
 ]
