@@ -1776,6 +1776,78 @@ export const SOURCES = [
     finding:
       'CBD acts as an inverse agonist at three closely related orphan receptors — GPR3, GPR6 and GPR12 — phylogenetically related to the cannabinoid receptors but with no confirmed natural ligand, adding yet another non-classical target to CBD’s broad pharmacology, with proposed relevance to Alzheimer’s and Parkinson’s disease.',
   },
+
+  // ---- Fear extinction, cardiovascular effects, schizophrenia cognition, sex --
+  {
+    id: 'kwee2024fear',
+    authors: 'Kwee CMB, van der Flier FE, Duits P, van Balkom AJLM, Cath DC, Baas JMP',
+    year: 2024,
+    title: 'Effects of cannabidiol on fear conditioning in anxiety disorders: decreased threat expectation during retention, but no enhanced fear re-extinction',
+    journal: 'Psychopharmacology',
+    type: 'RCT',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/38044339/',
+    regions: [],
+    autism: false,
+    finding:
+      'In patients with panic disorder or social anxiety disorder, CBD reduced expectation of threat when a fear-conditioned memory was recalled but did not enhance the erasure (“re-extinction”) of that fear — and in female patients taking antidepressants, CBD actually impaired re-extinction, a reminder that CBD’s effects can interact with both sex and other medications in clinically relevant ways.',
+  },
+  {
+    id: 'jadoon2017bp',
+    authors: 'Jadoon KA, Tan GD, O’Sullivan SE',
+    year: 2017,
+    title: 'A single dose of cannabidiol reduces blood pressure in healthy volunteers in a randomized crossover study',
+    journal: 'JCI Insight',
+    type: 'RCT (crossover)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/28614793/',
+    regions: [],
+    autism: false,
+    finding:
+      'A single 600 mg dose of CBD reduced resting systolic blood pressure by about 6 mmHg and blunted the blood-pressure rise to acute stress in healthy men — direct human evidence that CBD has real acute cardiovascular effects, not just central nervous system ones.',
+  },
+  {
+    id: 'granjeiro2011cardiovascular',
+    authors: 'Granjeiro EM, Gomes FV, Guimarães FS, Corrêa FM, Resstel LB',
+    year: 2011,
+    title: 'Effects of intracisternal administration of cannabidiol on the cardiovascular and behavioral responses to acute restraint stress',
+    journal: 'Pharmacology Biochemistry and Behavior',
+    type: 'Preclinical (rat)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/21771609/',
+    regions: [],
+    autism: false,
+    finding:
+      'Injecting CBD directly into the brainstem (via the cisterna magna) blunted the blood-pressure rise and anxiety-like behaviour triggered by acute restraint stress in rats — evidence CBD acts on brainstem cardiovascular-control circuits, not just higher limbic or cortical ones, to dampen the physical stress response.',
+  },
+  {
+    id: 'boggs2018cognition',
+    authors: 'Boggs DL, Surti T, Gupta A, et al.',
+    year: 2018,
+    title: 'The effects of cannabidiol (CBD) on cognition and symptoms in outpatients with chronic schizophrenia: a randomized placebo controlled trial',
+    journal: 'Psychopharmacology',
+    type: 'RCT',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/29619533/',
+    regions: [],
+    autism: false,
+    finding:
+      'Adding 600 mg/day CBD for 6 weeks to existing antipsychotic treatment produced no improvement in cognition or psychotic symptoms in stable chronic schizophrenia outpatients — a clean null result that tempers optimism from other, more positive CBD-schizophrenia trials elsewhere in this atlas.',
+  },
+  {
+    id: 'matheson2022sexdiff',
+    authors: 'Matheson J, Bourgault Z, Le Foll B',
+    year: 2022,
+    title: 'Sex Differences in the Neuropsychiatric Effects and Pharmacokinetics of Cannabidiol: A Scoping Review',
+    journal: 'Biomolecules',
+    type: 'Scoping review',
+    category: 'review',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/36291671/',
+    regions: [],
+    autism: false,
+    finding:
+      'This scoping review found sex has been strikingly understudied as a factor in CBD research — limited preclinical evidence hints at sex-dependent effects (e.g., on antidepressant-like responses), but human trials have rarely analysed or reported results by sex, leaving a real gap in understanding who CBD actually works best for.',
+  },
 ]
 
 // Convenience lookup
