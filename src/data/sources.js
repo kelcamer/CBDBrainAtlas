@@ -1570,6 +1570,96 @@ export const SOURCES = [
     finding:
       'In a viral mouse model of multiple sclerosis, CBD provided long-lasting protection against neuroinflammation — reducing immune-cell entry into the brain and microglial activation — an effect partly reversed by blocking adenosine A2A receptors, identifying another non-cannabinoid-receptor mechanism for CBD’s anti-inflammatory action.',
   },
+
+  // ---- Addiction (additional substances) --------------------------------------
+  {
+    id: 'hua2023anandamide',
+    authors: 'Hua DY, Hindocha C, Baio G, et al.',
+    year: 2023,
+    title: 'Effects of cannabidiol on anandamide levels in individuals with cannabis use disorder',
+    journal: 'Translational Psychiatry',
+    type: 'RCT (mechanism sub-study)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/37085531/',
+    regions: [],
+    autism: false,
+    finding:
+      '800 mg daily CBD produced preliminary evidence of raising anandamide levels in people with cannabis use disorder (from the same trial as Freeman 2020), but the change in anandamide didn’t correlate with clinical improvement — the proposed mechanism didn’t clearly track the outcome it was meant to explain.',
+  },
+  {
+    id: 'cheeks2024nicotine',
+    authors: 'Cheeks SN, Buzzi B, Valdez A, Mogul AS, Damaj MI, Fowler CD',
+    year: 2024,
+    title: 'Cannabidiol as a potential cessation therapeutic: Effects on intravenous nicotine self-administration and withdrawal symptoms in mice',
+    journal: 'Neuropharmacology',
+    type: 'Preclinical (mouse)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/38176534/',
+    regions: [],
+    autism: false,
+    finding:
+      'In mice, CBD reduced the number of intravenous nicotine self-administration rewards earned and attenuated nicotine withdrawal symptoms, extending CBD’s anti-craving profile from opioids and alcohol to nicotine in an animal model.',
+  },
+  {
+    id: 'mongeau2022cocaine',
+    authors: 'Mongeau-Pérusse V, Rizkallah E, Morissette F, et al.',
+    year: 2022,
+    title: 'Cannabidiol Effect on Anxiety Symptoms and Stress Response in Individuals With Cocaine Use Disorder: Exploratory Results From a Randomized Controlled Trial',
+    journal: 'Journal of Addiction Medicine',
+    type: 'RCT',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/35135986/',
+    regions: [],
+    autism: false,
+    finding:
+      'In people with cocaine use disorder, 800 mg daily CBD showed no significant advantage over placebo for reducing anxiety symptoms or cortisol levels — a null result extending the pattern that CBD’s stress-reduction effects don’t reliably generalise across every substance-use population.',
+  },
+
+  // ---- Anxiety (additional populations) ----------------------------------------
+  {
+    id: 'masataka2019teens',
+    authors: 'Masataka N',
+    year: 2019,
+    title: 'Anxiolytic Effects of Repeated Cannabidiol Treatment in Teenagers With Social Anxiety Disorders',
+    journal: 'Frontiers in Psychology',
+    type: 'RCT',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/31787910/',
+    regions: [],
+    autism: false,
+    finding:
+      'In 37 Japanese teenagers with social anxiety disorder, 300 mg daily CBD for 4 weeks significantly reduced anxiety symptoms on standardised scales compared to placebo, extending the social-anxiety evidence base (previously adult-only) to adolescents.',
+  },
+  {
+    id: 'appiahkusi2020stress',
+    authors: 'Appiah-Kusi E, Petros N, Wilson R, et al.',
+    year: 2020,
+    title: 'Effects of short-term cannabidiol treatment on response to social stress in subjects at clinical high risk of developing psychosis',
+    journal: 'Psychopharmacology',
+    type: 'RCT',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/31915861/',
+    regions: [],
+    autism: false,
+    finding:
+      'One week of 600 mg daily CBD produced intermediate cortisol-reactivity and anxiety responses to a social stress test in people at clinical high risk for psychosis — between the more blunted responses of healthy controls and the exaggerated responses of the placebo-treated high-risk group.',
+  },
+
+  // ---- Prenatal safety ----------------------------------------------------------
+  {
+    id: 'swenson2023fetal',
+    authors: 'Swenson KS, Gomez Wulschner LE, Hoelscher VM, et al.',
+    year: 2023,
+    title: 'Fetal cannabidiol (CBD) exposure alters thermal pain sensitivity, problem-solving, and prefrontal cortex excitability',
+    journal: 'Molecular Psychiatry',
+    type: 'Preclinical (mouse)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/37433966/',
+    regions: ['pfc'],
+    autism: false,
+    finding:
+      'In mice, prenatal CBD exposure altered offspring prefrontal-cortex neuronal excitability and produced sex-specific effects — heightened thermal pain sensitivity in males, reduced problem-solving in females — a caution that CBD is not necessarily neurodevelopmentally inert just because it’s non-intoxicating.',
+  },
 ]
 
 // Convenience lookup
