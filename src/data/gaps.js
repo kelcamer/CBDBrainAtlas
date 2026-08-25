@@ -6,17 +6,28 @@
 // This list exists to be honest about absence of evidence, not evidence of
 // absence: these are well-replicated autism findings that CBD research has
 // simply never examined, as far as this project's search could determine.
-// Six former entries here — the thalamus, hypothalamus, lingual gyrus,
-// gyrus rectus, superior temporal gyrus, and globus pallidus — were moved
-// out after further review surfaced real CBD research touching them (see
-// the Thalamus region, the BNST region's HPA-axis note, the Lorenzetti
-// 2024 lingual-gyrus finding, Bloomfield 2020 on orbitofrontal blood flow,
-// Winton-Brown 2011 on the superior temporal gyrus, and Patricio 2022's
-// direct intrapallidal CBD injection in rats). The lingual gyrus case in
-// particular was a lesson: it was missed the first time because the source
-// paper's title only names the hippocampus and amygdala — its specific
-// connectivity-partner findings, buried in the results rather than the
-// title, hadn't been checked against this list.
+// Eight former entries here — the thalamus, hypothalamus, lingual gyrus,
+// gyrus rectus, superior temporal gyrus, globus pallidus, middle temporal
+// gyrus, and middle frontal gyrus — were moved out after further review
+// surfaced real CBD research touching them (see the Thalamus region, the
+// BNST region's HPA-axis note, the Lorenzetti 2024 lingual-gyrus finding,
+// Bloomfield 2020 on orbitofrontal blood flow, Winton-Brown 2011 on the
+// superior temporal gyrus, Patricio 2022's direct intrapallidal CBD
+// injection in rats, and Borgwardt 2008 on response-inhibition fMRI).
+// The lingual gyrus case was the first lesson: it was missed because the
+// source paper's title only names the hippocampus and amygdala, and its
+// specific connectivity-partner findings, buried in the results rather
+// than the title, hadn't been checked against this list. The middle
+// temporal gyrus repeated the exact same lesson — Winton-Brown 2011 was
+// already cited elsewhere in this atlas for the superior temporal gyrus,
+// but its reported MTG cluster went unchecked against this list too. The
+// middle frontal gyrus was different: the specific citation this project
+// had for it ("Fusar-Poli 2012") remains unverifiable, but a separate,
+// confirmed paper (Borgwardt 2008) turned out to cover the same region.
+// The ventrolateral prefrontal cortex was also downgraded from this list,
+// though more provisionally — no study uses the term "VLPFC" itself, but
+// it's standard shorthand for the inferior frontal gyrus, which Borgwardt
+// 2008 and related studies do report on directly.
 // ---------------------------------------------------------------------------
 
 export const GAPS = [
@@ -35,22 +46,6 @@ export const GAPS = [
       'Arguably the single most autism-relevant social-cognition region: processes biological motion, voice, and audiovisual speech integration, with disrupted STS function proposed as a core mechanism behind autism’s social and language differences.',
     cbdGap:
       'No CBD study, autism-specific or general, has examined the STS directly — despite it being explicitly named as part of the hypothesized "social brain" network in the Parrella 2025 EEG study, which measured nearby parietal electrodes rather than the STS itself.',
-  },
-  {
-    id: 'mtg',
-    name: 'Middle temporal gyrus',
-    autismEvidence:
-      'A genuinely lateralized finding in autism — greater activation on the left, lower on the right, versus controls — rather than a simple up-or-down effect. Supports semantic/language processing and social perception.',
-    cbdGap:
-      'No CBD study, autism-specific or general, examines the middle temporal gyrus.',
-  },
-  {
-    id: 'middleFrontalGyrus',
-    name: 'Middle frontal gyrus',
-    autismEvidence:
-      'Lower activation shared between autism and ADHD versus controls; overlaps functionally with dorsolateral prefrontal cortex, supporting working memory and attention-shifting.',
-    cbdGap:
-      'CBD studies target the prefrontal cortex broadly — and specifically the dorsomedial, orbital, prelimbic and infralimbic PFC subregions — but none reliably isolate the middle frontal gyrus itself. A secondary source cites a "Fusar-Poli 2012" finding of CBD activation here in established psychosis, but this project could not independently verify that citation as a real, distinct primary paper.',
   },
   {
     id: 'sma',

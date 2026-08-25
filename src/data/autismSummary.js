@@ -34,8 +34,8 @@ export const AUTISM_SUMMARY = [
     area: 'Middle frontal gyrus',
     direction: '▼',
     autismFinding: 'Lower activation vs. controls (shared with ADHD) — overlaps functionally with dorsolateral prefrontal cortex.',
-    cbdStatus: 'gap',
-    cbdFinding: 'No CBD study reliably isolates this specific gyrus. A secondary source cites a "Fusar-Poli 2012" finding of CBD activation here in established psychosis, but this project could not independently verify that citation as a real, distinct primary paper — so it isn’t counted as confirmed evidence.',
+    cbdStatus: 'general',
+    cbdFinding: 'Yes, corrected from an earlier "gap" call. A secondary source cites a "Fusar-Poli 2012" finding of CBD activation here in established psychosis, and this project still could not independently verify that citation as a real, distinct primary paper. But a different, verifiable one exists: Borgwardt 2008 (Biol Psychiatry) reports CBD attenuating activity in the right superior, middle, inferior, and orbitofrontal gyri during a go/no-go response-inhibition task — not in autistic people specifically.',
     regionId: 'pfc',
   },
   {
@@ -58,8 +58,8 @@ export const AUTISM_SUMMARY = [
     area: 'Middle temporal gyrus',
     direction: '↕',
     autismFinding: 'Genuinely lateralized — greater activation on the left, lower on the right, vs. controls. Supports semantic/language processing and social perception.',
-    cbdStatus: 'gap',
-    cbdFinding: 'No CBD research, autism-specific or general, examines this region.',
+    cbdStatus: 'general',
+    cbdFinding: 'Yes, corrected from an earlier "gap" call — a repeat of the lingual-gyrus lesson. Winton-Brown 2011, already cited in this atlas for the superior temporal gyrus, reports CBD attenuating activity specifically in the posterior middle temporal gyrus during auditory processing; the finding was just filed under the paper\'s STG framing rather than cross-referenced here. Not studied in autistic people.',
     regionId: null,
   },
   {
@@ -162,8 +162,8 @@ export const AUTISM_SUMMARY = [
     area: 'Ventrolateral prefrontal cortex',
     direction: '▲',
     autismFinding: 'Bilateral overactivation during cognitive-control tasks, differentiating autism from ADHD specifically.',
-    cbdStatus: 'gap',
-    cbdFinding: 'No CBD study isolates this specific subregion.',
+    cbdStatus: 'general',
+    cbdFinding: 'Borderline — downgraded from "gap." No study uses the term "VLPFC" itself, but VLPFC is standard shorthand for the inferior frontal gyrus (BA44/45/47), the same kind of naming equivalence this atlas already applies to the gyrus rectus/OFC. Under that reading, Borgwardt 2008 and the related Bhattacharyya-lineage response-inhibition fMRI studies — which repeatedly report CBD modulating (right) inferior frontal gyrus activity — count as VLPFC findings in substance, just not in name. Not studied in autistic people.',
     regionId: null,
   },
   {
