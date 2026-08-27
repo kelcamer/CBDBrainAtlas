@@ -90,7 +90,7 @@ export const AUTISM_SUMMARY = [
   {
     area: 'Cerebellum (vermis)',
     direction: 'mixed',
-    autismFinding: 'Increased right-cerebellum task activation during facial emotion processing; an earlier borderline volume increase didn’t replicate in a larger sample.',
+    autismFinding: 'Increased right-cerebellum task activation during facial emotion processing; an earlier borderline volume increase didn’t replicate in a larger sample. A broader 2024 review separately reports reduced neocerebellar vermis lobules VI/VII across children and adults with autism, alongside postmortem Purkinje-cell loss concentrated in the lateral cerebellum, not the vermis itself (Patil, Iftikhar & Ganti 2024, Health Psychol Res, PMID 39944713).',
     cbdStatus: 'autism',
     cbdDirection: 'up',
     cbdFinding: 'Yes — and uniquely so. CBD increased vermis activity almost exclusively in autistic participants, with little change in non-autistic controls (Pretzsch 2019).',
