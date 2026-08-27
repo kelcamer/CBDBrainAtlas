@@ -967,7 +967,7 @@ export const SOURCES = [
     regions: [],
     autism: true,
     finding:
-      'Responding to the null results from recent placebo-controlled CBD-autism RCTs (including this atlas’s Trauner 2025 and Parrella 2026), this commentary argues the null findings may be a trial-design artifact: outcome selection, unmapped dose-response, insufficient exposure time, uncontrolled pharmacokinetics/comedications, and unmeasured expectancy effects could all mask a real signal. No new data — a methodological argument for why "CBD doesn’t work in autism" may be premature.',
+      'Written in direct response to this atlas’s own Trauner 2025 null result, this commentary argues five trial-design choices may be masking a real CBD effect rather than disproving one: using treatment-responsive scales (ABC-Irritability, CGI-I) instead of a diagnostic instrument like ADOS-2 as the primary endpoint; dose-ranging rather than one fixed high dose, since CBD may follow an inverted-U dose-response curve; at least 10–12 weeks of stable dosing, since anxiety-trial benefits didn’t stabilise until weeks 9–12; managing CBD’s CYP3A4/CYP2C19 drug interactions with comedications instead of ignoring them; and measuring/mitigating placebo expectancy in a population prone to strong caregiver-driven placebo response. No new data — a methodological argument, not evidence CBD works.',
   },
   {
     id: 'depol2021',
