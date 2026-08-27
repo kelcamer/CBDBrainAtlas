@@ -8,16 +8,24 @@ const STATUS_LABEL = {
   gap: 'No CBD research',
 }
 
+const CBD_DIR_LABEL = {
+  '▲': 'CBD boosts activity/connectivity here',
+  '▼': 'CBD lowers activity/connectivity here',
+  '↕': 'CBD evidence points both ways here (opposite directions across studies, subregions, or doses)',
+  '—': 'Tested directly — no significant effect either way',
+}
+
 function buildSummaryText() {
   const lines = [
     'CBD Brain Atlas — Full Autism Research Summary',
     '',
-    'Brain area | What’s atypical in autism | Why / whether CBD helps',
-    '-----------|---------------------------|------------------------',
+    'Brain area | What’s atypical in autism | CBD direction | Why / whether CBD helps',
+    '-----------|---------------------------|----------------|------------------------',
   ]
   for (const row of AUTISM_SUMMARY) {
+    const cbdDir = row.cbdDirection ? `${row.cbdDirection} ` : ''
     lines.push(
-      `${row.direction} ${row.area} | ${row.autismFinding} | [${STATUS_LABEL[row.cbdStatus]}] ${row.cbdFinding}`
+      `${row.direction} ${row.area} | ${row.autismFinding} | ${cbdDir}[${STATUS_LABEL[row.cbdStatus]}] ${row.cbdFinding}`
     )
   }
   return lines.join('\n')
@@ -53,8 +61,10 @@ export default function AutismSummaryPanel({ onJumpToRegion }) {
       <div className="summary-header-row">
         <p className="muted receptor-intro">
           Every brain area with a documented autism finding in this atlas’s research, and — directly
-          alongside it — what CBD research (if any) exists there. Rows with a link icon jump back to that
-          region’s full detail on the map.
+          alongside it — what CBD research (if any) exists there. The arrow before the CBD evidence label
+          shows which way CBD moves activity or connectivity there: ▲ boosts, ▼ lowers, ↕ mixed/opposite
+          across studies, — tested with no effect. Rows with a link icon jump back to that region’s full
+          detail on the map.
         </p>
         <button className={copied ? 'summary-copy-btn copied' : 'summary-copy-btn'} onClick={handleCopy}>
           {copied ? 'Copied ✓' : 'Copy'}
@@ -90,6 +100,15 @@ export default function AutismSummaryPanel({ onJumpToRegion }) {
                 </td>
                 <td className="summary-autism-cell">{row.autismFinding}</td>
                 <td className={`summary-cbd-cell status-${row.cbdStatus}`}>
+                  {row.cbdDirection && (
+                    <span
+                      className="summary-dir summary-cbd-dir"
+                      aria-hidden="true"
+                      title={CBD_DIR_LABEL[row.cbdDirection]}
+                    >
+                      {row.cbdDirection}
+                    </span>
+                  )}
                   <span className="summary-status-label">{STATUS_LABEL[row.cbdStatus]}</span>
                   <p>{row.cbdFinding}</p>
                 </td>

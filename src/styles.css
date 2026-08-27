@@ -554,6 +554,7 @@ code {
 .summary-table tr.clickable:hover td { background: rgba(63, 191, 143, 0.06); }
 .summary-area { font-weight: 700; color: #eaf2fc; white-space: nowrap; }
 .summary-dir { color: var(--muted-2); margin-right: 2px; }
+.summary-cbd-dir { margin-right: 5px; font-weight: 700; cursor: default; }
 .summary-link-hint { color: var(--cbd); font-weight: 400; }
 .summary-autism-cell { color: var(--muted); max-width: 320px; }
 .summary-cbd-cell { max-width: 340px; }
