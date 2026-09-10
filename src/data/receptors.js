@@ -7,6 +7,13 @@
 
 export const RECEPTORS = [
   {
+    id: 'ttype',
+    name: 'Cav3 T-type calcium channels',
+    action: 'Inhibitor (Cav3.1 / Cav3.2)',
+    effect:
+      'Blocks low-voltage Cav3.1/Cav3.2 T-type channels (IC50 ≈ 1 µM; weaker on Cav3.3), damping neuronal excitability, thalamic burst-firing and pain signalling — relevant to CBD’s analgesic and anti-seizure actions. Cav3.2 (CACNA1H) is genetically tied to autism, but the ASD-linked variants are usually loss-of-function, so this is a shared calcium-channel thread, not a straightforward correction.',
+  },
+  {
     id: '5ht1a',
     name: '5-HT1A serotonin receptor',
     action: 'Agonist / positive modulator',

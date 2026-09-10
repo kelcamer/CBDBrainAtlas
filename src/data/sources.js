@@ -20,6 +20,35 @@
 // ---------------------------------------------------------------------------
 
 export const SOURCES = [
+  // ---- Molecular mechanism: T-type calcium channels --------------------
+  {
+    id: 'ross2008',
+    authors: 'Ross HR, Napier I, Connor M',
+    year: 2008,
+    title: 'Inhibition of recombinant human T-type calcium channels by Δ9-tetrahydrocannabinol and cannabidiol',
+    journal: 'Journal of Biological Chemistry',
+    type: 'Preclinical (HEK293 electrophysiology)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/18390906/',
+    regions: [],
+    autism: false,
+    finding:
+      'CBD (and THC) inhibited human Cav3.1 and Cav3.2 T-type calcium channels with IC50 values near 1 µM — less potent on Cav3.3 — largely by shifting steady-state inactivation to more hyperpolarised potentials.',
+  },
+  {
+    id: 'liao2020',
+    authors: 'Liao X, Li Y',
+    year: 2020,
+    title: 'Genetic associations between voltage-gated calcium channels and autism spectrum disorder: a systematic review',
+    journal: 'Molecular Brain',
+    type: 'Systematic review',
+    category: 'review',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/32571372/',
+    regions: [],
+    autism: true,
+    finding:
+      'Reviews calcium-channel genetics in autism; CACNA1H (the Cav3.2 T-type channel) mutations were found in autistic subjects and reduced Cav3.2 activity (loss of function, incomplete penetrance), placing T-type calcium signalling among the calcium-channel genes implicated in ASD.',
+  },
   // ---- Human neuroimaging: limbic / emotion circuitry -------------------
   {
     id: 'fusarpoli2009',
