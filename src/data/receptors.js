@@ -58,6 +58,13 @@ export const RECEPTORS = [
     effect: 'Boosts adenosine signalling — anti-inflammatory and possibly anticonvulsant.',
   },
   {
+    id: 'cav3',
+    name: 'Cav3 T-type calcium channels',
+    action: 'Inhibitor (shifts steady-state inactivation)',
+    effect:
+      'Blocks Cav3.1 and Cav3.2 near 1 \u00b5M \u2014 and over half of peak Cav3.1 current at 100 nM from a \u201370 mV holding potential \u2014 while barely touching Cav3.3 (Ross 2008). These channels build the thalamus\u2019s burst/tonic firing switch and set low-threshold excitability in sensory neurons, making this CBD\u2019s most thalamus-specific target. THC acts on the same channels but stabilises their open state, which is why the two cannabinoids are treated as opposite here.',
+  },
+  {
     id: 'd2high',
     name: 'Dopamine D2High receptor',
     action: 'Partial agonist',
