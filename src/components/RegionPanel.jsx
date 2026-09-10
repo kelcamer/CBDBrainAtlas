@@ -1,6 +1,12 @@
 import { CATEGORY_COLORS, CATEGORY_LABELS } from '../data/regions.js'
 import { SOURCE_BY_ID } from '../data/sources.js'
 
+/* Notes are written as blank-line-separated paragraphs where they run long;
+   render them that way rather than as one block of text. */
+function Prose({ text }) {
+  return text.split('\n\n').map((para, i) => <p key={i}>{para}</p>)
+}
+
 function SourceLink({ id }) {
   const s = SOURCE_BY_ID[id]
   if (!s) return null
@@ -67,35 +73,29 @@ export default function RegionPanel({ region, onClear }) {
 
       <div className="region-block">
         <h3>How CBD acts here</h3>
-        {/* Longer mechanism entries are written as blank-line-separated
-            paragraphs; render them as such rather than one wall of text. */}
-        {region.mechanism.split('\n\n').map((para, i) => (
-          <p className="muted" key={i}>
-            {para}
-          </p>
-        ))}
+        <div className="muted">
+          <Prose text={region.mechanism} />
+        </div>
       </div>
 
       {region.autismNote && (
         <div className="region-block autism-note">
           <h3>Autism connection</h3>
-          <p>{region.autismNote}</p>
+          <Prose text={region.autismNote} />
         </div>
       )}
 
       {region.nonAutismNote && (
         <div className="region-block nonautism-note">
           <h3>Non-autistic people</h3>
-          <p>{region.nonAutismNote}</p>
+          <Prose text={region.nonAutismNote} />
         </div>
       )}
 
       {region.womenNote && (
         <div className="region-block women-note">
           <h3>Women</h3>
-          {region.womenNote.split('\n\n').map((para, i) => (
-            <p key={i}>{para}</p>
-          ))}
+          <Prose text={region.womenNote} />
         </div>
       )}
 

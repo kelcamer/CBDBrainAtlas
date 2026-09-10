@@ -240,7 +240,8 @@ a:hover { text-decoration: underline; }
   padding: 12px 14px;
 }
 .autism-note h3 { color: var(--autism); }
-.autism-note p { margin: 0; font-size: 13.5px; color: #ffdcec; }
+.autism-note p { margin: 0 0 9px; font-size: 13.5px; color: #ffdcec; }
+.autism-note p:last-child { margin-bottom: 0; }
 .autism-count { color: var(--autism); font-weight: 700; }
 .nonautism-note {
   background: rgba(242, 193, 78, 0.08);
@@ -249,7 +250,8 @@ a:hover { text-decoration: underline; }
   padding: 12px 14px;
 }
 .nonautism-note h3 { color: var(--nonautism); }
-.nonautism-note p { margin: 0; font-size: 13.5px; color: #fff2d1; }
+.nonautism-note p { margin: 0 0 9px; font-size: 13.5px; color: #fff2d1; }
+.nonautism-note p:last-child { margin-bottom: 0; }
 /* Women: where the evidence is sex-specific, or male-only and shouldn't be
    read as if it weren't. Its own block so it can't be skimmed past. */
 .women-note {
