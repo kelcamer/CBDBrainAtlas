@@ -1298,7 +1298,7 @@ export const SOURCES = [
     regions: ['pfc', 'cerebellum', 'drn', 'thalamus', 'caudate', 'striatum'],
     autism: false,
     finding:
-      'Scanning awake mice across the whole brain, a single CBD dose produced a dose-dependent split along the front-to-back axis: BOLD signal rose in the olfactory system and prefrontal cortex (including orbital, prelimbic and infralimbic subregions) but fell in the cerebellum and brainstem arousal circuitry (including the dorsal raphe), with an inverted-U dose curve peaking at 10 mg/kg. The thalamus, amygdala, basal ganglia (including caudate/putamen) and hippocampus showed no significant change.',
+      'Scanning awake male mice across the whole brain \u2014 the authors name the male-only sample as a limitation \u2014 a single CBD dose produced a dose-dependent split along the front-to-back axis: BOLD signal rose in the olfactory system and prefrontal cortex (including orbital, prelimbic and infralimbic subregions) but fell in the cerebellum and brainstem arousal circuitry (including the dorsal raphe), with an inverted-U dose curve peaking at 10 mg/kg. The thalamus, amygdala, basal ganglia (including caudate/putamen) and hippocampus showed no significant change.',
   },
   {
     id: 'jenkins2026hpa',
@@ -1948,7 +1948,7 @@ export const SOURCES = [
     regions: ['thalamus', 'hippocampus', 'caudate', 'striatum'],
     autism: false,
     finding:
-      'In anaesthetised rats, 150 mg/kg CBD lowered whole-brain functional connectivity while leaving regional cerebral blood flow unchanged — the thalamus included, where CBD and vehicle values were effectively identical. A second species, and a second measurement type, agreeing with the mouse result that CBD does not move bulk thalamic signal in an ordinary resting brain. THC did the opposite on both measures, which is the study\u2019s main point.',
+      'In anaesthetised male rats, 150 mg/kg CBD lowered whole-brain functional connectivity while leaving regional cerebral blood flow unchanged — the thalamus included, where CBD and vehicle values were effectively identical. A second species, and a second measurement type, agreeing with the mouse result that CBD does not move bulk thalamic signal in an ordinary resting brain. THC did the opposite on both measures, which is the study\u2019s main point.',
   },
   {
     id: 'long2006ppi',
@@ -1990,7 +1990,7 @@ export const SOURCES = [
     regions: ['thalamus'],
     autism: true,
     finding:
-      'In mice exposed to valproic acid in utero \u2014 the standard environmental autism model \u2014 CBD (30 and 60 mg/kg) reversed the prepulse-inhibition deficit, reduced marble burying and improved social-interaction time and object recognition, while failing to reduce stereotyped movement. Direct evidence that CBD can normalise sensory filtering in an autism model, in contrast to its lack of effect on the same measure in intact animals.',
+      'In male mice exposed to valproic acid in utero \u2014 the standard environmental autism model \u2014 CBD (30 and 60 mg/kg) reversed the prepulse-inhibition deficit, reduced marble burying and improved social-interaction time and object recognition, while failing to reduce stereotyped movement. Direct evidence that CBD can normalise sensory filtering in an autism model, in contrast to its lack of effect on the same measure in intact animals.',
   },
   {
     id: 'knudsen2026thalamus',
@@ -2004,7 +2004,7 @@ export const SOURCES = [
     regions: ['thalamus', 'nac', 'striatum'],
     autism: true,
     finding:
-      'In 30 autistic and 30 matched neurotypical adults, [11C]raclopride PET found higher dopamine D2 receptor availability in the thalamus of the autistic group (with further increases in nucleus accumbens and putamen in autistic males), and [18F]FDG found raised thalamic glucose metabolism that correlated with social and communication difficulties. Thalamic D2 availability was also coupled to resting-state connectivity differently by diagnosis and sex. No CBD involved \u2014 this is autism biology, and it is why the thalamus is a plausible target for a drug with D2 activity.',
+      'In 30 autistic and 30 matched neurotypical adults \u2014 women included, and analysed separately \u2014 [11C]raclopride PET found higher dopamine D2 receptor availability in the thalamus of the autistic group, which the authors report as holding across sexes; the further increases in nucleus accumbens and putamen were specific to autistic males. [18F]FDG found raised thalamic glucose metabolism correlating with social and communication difficulties, and that elevation was confirmed within autistic women and autistic men separately. Thalamic D2 availability was coupled to resting-state connectivity differently by diagnosis and by sex. No CBD involved \u2014 this is autism biology, and it is why the thalamus is a plausible target for a drug with D2 activity.',
   },
   {
     id: 'murayama2022d2',
@@ -2018,7 +2018,66 @@ export const SOURCES = [
     regions: ['thalamus'],
     autism: true,
     finding:
-      'Using [11C]FLB457 in 22 autistic men and 24 matched controls, this study found lower D2/3 receptor availability across extrastriatal dopamine territory, with the largest effect in the posterior thalamus (mostly pulvinar); lower availability tracked higher social-affect symptom scores and weaker thalamus-to-superior-temporal-sulcus connectivity. Note the direction is opposite to Knudsen 2026 \u2014 different tracer, smaller male-only sample \u2014 so the sign is unsettled even though both studies land on the thalamus.',
+      'Using [11C]FLB457 in 22 autistic men and 24 matched male controls \u2014 no women in the sample \u2014 this study found lower D2/3 receptor availability across extrastriatal dopamine territory, with the largest effect in the posterior thalamus (mostly pulvinar); lower availability tracked higher social-affect symptom scores and weaker thalamus-to-superior-temporal-sulcus connectivity. Note the direction is opposite to Knudsen 2026 \u2014 different tracer, smaller male-only sample \u2014 so the sign is unsettled even though both studies land on the thalamus.',
+  },
+  // ---- Women: sex differences in the D2 system CBD acts on, and in CBD
+  // ---- itself. The atlas's autism-imaging evidence is overwhelmingly male,
+  // ---- so these are the papers that say what is and isn't known for women.
+  {
+    id: 'kaasinen2001sex',
+    authors: 'Kaasinen V, N\u00e5gren K, Hietala J, Farde L, Rinne JO',
+    year: 2001,
+    title: 'Sex differences in extrastriatal dopamine D2-like receptors in the human brain',
+    journal: 'American Journal of Psychiatry',
+    type: 'Human PET (healthy volunteers)',
+    category: 'imaging',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/11156817/',
+    regions: ['thalamus', 'pfc', 'acc'],
+    autism: false,
+    finding:
+      'Using [11C]FLB457 in 12 healthy women and 12 healthy men, women had higher extrastriatal D2-like receptor availability than men in all three regions measured \u2014 frontal cortex, temporal cortex and thalamus \u2014 though the difference reached significance only in the frontal cortex, and was largest in the anterior cingulate. Women therefore start from a different level of the receptor CBD partially agonises, which is a reason to expect a dose-response that differs by sex rather than assuming male data transfer.',
+  },
+  {
+    id: 'kaasinen2002women',
+    authors: 'Kaasinen V, Kemppainen N, N\u00e5gren K, Helenius H, Kurki T, Rinne JO',
+    year: 2002,
+    title: 'Age-related loss of extrastriatal dopamine D2-like receptors in women',
+    journal: 'Journal of Neurochemistry',
+    type: 'Human PET (37 healthy women)',
+    category: 'imaging',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/12065612/',
+    regions: ['thalamus', 'pfc'],
+    autism: false,
+    finding:
+      'In 37 healthy women aged 22\u201378, thalamic D2-like receptor availability fell about 6% per decade of life (frontal cortex 12%, temporal cortex 9%). Oestradiol and progesterone levels showed no relationship once age was accounted for. A rare study run in women only, and it means a woman\u2019s thalamic D2 availability \u2014 the target this atlas now flags for CBD \u2014 is age-dependent rather than fixed.',
+  },
+  {
+    id: 'matheson2022sex',
+    authors: 'Matheson J, Bourgault Z, Le Foll B',
+    year: 2022,
+    title: 'Sex differences in the neuropsychiatric effects and pharmacokinetics of cannabidiol: a scoping review',
+    journal: 'Biomolecules',
+    type: 'Scoping review',
+    category: 'review',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/36291671/',
+    regions: [],
+    autism: false,
+    finding:
+      'Of 300 CBD articles screened, only 12 examined sex as a moderator at all \u2014 eight preclinical, four human \u2014 and none considered gender. Among them: two found antidepressant-like effects of CBD in males only, one found higher plasma and liver CBD concentrations in female animals, and one human study found higher plasma CBD in healthy women. The headline number is the finding: the CBD literature this atlas is built on almost never asks whether women respond differently.',
+  },
+  {
+    id: 'macnair2024pk',
+    authors: 'MacNair L, Kulpa J, Hill ML, et al.',
+    year: 2024,
+    title: 'Sex differences in the pharmacokinetics of cannabidiol and metabolites following oral administration of a cannabidiol-dominant cannabis oil in healthy adults',
+    journal: 'Cannabis and Cannabinoid Research',
+    type: 'Human PK (secondary analysis of RCT)',
+    category: 'clinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/37267269/',
+    regions: [],
+    autism: false,
+    finding:
+      'In 17 men and 15 women given 120\u2013480 mg CBD daily for seven days, raw pharmacokinetic parameters did not differ significantly by sex, but metabolite-to-parent ratios for 7-OH-CBD and 7-COOH-CBD showed significant sex-by-day interactions \u2014 women and men metabolised repeated doses differently even where peak exposure looked the same. Relevant because nearly every CBD brain study in this atlas uses a single dose in men.',
   },
 ]
 

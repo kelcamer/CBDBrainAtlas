@@ -210,7 +210,7 @@ export const AUTISM_SUMMARY = [
     autismFinding: 'No overall volume difference, but shape analysis found expanded right-posterior surface area and a more concave left mediodorsal nucleus.',
     cbdStatus: 'null',
     cbdDirection: 'null',
-    cbdFinding: 'Directly tested twice in ordinary resting animals and null both times — no thalamic BOLD change in awake mice (Sadaka 2021), no thalamic blood-flow change in rats (MacNicol 2026); no human study has measured it. But CBD reverses prepulse-inhibition deficits in the valproate autism model while doing nothing in intact mice (Pedrazzi 2025, Long 2006), and autistic thalamus shows atypical D2 receptor availability (Knudsen 2026, Murayama 2022) — a drug with D2 partial agonism (Seeman 2016) has never been tested here in autism.',
+    cbdFinding: 'Directly tested twice in ordinary resting animals and null both times — no thalamic BOLD change in awake mice (Sadaka 2021), no thalamic blood-flow change in rats (MacNicol 2026); no human study has measured it. But CBD reverses prepulse-inhibition deficits in the valproate autism model while doing nothing in intact mice (Pedrazzi 2025, Long 2006), and the autistic thalamus shows atypical D2 receptor availability — raised in autistic adults of both sexes, women included (Knudsen 2026), lowered in an all-male sample (Murayama 2022). A drug with D2 partial agonism (Seeman 2016) has never been tested here in autism, and the animal work behind the nulls is male-only.',
     regionId: 'thalamus',
   },
   {

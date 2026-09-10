@@ -90,6 +90,15 @@ export default function RegionPanel({ region, onClear }) {
         </div>
       )}
 
+      {region.womenNote && (
+        <div className="region-block women-note">
+          <h3>Women</h3>
+          {region.womenNote.split('\n\n').map((para, i) => (
+            <p key={i}>{para}</p>
+          ))}
+        </div>
+      )}
+
       <div className="region-block">
         <h3>
           Sources {autismSources.length > 0 && <span className="autism-count">({autismSources.length} autism)</span>}
