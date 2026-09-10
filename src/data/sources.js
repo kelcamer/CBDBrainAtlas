@@ -49,6 +49,34 @@ export const SOURCES = [
     finding:
       'Reviews calcium-channel genetics in autism; CACNA1H (the Cav3.2 T-type channel) mutations were found in autistic subjects and reduced Cav3.2 activity (loss of function, incomplete penetrance), placing T-type calcium signalling among the calcium-channel genes implicated in ASD.',
   },
+  {
+    id: 'splawski2006',
+    authors: 'Splawski I, Yoo DS, Stotz SC, Cherry A, Clapham DE, Keating MT',
+    year: 2006,
+    title: 'CACNA1H mutations in autism spectrum disorders',
+    journal: 'Journal of Biological Chemistry',
+    type: 'Human genetics + electrophysiology',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/16754686/',
+    regions: [],
+    autism: true,
+    finding:
+      'Found missense CACNA1H (Cav3.2) variants in 6 of 461 individuals with ASD and none of 480 controls; all six reduced peak Cav3.2 current in expression assays \u2014 the original loss-of-function reading. Penetrance was incomplete (variants inherited from unaffected relatives), so these are risk-modifying, not deterministic.',
+  },
+  {
+    id: 'antunes2025',
+    authors: 'Antunes FTT, Zamponi GW',
+    year: 2025,
+    title: 'Exploring the role of Cav3.2 calcium channels in autism-like cognitive behavior induced by prenatal valproic acid exposure',
+    journal: 'Neuroscience',
+    type: 'Preclinical (Cav3.2 knockout mice, valproate autism model)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/40339900/',
+    regions: [],
+    autism: true,
+    finding:
+      'The causal counterweight to the loss-of-function genetics: in the prenatal valproic-acid mouse model, deleting Cav3.2 was protective. Knockout mice kept normal spatial working memory (both sexes), showed no VPA-induced rise in repetitive behaviour (males), had ~40% less self-grooming (adult females), and had sociability rescued (males, not females). So Cav3.2 activity contributes to autism-like behaviour and blocking it helps \u2014 the direction CBD\u2019s T-type block would push. Effect is sex-dependent.',
+  },
   // ---- Human neuroimaging: limbic / emotion circuitry -------------------
   {
     id: 'fusarpoli2009',

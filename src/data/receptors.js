@@ -11,7 +11,7 @@ export const RECEPTORS = [
     name: 'Cav3 T-type calcium channels',
     action: 'Inhibitor (Cav3.1 / Cav3.2)',
     effect:
-      'Blocks low-voltage Cav3.1/Cav3.2 T-type channels (IC50 ≈ 1 µM; weaker on Cav3.3), damping neuronal excitability, thalamic burst-firing and pain signalling — relevant to CBD’s analgesic and anti-seizure actions. Cav3.2 (CACNA1H) is genetically tied to autism, but the ASD-linked variants are usually loss-of-function, so this is a shared calcium-channel thread, not a straightforward correction.',
+      'Blocks low-voltage Cav3.1/Cav3.2 T-type channels (IC50 ≈ 1 µM; weaker on Cav3.3), damping neuronal excitability, thalamic burst-firing and pain signalling — relevant to CBD’s analgesic and anti-seizure actions. Cav3.2 (CACNA1H) is genetically tied to autism, and the direction is unsettled — which is what decides whether CBD’s block would help or hurt here. The rare ASD variants reduce peak current (loss-of-function; Splawski 2006, Liao 2020), yet deleting Cav3.2 protects mice from valproate-induced autism-like behaviour: spatial working memory preserved in both sexes, no repetitive-behaviour rise in males, less excess grooming in adult females, and sociability rescued in males (Antunes & Zamponi 2025). So the causal evidence runs opposite to the genetics — channel activity contributes to the phenotype and blocking it helps, which puts CBD on the side of correction. A live, contested thread, sex-dependent in which behaviours respond — not settled either way.',
   },
   {
     id: '5ht1a',
