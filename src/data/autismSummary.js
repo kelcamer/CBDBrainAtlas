@@ -207,7 +207,7 @@ export const AUTISM_SUMMARY = [
   {
     area: 'Thalamus',
     direction: 'mixed',
-    autismFinding: 'No overall volume difference, but shape analysis found expanded right-posterior surface area and a more concave left mediodorsal nucleus.',
+    autismFinding: 'Dopaminergically atypical: raised D2 receptor availability and raised glucose metabolism in autistic adults of both sexes, the metabolism tracking social-communication difficulties (Knudsen 2026) \u2014 against lower posterior-thalamic/pulvinar D2/3 in an all-male sample (Murayama 2022). Structurally, no overall volume difference, but expanded right-posterior surface area and a more concave left mediodorsal nucleus.',
     cbdStatus: 'null',
     cbdDirection: 'null',
     cbdFinding: 'Directly tested twice in ordinary resting animals and null both times — no thalamic BOLD change in awake mice (Sadaka 2021), no thalamic blood-flow change in rats (MacNicol 2026); no human study has measured it. But CBD reverses prepulse-inhibition deficits in the valproate autism model while doing nothing in intact mice (Pedrazzi 2025, Long 2006), and the autistic thalamus shows atypical D2 receptor availability — raised in autistic adults of both sexes, women included (Knudsen 2026), lowered in an all-male sample (Murayama 2022). A drug with D2 partial agonism (Seeman 2016) has never been tested here in autism, and the animal work behind the nulls is male-only. CBD also blocks the Cav3.1/Cav3.2 T-type channels that build the thalamus\u2019s burst/tonic switch (Ross 2008, Kim 2001, Talley 1999) \u2014 a mode change resting-state imaging would not see (Vukadinovic 2013).',

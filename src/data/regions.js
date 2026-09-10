@@ -317,7 +317,12 @@ export const REGIONS = [
     name: 'Thalamus',
     abbr: 'THA',
     category: 'thalamic',
-    autism: false,
+    // Circled as autism-relevant: two human PET studies measured dopamine
+    // D2/3 in autistic people's thalamus specifically (Knudsen 2026,
+    // Murayama 2022), and a CBD study in the valproate autism model turns
+    // on thalamic filtering (Pedrazzi 2025). What is still missing is a CBD
+    // study that measures an autistic thalamus — which the entry says.
+    autism: true,
     map: { shape: 'ellipse', cx: 452, cy: 272, rx: 24, ry: 19 },
     summary:
       'The brain’s central relay station, routing almost all sensory information to the cortex, and deciding moment to moment which of it reaches there at full strength. Two rodent studies have measured the thalamus directly under CBD and found nothing move: an awake-mouse whole-brain fMRI screen (Sadaka 2021) and a rat blood-flow study (MacNicol 2026). Both scanned ordinary animals lying at rest with nothing disturbed. No human CBD imaging study has measured the thalamus at all — the human blood-flow work confined its regions of interest to the temporal lobe and prefrontal cortex (Bloomfield 2020). So what is actually established is narrow: a single dose of CBD does not visibly shift bulk thalamic signal in a typical resting brain — which is not the same as CBD having no thalamic action, since CBD blocks the T-type calcium channels that build the thalamus’s burst/tonic switch (Ross 2008, Kim 2001), and a change of firing mode need not move mean BOLD. Behaviourally, CBD likewise does nothing to sensory filtering in intact animals — but restores it when it has been disrupted, including in the valproate autism model (Long 2006, Pedrazzi 2024, Pedrazzi 2025), which is a different claim from the one a resting-state null can settle. See the Women note below: the D2 target this rests on is confirmed in autistic women, while every animal study behind the nulls used males only.',
