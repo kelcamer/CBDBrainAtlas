@@ -1,7 +1,7 @@
 // ---------------------------------------------------------------------------
 // CBD Brain Atlas — curated source library
 // ---------------------------------------------------------------------------
-// 32 peer-reviewed sources gathered from PubMed / JAMA / NEJM / The Lancet /
+// Peer-reviewed sources gathered from PubMed / JAMA / NEJM / The Lancet /
 // Nature / Frontiers. Every `url` is a real, canonical link (PubMed PMID,
 // journal DOI resolver, or publisher page).
 //
@@ -650,7 +650,7 @@ export const SOURCES = [
     type: 'In vitro receptor binding',
     category: 'preclinical',
     url: 'https://doi.org/10.1038/tp.2016.195',
-    regions: ['caudate', 'striatum'],
+    regions: ['caudate', 'striatum', 'thalamus'],
     autism: false,
     finding:
       'Radioligand-binding assays showed CBD acts as a partial agonist at high-affinity dopamine D2 receptors — concentrated in the caudate and putamen — at concentrations matching its clinical antipsychotic dose, a candidate dopaminergic mechanism distinct from CB1/CB2.',
@@ -1933,6 +1933,92 @@ export const SOURCES = [
     autism: false,
     finding:
       'Comparing regular CBD users to non-users, no statistically significant difference emerged in working-memory performance on the N-back task — reassuring real-world evidence (as opposed to single-dose lab studies) that habitual CBD use doesn’t appear to impair working memory.',
+  },
+  // ---- Thalamus: the direct nulls, the behavioural counter-evidence, and
+  // ---- the dopaminergic case for testing it in autistic people -----------
+  {
+    id: 'macnicol2026',
+    authors: 'MacNicol E, Kokkinou M, Serrano Navacerrada ME, et al.',
+    year: 2026,
+    title: 'Acute cannabidiol (CBD), tetrahydrocannabinol (THC) and their mixture (THC:CBD) exert differential effects on brain activity and blood flow in rats: a translational neuroimaging study',
+    journal: 'Journal of Psychopharmacology',
+    type: 'Preclinical (rat fMRI + ASL, whole-brain)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/40838351/',
+    regions: ['thalamus', 'hippocampus', 'caudate', 'striatum'],
+    autism: false,
+    finding:
+      'In anaesthetised rats, 150 mg/kg CBD lowered whole-brain functional connectivity while leaving regional cerebral blood flow unchanged — the thalamus included, where CBD and vehicle values were effectively identical. A second species, and a second measurement type, agreeing with the mouse result that CBD does not move bulk thalamic signal in an ordinary resting brain. THC did the opposite on both measures, which is the study\u2019s main point.',
+  },
+  {
+    id: 'long2006ppi',
+    authors: 'Long LE, Malone DT, Taylor DA',
+    year: 2006,
+    title: 'Cannabidiol reverses MK-801-induced disruption of prepulse inhibition in mice',
+    journal: 'Neuropsychopharmacology',
+    type: 'Preclinical (mouse behaviour)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/16052245/',
+    regions: ['thalamus'],
+    autism: false,
+    finding:
+      'CBD (1\u201315 mg/kg) on its own did nothing to prepulse inhibition \u2014 the test of whether a quiet warning tone blunts the startle response to a loud one \u2014 in intact mice. The same drug at 5 mg/kg reversed the disruption caused by the NMDA-receptor blocker MK-801, as did clozapine. The nothing-at-baseline, correction-under-disruption pattern matters for reading CBD\u2019s null imaging results in unperturbed animals.',
+  },
+  {
+    id: 'pedrazzi2024ppi',
+    authors: 'Pedrazzi JFC, Silva-Amaral D, Issy AC, et al.',
+    year: 2024,
+    title: 'Cannabidiol attenuates prepulse inhibition disruption by facilitating TRPV1 and 5-HT1A receptor-mediated neurotransmission',
+    journal: 'Pharmacology Biochemistry and Behavior',
+    type: 'Preclinical (mouse behaviour + antagonists)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/39305939/',
+    regions: ['thalamus'],
+    autism: false,
+    finding:
+      'CBD restored amphetamine-disrupted prepulse inhibition in mice, and the effect was blocked by a TRPV1 antagonist and, more strongly, by a 5-HT1A antagonist \u2014 but not by CB1 or CB2 antagonists. So CBD can change how a startling stimulus is filtered, and it does so through the same 5-HT1A route this atlas cites elsewhere rather than through cannabinoid receptors.',
+  },
+  {
+    id: 'pedrazzi2025vpa',
+    authors: 'Pedrazzi JFC, Sales AJ, Ponciano RSM, et al.',
+    year: 2025,
+    title: 'Acute cannabidiol treatment reverses behavioral impairments induced by embryonic valproic acid exposure in male mice',
+    journal: 'Pharmacology Biochemistry and Behavior',
+    type: 'Preclinical (autism model, mouse behaviour)',
+    category: 'preclinical',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/39615556/',
+    regions: ['thalamus'],
+    autism: true,
+    finding:
+      'In mice exposed to valproic acid in utero \u2014 the standard environmental autism model \u2014 CBD (30 and 60 mg/kg) reversed the prepulse-inhibition deficit, reduced marble burying and improved social-interaction time and object recognition, while failing to reduce stereotyped movement. Direct evidence that CBD can normalise sensory filtering in an autism model, in contrast to its lack of effect on the same measure in intact animals.',
+  },
+  {
+    id: 'knudsen2026thalamus',
+    authors: 'Knudsen LV, Vafaee MS, Farahani ZA, Sheldrick-Michel AJ, Michel TM',
+    year: 2026,
+    title: 'Subcortical dopamine D2 receptor availability and glucose metabolism in autism: a dual-tracer PET/MR study',
+    journal: 'European Journal of Nuclear Medicine and Molecular Imaging',
+    type: 'Human PET/MR (case-control)',
+    category: 'imaging',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/42406073/',
+    regions: ['thalamus', 'nac', 'striatum'],
+    autism: true,
+    finding:
+      'In 30 autistic and 30 matched neurotypical adults, [11C]raclopride PET found higher dopamine D2 receptor availability in the thalamus of the autistic group (with further increases in nucleus accumbens and putamen in autistic males), and [18F]FDG found raised thalamic glucose metabolism that correlated with social and communication difficulties. Thalamic D2 availability was also coupled to resting-state connectivity differently by diagnosis and sex. No CBD involved \u2014 this is autism biology, and it is why the thalamus is a plausible target for a drug with D2 activity.',
+  },
+  {
+    id: 'murayama2022d2',
+    authors: 'Murayama C, Iwabuchi T, Kato Y, et al.',
+    year: 2022,
+    title: 'Extrastriatal dopamine D2/3 receptor binding, functional connectivity, and autism socio-communicational deficits: a PET and fMRI study',
+    journal: 'Molecular Psychiatry',
+    type: 'Human PET + fMRI (case-control)',
+    category: 'imaging',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/35181754/',
+    regions: ['thalamus'],
+    autism: true,
+    finding:
+      'Using [11C]FLB457 in 22 autistic men and 24 matched controls, this study found lower D2/3 receptor availability across extrastriatal dopamine territory, with the largest effect in the posterior thalamus (mostly pulvinar); lower availability tracked higher social-affect symptom scores and weaker thalamus-to-superior-temporal-sulcus connectivity. Note the direction is opposite to Knudsen 2026 \u2014 different tracer, smaller male-only sample \u2014 so the sign is unsettled even though both studies land on the thalamus.',
   },
 ]
 

@@ -67,7 +67,13 @@ export default function RegionPanel({ region, onClear }) {
 
       <div className="region-block">
         <h3>How CBD acts here</h3>
-        <p className="muted">{region.mechanism}</p>
+        {/* Longer mechanism entries are written as blank-line-separated
+            paragraphs; render them as such rather than one wall of text. */}
+        {region.mechanism.split('\n\n').map((para, i) => (
+          <p className="muted" key={i}>
+            {para}
+          </p>
+        ))}
       </div>
 
       {region.autismNote && (

@@ -58,6 +58,13 @@ export const RECEPTORS = [
     effect: 'Boosts adenosine signalling — anti-inflammatory and possibly anticonvulsant.',
   },
   {
+    id: 'd2high',
+    name: 'Dopamine D2High receptor',
+    action: 'Partial agonist',
+    effect:
+      'Binds the high-affinity state of the D2 receptor at concentrations matching CBD\u2019s clinical antipsychotic dose, in the same biphasic way as aripiprazole (Seeman 2016) \u2014 a dopaminergic route separate from CB1/CB2. Relevant wherever D2 density is atypical, including the autistic thalamus and striatum. Single in-vitro binding study; not yet confirmed in living brain.',
+  },
+  {
     id: 'ppar',
     name: 'PPARγ nuclear receptor',
     action: 'Agonist',
